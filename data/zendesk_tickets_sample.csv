@@ -1,0 +1,6 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-3001,ben@email.com,"My coffee tastes off, tastes stale",2026-07-06T09:00:00-07:00,"quality,refund_request",#5003
+ZD-3002,,"Where is my box??",2026-07-08T16:22:00-04:00,"shipping,frustrated",
+ZD-3003,dana@email.com,"Bag arrived crushed",2026-07-09T11:10:00-04:00,"damaged,refund_request",#5005
+ZD-3004,carl@email.com,"Please cancel my subscription",2026-07-07T14:00:00-04:00,"cancellation",
+ZD-3005,,"Wrong grind size sent, whole bean expected",2026-07-07T10:15:00-07:00,"quality",#5003

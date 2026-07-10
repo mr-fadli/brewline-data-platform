@@ -1,0 +1,57 @@
+[
+  {
+    "subscription_id": "RC-200",
+    "customer_email": "ana@email.com",
+    "status": "active",
+    "frequency_days": 30,
+    "created_at": "2026-04-05T00:00:00-04:00",
+    "next_charge_date": "2026-08-05",
+    "cancelled_at": null,
+    "cancellation_reason": null,
+    "linked_shopify_order_id": "#5002"
+  },
+  {
+    "subscription_id": "RC-201",
+    "customer_email": "carl@email.com",
+    "status": "cancelled",
+    "frequency_days": 14,
+    "created_at": "2026-02-01T00:00:00-05:00",
+    "next_charge_date": null,
+    "cancelled_at": "2026-07-08T00:00:00-04:00",
+    "cancellation_reason": "customer_cancelled",
+    "linked_shopify_order_id": "#4890"
+  },
+  {
+    "subscription_id": "RC-202",
+    "customer_email": "erin@email.com",
+    "status": "cancelled",
+    "frequency_days": 30,
+    "created_at": "2026-01-15T00:00:00-05:00",
+    "next_charge_date": null,
+    "cancelled_at": "2026-07-03T00:00:00-04:00",
+    "cancellation_reason": "payment_failed_max_retries",
+    "linked_shopify_order_id": "#4750"
+  },
+  {
+    "subscription_id": "RC-203",
+    "customer_email": "erin@email.com",
+    "status": "active",
+    "frequency_days": 30,
+    "created_at": "2026-07-05T00:00:00-04:00",
+    "next_charge_date": "2026-08-05",
+    "cancelled_at": null,
+    "cancellation_reason": null,
+    "linked_shopify_order_id": "#5010"
+  },
+  {
+    "subscription_id": "RC-204",
+    "customer_email": "dana@email.com",
+    "status": "paused",
+    "frequency_days": 30,
+    "created_at": "2026-05-01T00:00:00-04:00",
+    "next_charge_date": null,
+    "cancelled_at": null,
+    "cancellation_reason": null,
+    "linked_shopify_order_id": "#5005"
+  }
+]
