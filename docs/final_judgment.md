@@ -1,0 +1,74 @@
+# Original Takes
+So this is my final judgement for the assessment. This is constructed based on the amount of time given to me to work on this and I take the assumption that it was 2 weeks minimum.
+
+For the weekly revenue, we will separate it into 3 different channels between shopify, square, and recharge subscriptions where the order data from shopify will be split by the source name a.k.a web or subscriptions. Since you stated about the internal reporting calendar, we’re going to use the monday-to-sunday models and if it happens to be the 7 days on-going data, we can add another table in the database to get this data.
+
+Regarding the definitions of customer, we’re going with the safest route which is separating online and offline customers as different entities to get the most clarity for it. For the online part, we’re using the email to define a customer. For the offline part. First, we’re going to separate customers who’re willingly sign up for the loyalty member as a single true customer and put it aside in case we want to put them at the top of our list in the best customers category. Then for the “walk-in” customer, we’re going to group it by dates and stores to get the closest definition for customers.
+
+Regarding the definition of best customer, we’re going to do the RFM-style approach for the first version. This approach will score customers on how recently they bought, how often, and how much, then combine everything to get the score. This approach will be implemented both for online and offline customers, where the online one will get an additional score for how long they’ve been subscribed to recharge. For the offline, since it’s inevitable that we couldn’t define what customer is aside from the one who’s willingly signed up for the loyalty number, but luckily, this also an advantage for the business since if the customer is happily signed up for the program, it was a strong signal that they’re liking the services and more likely to stay rather than churn.
+
+For the definition of sticking around, I’m going with my assumption. For a  one-time/walks-in customer, if they have ordered within a certain period of time (let’s say 60 days) or less from the current time, they are considered sticking around. Anything beyond that points considered out. For the subscription, if the customer cancelled it on purpose and hasn't subscribed again within a period of times also considered out.
+
+For the churn customer, given the amount of time to create this pipeline, we’re going to simplify the algorithm and go with the logic “if they didn’t stick around, they’re considered churn”. I believe this is the closest I can get for the first version. With this logic, we can flag a customer that is close to a time period for considered churn and alert the teams about it. (e.g if the time period for considered churn was 60 days and a customer was 45 days without a single order made, we can flag this customer). For future improvement, we can adopt a more complex algorithm using the data from zendesk and shipstation to enrich the data for flagging possible customer churn. For now let’s just keep the raw data from zendesk and shipstation in its compressed form inside the data lake for future usage.
+
+Lastly, regarding the refund spikes. When I checked the sample data, I noticed that customers who’re applying for refunds were creating their tickets before 1 week passed after they received their shipment. With this pattern, we can assume that the highest chances for a customer to apply for a refund ticket was around the first week they received their goods. So I’m going to take that assumption and make a refund rates table that’s constantly updated and track the record of refunds from the last 7 days. The refund itself will be compared based on how many orders are refunded / batch shipment in the same day. If the amount of refund passes a certain % threshold, we can alert the teams about the situation.
+
+For now, that’s the best work I can try to implement for the system. Although, there might be a few changes along the way if I found something was too difficult to implement or I found a better way to solve the problem, and for that, I’ll be informing you in advance. If this sounds good to you, then I will start working toward it.
+
+# Evaluation and discussion with the Mentor
+
+## Mentor
+*(Mentor mode):*
+
+Overall this is a strong, coherent first design — you clearly synthesized everything from this whole conversation instead of just answering each question in isolation. Let me go through what's solid, and then push on a few things a senior reviewer would absolutely ask about.
+
+**What's genuinely good here:**
+
+- **Recharge revenue isn't double-counted.** You split Shopify by `source_name` instead of adding Recharge's own total on top — that's exactly the fix for the reconciliation problem we worked through. Worth saying explicitly in your write-up, because it shows you understood *why* the bug happens, not just that it exists.
+- **Separating identity by data availability, not wishful thinking.** Loyalty-signed vs. anonymous walk-in is the honest answer to a problem that doesn't have a clean one. You're not pretending to solve identity resolution — you're scoping it to "the customers we can actually identify," which is defensible and states your limitation instead of hiding it.
+- **RFM with a bolt-on tenure score for subscribers** is a sensible, simple extension rather than over-engineering two totally separate scoring systems.
+- **Deferring Zendesk/ShipStation to bronze-only** is exactly the scope discipline we talked about — nice.
+
+**Now, three things I'd stop you on before you start building:**
+
+**1. Currency is missing entirely, and you have direct evidence you need it.** Order `#5004` in the sample data is in CAD. Nowhere in your plan do you mention converting currency before summing revenue. If you `SUM(total_price)` across USD and CAD orders as-is, your weekly revenue number is arithmetically meaningless — not "slightly off," actually wrong. This isn't a nitpick; it's the exact kind of "why doesn't this reconcile" bug we spent time on earlier, now missing from your own design. Go back and decide: convert to a base currency at ingestion (needs an exchange rate source — which one, and as of when?), or keep both and report separately? Either is fine, but it can't be silently absent.
+
+**2. "If they didn't stick around, they're considered churn" quietly erases the payment-failure nuance you found yourself.** Go check your own Recharge sample data — Erin's subscription was cancelled with reason `payment_failed_max_retries`, then a *new* subscription appeared two days later. Your rule as written says "cancelled it on purpose" for subscriptions specifically, which is good — but does your actual join/filter logic check the `cancellation_reason` field, or does it just check `status == cancelled`? If it's the latter, you'll flag Erin as churned despite her still being an active customer today. Also — what happens to a **paused** subscription (like Dana's, RC-204) under your "no order in X days" logic? A pause is intentional and temporary, but if your churn rule is purely "no order recently," a paused customer looks identical to a churned one. You need an explicit exception for `status == paused`, or you'll generate false alerts — the exact kind of noise that erodes leadership's trust in the dashboard.
+
+**3. Be careful generalizing "refunds happen within a week" from 5 rows of sample data.** I gave you a tiny toy dataset to illustrate *shapes*, not to be statistically meaningful — and you used a pattern from it to justify a real design decision (a 7-day rolling window). That's a good instinct to look at real data before deciding, but the sample size here is far too small to support that conclusion, and you also have Sarah's *own stated policy* of a 30-day refund window sitting right next to it. A refund on day 25 is legitimate under policy but would be completely invisible to a 7-day window. I'd push you to either (a) widen the window to match the actual policy window, or (b) keep both — a fast-detection "spike in first week" alert for catching things like the mislabeling incident quickly, *and* a separate longer-window reconciliation so refunds arriving late don't just vanish from your reporting. Don't retire the 30-day figure just because a 5-row sample happened to look tidy.
+
+**One clarifying question for you, not a criticism:** how exactly are you "grouping walk-ins by date and store"? Talk me through what that bucket is *for* — is it purely to get an aggregate revenue/transaction count for reporting (which is fine and doesn't need identity at all), or are you trying to use it as a proxy for "returning customer" behavior? Those are very different uses of the same-looking bucket, and only one of them is safe to build on.
+
+Fix the currency gap and the churn-status edge cases, sanity-check the refund window against actual policy, and clarify the walk-in bucket's purpose — then I think you're in good shape to start building the actual pipeline.
+
+## ME
+to the mentor. oh yeah, I purposely didn't include it since I guess that the teams didn't really have any preferences regarding the subject, so I assume they'll fine with whatever approach I take and won't complaint about it.
+
+1. since there's no preference, I will do the currency in USD because it's more commonly used across nations. for the time preferences, I'll go with the default timing UTC which has 0 hour offset.
+2. for the churn status, I will connect the status == cancelled and cancellation_reason == customer_cancelled using AND logic to pinpoint the user that's flagged as churn, and if possible, I also want to add the last_ordered to the equation for clearer result but that might be too hard for now, so I'll go with the most realistic approach first.
+3. when you said it like that, you might be right. I'm being too rough about implying it based on the sample data given. so to change that, I think it's better to widen the window to match actual policy window, with the extention of adding a flag alert if the refund spikes around certain amount of time (example 1 week window).
+4. honestly, when I think about that, I thought that maybe we can extract some information based on the ambiguos data and flag it as a customer. but now that you mention it, I think the ROI was too low and not worth the time. so I guess it's better to generalize the data based on the store alone and use that to get the revenue.
+
+## Mentor
+Good — let's go through these one at a time, because a couple of them need a little more rigor before you lock them in, and then I'll give you the overall feasibility read you asked for.
+
+**1. Currency and timezone**
+
+First, a process note before the technical one: "there's no preference so they'll be fine with whatever" is a slightly risky habit to build. It's fine to *decide* in the absence of a stated preference — that's exactly what you should do — but the safe version of that sentence is "I'm documenting this as my assumption, and I'll flag it if anyone pushes back," not "I'll assume they won't complain." The difference matters because if leadership *does* care later, the first framing means you made a reasonable, defensible call under time pressure. The second framing means you didn't think it was worth checking. Small wording difference, different impression in a review.
+
+On the actual decision: "USD is more commonly used across nations" isn't quite the right justification, and a finance person would push back on it immediately. The right justification is almost always **"what currency does the company report its financials in"** — since Brewline is a US-based company with occasional CAD orders, USD as the *base/reporting* currency is correct, but the reasoning should be "this is our home currency and what Finance closes the books in," not "it's popular." Same conclusion, much stronger justification — write it that way in your docs.
+
+But you're missing the harder half of this problem: **converting CAD to USD requires an exchange rate, and exchange rates move daily.** You need to decide — do you convert at the rate on the *order's* date (historical rate), or at whatever today's rate is when the report runs? These give different numbers for the same historical order. For a portfolio project, the realistic move is: keep a small static/mocked daily exchange rate table (you don't need a live forex API), and convert using **the rate on the order's transaction date** — because that's what actually happened financially at the time. Converting historical revenue using today's rate would make last month's numbers shift every time you rerun the report, which is exactly the kind of thing that would make Finance distrust your pipeline the same way they distrust the current mess.
+
+Timezone: UTC as your **internal storage standard** is the right call, and standard practice — always store in UTC, always. But that's a separate decision from **what timezone defines your Monday-to-Sunday boundary** for reporting. If you store everything in UTC but define "the week" using UTC boundaries too, you'll get a subtle bug: an order placed at 9pm Monday in Eastern time is already past midnight in UTC, landing it in "Tuesday" from a UTC clock's perspective, which isn't how anyone at Brewline actually experiences their week. The common pattern is: **store in UTC, but convert to a single business-reporting timezone (e.g., wherever HQ or Finance is) before bucketing into weeks.** Otherwise your "weekly revenue" boundary is technically correct and practically meaningless to the humans reading it.
+
+**2. Churn logic**
+
+Your `status == cancelled AND cancellation_reason == customer_cancelled` correctly excludes both payment failures *and* pauses (since paused is a different status value entirely) — good, that actually already handles the edge case I raised, you just worked it out from the sample data rather than me having to spell it out. That's the right instinct.
+
+On adding `last_ordered` — you don't need to make this one complicated equation on day one. A clean way to phase it: **v1 ships two independent churn signals, not one merged score** — a subscription-status-based flag (what you just described) and a separate "days since last order" flag for non-subscribers. Combine them into a unified "customer health" view later if you want, but don't block your first working version on merging logic you're not confident about yet. Simple, parallel, and both individually correct beats one complex thing that's half-right.
+
+**3 & 4.** Both good — the refund window fix and the walk-in scope-down are exactly the right calls, and importantly, you're now giving *reasoning* for the change rather than just picking a new number. That's the pattern to keep repeating.
+
+---
+

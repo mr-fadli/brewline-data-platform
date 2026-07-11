@@ -143,3 +143,29 @@ do the company have any other data source such as shipment status or was everyth
 Actually, yes — I probably should've mentioned this earlier, sorry. We use **ShipStation** for fulfillment, which pulls orders from Shopify once they're paid and pushes back tracking status — things like "label created," "shipped," "in transit," "delivered," and occasionally "delivery exception" (lost package, delivery attempt failed, etc.). It updates the Shopify order record with a tracking number and fulfillment status, but the more detailed tracking history — the carrier's scan events — really only lives in ShipStation itself, not in Shopify.
 
 I hadn't listed it originally because nobody explicitly asked me for shipping visibility, but now that you ask... I could see it being relevant to a couple of things I *did* ask for. Remember those "where's my box" complaints in Zendesk? A support rep can't tell if that's a real problem or just an impatient customer without checking tracking status, and I don't think our systems currently make that easy. So there might be a connection there, but I want to be upfront that this wasn't part of my original ask — I'm just thinking out loud as you ask me about it.
+
+## ME
+to sarah, is there any store policies regarding the refund system? such as How long is the time limit for customers to request a refund after receiving the goods? and what is the regulation about the partially refund items?
+
+## Sarah
+*Sarah responds:*
+
+Good question, and honestly one I should have thought to mention given how much refunds have come up. Here's what I know:
+
+**Refund window:** Officially, our policy page says customers can request a refund within **30 days of delivery** — not order date, delivery date, since obviously shipping takes time and it wouldn't be fair to start the clock before they even have the product. That said, I know for a fact our support team has approved refunds outside that window before, especially for quality issues that are clearly our fault (like the mislabeling incident) rather than the customer just changing their mind. So the *written* policy is 30 days from delivery, but the *actual enforced* behavior has exceptions our system probably doesn't track as a clean flag anywhere — it's more "the rep used their judgment," which I realize isn't very helpful for you trying to build clean logic around it.
+
+**Partial refunds:** There's no fixed formula, unfortunately — it's case-by-case based on what the support rep decides is fair. A damaged item might get a partial refund equal to just that item's price (like the $5 example from earlier), or occasionally a rep will throw in extra credit as a goodwill gesture that has nothing to do with the actual item price. So you can't assume `refund_amount` always maps cleanly back to a specific line item's price — sometimes it will, sometimes it won't, and there's no field anywhere that says "this refund was goodwill vs. exact item cost."
+
+I don't think there's a written internal policy doc for partial refunds — this is genuinely just "whatever the support rep and their manager agree on."
+
+---
+
+## ME (Final Judgment)
+see in the docs/final_judgment.md
+
+## Sarah
+*Sarah responds:*
+
+This reads like something I could actually bring to the board, so — good work, genuinely. I like that you separated "walk-in" from "loyalty" instead of pretending you can identify people who never gave us anything to identify them by. And I appreciate you flagging Zendesk/ShipStation as "captured but not used yet" rather than either ignoring them or trying to force them in — that's the kind of thing that makes me trust the roadmap. Two weeks sounds reasonable to me too. Go ahead and start building — just flag it if something turns out harder than expected, like you said.
+
+---
