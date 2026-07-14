@@ -2,8 +2,9 @@
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent
-RAW_DIR = PROJECT_ROOT / "bronze" / "raw"
-BRONZE_PARQUET_DIR = PROJECT_ROOT / "bronze" / "parquet"
+BRONZE_DIR = PROJECT_ROOT / "pipelines" / "bronze"
+RAW_DIR = BRONZE_DIR / "raw"
+BRONZE_PARQUET_DIR = BRONZE_DIR / "parquet"
 DB_PATH = PROJECT_ROOT / "brewline.duckdb"
 
 BRONZE_PARQUET_DIR.mkdir(parents=True, exist_ok=True)
