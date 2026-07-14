@@ -1,0 +1,71 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-3001,jason31@example.com,"My coffee tastes off, tastes stale",2026-06-19T19:52:00-07:00,"quality,refund_request",#5455
+ZD-3002,williamrodriguez@example.net,"Wrong grind size sent, whole bean expected",2026-06-22T06:33:00-07:00,"quality,refund_request",#5460
+ZD-3003,lrosales@example.com,"My coffee tastes off, tastes stale",2026-06-21T10:44:00-05:00,"quality,refund_request",#5473
+ZD-3004,,"Wrong grind size sent, whole bean expected",2026-06-20T22:41:00-07:00,"quality,refund_request",#5487
+ZD-3005,,"My coffee tastes off, tastes stale",2026-06-21T20:05:00-05:00,"quality,refund_request",#5495
+ZD-3006,,"Wrong grind size sent, whole bean expected",2026-06-23T15:21:00-07:00,"quality,refund_request",#5496
+ZD-3007,,"My coffee tastes off, tastes stale",2026-06-21T20:50:00-05:00,"quality,refund_request",#5505
+ZD-3008,wrightcaleb@example.org,"My coffee tastes off, tastes stale",2026-06-23T17:14:00-05:00,"quality,refund_request",#5531
+ZD-3009,,"My coffee tastes off, tastes stale",2026-06-24T09:40:00-05:00,"quality,refund_request",#5554
+ZD-3010,,"Wrong grind size sent, whole bean expected",2026-06-23T16:53:00-04:00,"quality,refund_request",#5560
+ZD-3011,,Please cancel my subscription,2026-06-22T21:00:00+00:00,cancellation,#5654
+ZD-3012,whitesandra@example.com,Please cancel my subscription,2026-06-12T18:00:00+00:00,cancellation,
+ZD-3013,nathanielmartin@example.net,Package says delivered but I don't have it,2026-06-08T14:00:00+00:00,"shipping,frustrated",#5397
+ZD-3014,barbara10@example.net,Box was soaked/damaged in transit,2026-06-17T17:00:00+00:00,"damaged,refund_request",
+ZD-3015,,How do I pause my subscription?,2026-06-23T08:00:00+00:00,cancellation,
+ZD-3016,,Box was soaked/damaged in transit,2026-06-11T13:00:00+00:00,"damaged,refund_request",
+ZD-3017,,Package says delivered but I don't have it,2026-06-21T11:00:00+00:00,"shipping,frustrated",
+ZD-3018,russellwilliams@example.com,Bag arrived crushed,2026-06-17T19:00:00+00:00,"damaged,refund_request",
+ZD-3019,,Bag arrived crushed,2026-06-12T17:00:00+00:00,"damaged,refund_request",#5261
+ZD-3020,herringjames@example.org,How do I pause my subscription?,2026-07-04T08:00:00+00:00,cancellation,#5044
+ZD-3021,barbara10@example.net,Box was soaked/damaged in transit,2026-06-19T18:00:00+00:00,"damaged,refund_request",#6202
+ZD-3022,yherrera@example.org,Box was soaked/damaged in transit,2026-06-11T08:00:00+00:00,"damaged,refund_request",
+ZD-3023,kellie42@example.net,Package says delivered but I don't have it,2026-06-21T07:00:00+00:00,"shipping,frustrated",#5960
+ZD-3024,georgepamela@example.net,How do I pause my subscription?,2026-07-07T12:00:00+00:00,cancellation,
+ZD-3025,,Please cancel my subscription,2026-06-17T15:00:00+00:00,cancellation,#5581
+ZD-3026,whitesandra@example.com,Box was soaked/damaged in transit,2026-06-26T13:00:00+00:00,"damaged,refund_request",
+ZD-3027,,How do I pause my subscription?,2026-07-05T11:00:00+00:00,cancellation,
+ZD-3028,kingmichelle@example.org,How do I pause my subscription?,2026-06-30T09:00:00+00:00,cancellation,#5805
+ZD-3029,,Box was soaked/damaged in transit,2026-06-25T12:00:00+00:00,"damaged,refund_request",
+ZD-3030,,Package says delivered but I don't have it,2026-06-17T07:00:00+00:00,"shipping,frustrated",
+ZD-3031,javierwashington@example.net,How do I pause my subscription?,2026-06-25T13:00:00+00:00,cancellation,#5177
+ZD-3032,,Please cancel my subscription,2026-06-26T07:00:00+00:00,cancellation,#5821
+ZD-3033,tholt@example.net,How do I pause my subscription?,2026-06-28T10:00:00+00:00,cancellation,
+ZD-3034,,Please cancel my subscription,2026-07-06T13:00:00+00:00,cancellation,#5120
+ZD-3035,millerroy@example.com,Package says delivered but I don't have it,2026-06-09T18:00:00+00:00,"shipping,frustrated",
+ZD-3036,williamanderson@example.com,Please cancel my subscription,2026-06-25T14:00:00+00:00,cancellation,#6079
+ZD-3037,,Bag arrived crushed,2026-06-28T10:00:00+00:00,"damaged,refund_request",#5472
+ZD-3038,,Bag arrived crushed,2026-06-09T21:00:00+00:00,"damaged,refund_request",
+ZD-3039,blakeerik@example.com,Bag arrived crushed,2026-07-02T13:00:00+00:00,"damaged,refund_request",
+ZD-3040,georgepamela@example.net,How do I pause my subscription?,2026-06-12T17:00:00+00:00,cancellation,#5526
+ZD-3041,,Where is my box??,2026-07-02T14:00:00+00:00,"shipping,frustrated",
+ZD-3042,,How do I pause my subscription?,2026-06-19T17:00:00+00:00,cancellation,
+ZD-3043,,Where is my box??,2026-06-23T21:00:00+00:00,"shipping,frustrated",
+ZD-3044,,Tracking hasn't updated in days,2026-07-01T11:00:00+00:00,"shipping,frustrated",
+ZD-3045,donnacampbell@example.net,Package says delivered but I don't have it,2026-07-02T18:00:00+00:00,"shipping,frustrated",
+ZD-3046,,Tracking hasn't updated in days,2026-06-23T13:00:00+00:00,"shipping,frustrated",
+ZD-3047,,Please cancel my subscription,2026-06-25T15:00:00+00:00,cancellation,#5942
+ZD-3048,jonathanfletcher@example.org,Tracking hasn't updated in days,2026-07-07T13:00:00+00:00,"shipping,frustrated",#6168
+ZD-3049,erik16@example.org,Tracking hasn't updated in days,2026-06-30T18:00:00+00:00,"shipping,frustrated",#6128
+ZD-3050,,How do I pause my subscription?,2026-07-07T17:00:00+00:00,cancellation,
+ZD-3051,,Where is my box??,2026-06-26T16:00:00+00:00,"shipping,frustrated",
+ZD-3052,wmurphy@example.com,Box was soaked/damaged in transit,2026-06-27T14:00:00+00:00,"damaged,refund_request",
+ZD-3053,,Package says delivered but I don't have it,2026-06-08T15:00:00+00:00,"shipping,frustrated",#5061
+ZD-3054,,How do I pause my subscription?,2026-07-07T08:00:00+00:00,cancellation,#5676
+ZD-3055,jacqueline71@example.net,How do I pause my subscription?,2026-06-23T15:00:00+00:00,cancellation,#5719
+ZD-3056,cruzcaitlin@example.com,Please cancel my subscription,2026-07-03T08:00:00+00:00,cancellation,#5115
+ZD-3057,,Box was soaked/damaged in transit,2026-07-05T17:00:00+00:00,"damaged,refund_request",#6218
+ZD-3058,ronaldstephens@example.net,Tracking hasn't updated in days,2026-06-30T17:00:00+00:00,"shipping,frustrated",
+ZD-3059,,Where is my box??,2026-06-09T17:00:00+00:00,"shipping,frustrated",
+ZD-3060,tsanders@example.org,Package says delivered but I don't have it,2026-06-11T18:00:00+00:00,"shipping,frustrated",#6011
+ZD-3061,,Please cancel my subscription,2026-06-16T09:00:00+00:00,cancellation,#5372
+ZD-3062,frazierdanny@example.net,Package says delivered but I don't have it,2026-06-13T10:00:00+00:00,"shipping,frustrated",#5345
+ZD-3063,,Where is my box??,2026-07-06T07:00:00+00:00,"shipping,frustrated",
+ZD-3064,,Box was soaked/damaged in transit,2026-07-03T09:00:00+00:00,"damaged,refund_request",
+ZD-3065,,Please cancel my subscription,2026-06-15T14:00:00+00:00,cancellation,
+ZD-3066,millerroy@example.com,Box was soaked/damaged in transit,2026-07-03T17:00:00+00:00,"damaged,refund_request",
+ZD-3067,hernandezlisa@example.com,How do I pause my subscription?,2026-06-16T07:00:00+00:00,cancellation,
+ZD-3068,yorkcasey@example.org,Tracking hasn't updated in days,2026-06-16T12:00:00+00:00,"shipping,frustrated",
+ZD-3069,brian97@example.net,How do I pause my subscription?,2026-06-19T21:00:00+00:00,cancellation,
+ZD-3070,,Package says delivered but I don't have it,2026-06-25T18:00:00+00:00,"shipping,frustrated",
