@@ -1,3 +1,8 @@
+# data generator and tester
 generate.py
 sample_data
 __pycache__
+
+# duckdb
+brewline.duckdb
+brewline.duckdb.wal
