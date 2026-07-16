@@ -6,3 +6,6 @@ __pycache__
 # duckdb
 brewline.duckdb
 brewline.duckdb.wal
+
+#miscellaneous
+notes.md
