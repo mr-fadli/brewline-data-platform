@@ -23,3 +23,4 @@ SELECT * FROM square_walk_in
 )
 
 SELECT * FROM combined
+--tested manually inside the duckdb database
