@@ -22,5 +22,5 @@ UNION ALL
 SELECT * FROM square_walk_in
 )
 
-SELECT * FROM combined
+SELECT * FROM combineds
 --tested manually inside the duckdb database
