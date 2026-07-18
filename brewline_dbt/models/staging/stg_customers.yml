@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "One row per identifiable customer, resolved into online (email), loyalty (phone), or walk-in (store+date) identity buckets."
+    columns:
+      - name: customer_key
+        description: "Unique identity key -- email for online, phone for loyalty, synthetic store+date key for walk-ins."
+        tests:
+          - unique
+          - not_null
+      - name: customer_type
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['online', 'loyalty', 'walk_in']
