@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_refunds
+    columns:
+      - name: refund_id
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref ('stg_orders')
+              field: order_id
+      - name: amount_usd
+        tests:
+          - not_null
