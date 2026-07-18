@@ -15,6 +15,9 @@ from pathlib import Path
 import duckdb
 import pandas as pd
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+sys.path.append(str(PROJECT_ROOT))
+
 from config import RAW_DIR, BRONZE_PARQUET_DIR, SOURCES
 from db import get_connection
 from extractors import EXTRACTORS
