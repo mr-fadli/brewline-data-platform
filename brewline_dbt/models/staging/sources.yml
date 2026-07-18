@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: bronze
+    tables:
+      - name: shopify_orders
+      - name: square_transactions
+      - name: recharge_subscriptions
+      - name: zendesk_tickets
+      - name: shipstation_shipments
