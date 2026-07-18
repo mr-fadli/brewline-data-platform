@@ -16,6 +16,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 sys.path.append(str(PROJECT_ROOT))
 
 from db import get_connection
+from logging_config import get_logger
+logger = get_logger("gold")
 
 GOLD_SQL_DIR = Path(__file__).parent / "sql"
 
@@ -41,13 +43,13 @@ def run():
         try:
             con.execute(sql_text)
             row_count = con.execute(f"SELECT COUNT(*) FROM gold.{table_name}").fetchone()[0]
-            print(f"[OK]   gold.{table_name:<28} {row_count:>5} rows")
+            logger.info(f"[OK]   gold.{table_name:<28} {row_count:>5} rows")
         except Exception as e:
-            print(f"[FAIL] {filename}: {e}")
+            logger.error(f"[FAIL] {filename}: {e}")
             raise
 
     con.close()
-    print("\nGold aggregation complete.")
+    logger.info("Gold aggregation complete.")
 
 if __name__ == "__main__":
     run()

@@ -21,6 +21,8 @@ sys.path.append(str(PROJECT_ROOT))
 from config import RAW_DIR, BRONZE_PARQUET_DIR, SOURCES
 from db import get_connection
 from extractors import EXTRACTORS
+from logging_config import get_logger
+logger = get_logger("bronze")
 
 
 def resolve_file(source: dict, run_date: date | None = None) -> Path:
@@ -87,14 +89,14 @@ def run(run_date: date | None = None) -> None:
 
             df = stamp_lineage(df, source_name=name, file_path=file_path)
             row_count = load_to_bronze(df, table_name=name, con=con)
-            print(f"[OK]   bronze.{name:<26} {row_count:>5} rows  <- {file_path.name}")
+            logger.info(f"bronze.{name} loaded: {row_count} rows <- {file_path.name}")
 
         except Exception as e:
-            print(f"[FAIL] {name:<26} {e}", file=sys.stderr)
+            logger.error(f"{name} failed: {e}")
             raise  # fail loudly — a silently-skipped source is worse than a crashed run
 
     con.close()
-    print("\nBronze ingestion complete.")
+    logger.info("Bronze Ingestion Completed")
 
 
 if __name__ == "__main__":

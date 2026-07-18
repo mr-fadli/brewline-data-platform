@@ -1,0 +1,24 @@
+2026-07-18 09:47:39,221 [INFO] bronze: bronze.shopify_orders loaded: 1221 rows <- shopify_orders.json
+2026-07-18 09:47:39,244 [INFO] bronze: bronze.square_transactions loaded: 1156 rows <- square_transactions.csv
+2026-07-18 09:47:39,257 [INFO] bronze: bronze.recharge_subscriptions loaded: 38 rows <- recharge_subscriptions.json
+2026-07-18 09:47:39,272 [INFO] bronze: bronze.zendesk_tickets loaded: 70 rows <- zendesk_tickets.csv
+2026-07-18 09:47:39,294 [INFO] bronze: bronze.shipstation_shipments loaded: 1013 rows <- shipstation_shipments.csv
+2026-07-18 09:47:39,365 [INFO] bronze: Bronze Ingestion Completed
+2026-07-18 09:48:10,645 [INFO] silver: [OK] reference tables loaded: stg_exchange_rates, stg_store_timezones
+2026-07-18 09:48:10,653 [INFO] silver: [OK]   silver.stg_customers          249 rows
+2026-07-18 09:48:10,667 [INFO] silver: [OK]   silver.stg_orders            1770 rows
+2026-07-18 09:48:10,670 [INFO] silver: [OK]   silver.stg_subscriptions       38 rows
+2026-07-18 09:48:10,678 [INFO] silver: [OK]   silver.stg_refunds             28 rows
+2026-07-18 09:48:10,721 [INFO] silver: Silver transformation complete.
+2026-07-18 09:49:50,505 [INFO] silver: [OK]   gold.fact_weekly_revenue             15 rows
+2026-07-18 09:49:50,509 [INFO] silver: [OK]   gold.fact_subscription_churn         35 rows
+2026-07-18 09:49:50,519 [INFO] silver: [OK]   gold.fact_customer_health           159 rows
+2026-07-18 09:49:50,531 [INFO] silver: [OK]   gold.fact_refund_alerts              34 rows
+2026-07-18 09:49:50,543 [INFO] silver: [OK]   gold.fact_customer_rfm              159 rows
+2026-07-18 09:49:50,564 [INFO] silver: Gold aggregation complete.
+2026-07-18 09:50:22,275 [INFO] gold: [OK]   gold.fact_weekly_revenue             15 rows
+2026-07-18 09:50:22,280 [INFO] gold: [OK]   gold.fact_subscription_churn         35 rows
+2026-07-18 09:50:22,289 [INFO] gold: [OK]   gold.fact_customer_health           159 rows
+2026-07-18 09:50:22,301 [INFO] gold: [OK]   gold.fact_refund_alerts              34 rows
+2026-07-18 09:50:22,312 [INFO] gold: [OK]   gold.fact_customer_rfm              159 rows
+2026-07-18 09:50:22,337 [INFO] gold: Gold aggregation complete.

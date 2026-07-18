@@ -7,6 +7,8 @@ sys.path.append(str(PROJECT_ROOT))
 
 from db import get_connection
 from config import REFERENCE_DIR
+from logging_config import get_logger
+logger = get_logger("silver")
 
 SILVER_SQL_DIR = Path(__file__).parent / "sql"
 EXCHANGE_RATES_CSV = REFERENCE_DIR / "exchange_rates.csv"
@@ -28,7 +30,7 @@ def load_reference_tables(con):
         CREATE OR REPLACE TABLE silver.stg_store_timezones AS
         SELECT * FROM read_csv('{STORE_TIMEZONE_CSV.as_posix()}')
     """)
-    print("[OK] reference tables loaded: stg_exchange_rates, stg_store_timezones")
+    logger.info("[OK] reference tables loaded: stg_exchange_rates, stg_store_timezones")
 
 def run():
     con = get_connection()
@@ -43,13 +45,13 @@ def run():
         try:
             con.execute(sql_text)
             row_count = con.execute(f"SELECT COUNT(*) FROM silver.{table_name}").fetchone()[0]
-            print(f"[OK]   silver.{table_name:<20} {row_count:>5} rows")
+            logger.info(f"[OK]   silver.{table_name:<20} {row_count:>5} rows")
         except Exception as e:
-            print(f"[FAIL] {filename}: {e}")
+            logger.error(f"[FAIL] {filename}: {e}")
             raise
 
     con.close()
-    print("\nSilver transformation complete.")
+    logger.info("Silver transformation complete.")
 
 if __name__ == "__main__":
     run()
