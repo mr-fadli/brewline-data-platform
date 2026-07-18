@@ -1,4 +1,4 @@
-# ADR-002 : DuckDB VS Postgres
+# ADR-002 : DuckDB VS Postgres for stage 1 test
 
 ## Status
 Accepted
