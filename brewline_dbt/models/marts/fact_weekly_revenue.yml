@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fact_weekly_revenue
+    columns:
+      - name: week_start_date
+        tests:
+          - not_null
+      - name: channel
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['retail', 'online_oneoff', 'subscription']
+      - name: total_revenue
+        tests:
+          - not_null
