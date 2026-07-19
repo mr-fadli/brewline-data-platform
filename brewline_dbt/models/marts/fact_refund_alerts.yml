@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fact_refund_alerts
+    columns:
+      - name: day
+        tests:
+          - unique
+          - not_null
+      - name: alert_system
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['alert', 'normal']
