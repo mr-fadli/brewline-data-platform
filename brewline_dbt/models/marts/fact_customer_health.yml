@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: fact_customer_health
+    columns:
+      - name: customer_key
+        tests:
+          - unique
+          - not_null
+      - name: customer_health
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['active', 'at_risk', 'churned']
+      - name: days_since_last_order
+        tests:
+          - not_null
