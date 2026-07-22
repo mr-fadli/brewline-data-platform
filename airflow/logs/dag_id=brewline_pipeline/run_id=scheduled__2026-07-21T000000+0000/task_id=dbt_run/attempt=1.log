@@ -1,0 +1,58 @@
+[2026-07-22T01:17:00.498+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-22T01:17:00.521+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: brewline_pipeline.dbt_run scheduled__2026-07-21T00:00:00+00:00 [queued]>
+[2026-07-22T01:17:00.532+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: brewline_pipeline.dbt_run scheduled__2026-07-21T00:00:00+00:00 [queued]>
+[2026-07-22T01:17:00.533+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2026-07-22T01:17:00.547+0000] {taskinstance.py:2890} INFO - Executing <Task(DockerOperator): dbt_run> on 2026-07-21 00:00:00+00:00
+[2026-07-22T01:17:00.557+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=104) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-07-22T01:17:00.560+0000] {standard_task_runner.py:72} INFO - Started process 106 to run task
+[2026-07-22T01:17:00.560+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'brewline_pipeline', 'dbt_run', 'scheduled__2026-07-21T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/brewline_pipeline_dag.py', '--cfg-path', '/tmp/tmpuew_7vsq']
+[2026-07-22T01:17:00.562+0000] {standard_task_runner.py:105} INFO - Job 13: Subtask dbt_run
+[2026-07-22T01:17:00.625+0000] {task_command.py:467} INFO - Running <TaskInstance: brewline_pipeline.dbt_run scheduled__2026-07-21T00:00:00+00:00 [running]> on host 9abae33d087c
+[2026-07-22T01:17:00.712+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='brewline_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2026-07-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-07-21T00:00:00+00:00'
+[2026-07-22T01:17:00.714+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-07-22T01:17:00.715+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-07-22T01:17:00.716+0000] {logging_mixin.py:190} INFO - Current task name:dbt_run state:running start_date:2026-07-22 01:17:00.522603+00:00
+[2026-07-22T01:17:00.717+0000] {logging_mixin.py:190} INFO - Dag name:brewline_pipeline and current dag run status:running
+[2026-07-22T01:17:00.717+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-07-22T01:17:00.771+0000] {docker.py:345} INFO - Starting docker container from image brewline-dbt:latest
+[2026-07-22T01:17:03.015+0000] {docker.py:69} INFO - [0m01:17:03  Running with dbt=1.12.0
+[2026-07-22T01:17:03.350+0000] {docker.py:69} INFO - [0m01:17:03  Registered adapter: duckdb=1.10.1
+[2026-07-22T01:17:04.047+0000] {docker.py:69} INFO - [0m01:17:04  Found 9 models, 53 data tests, 2 seeds, 5 sources, 487 macros
+[2026-07-22T01:17:04.053+0000] {docker.py:69} INFO - [0m01:17:04
+[2026-07-22T01:17:04.054+0000] {docker.py:69} INFO - [0m01:17:04  Concurrency: 1 threads (target='dev')
+[2026-07-22T01:17:04.055+0000] {docker.py:69} INFO - [0m01:17:04
+[2026-07-22T01:17:04.303+0000] {docker.py:69} INFO - [0m01:17:04  1 of 9 START sql table model silver.stg_customers .............................. [RUN]
+[2026-07-22T01:17:04.451+0000] {docker.py:69} INFO - [0m01:17:04  1 of 9 OK created sql table model silver.stg_customers ......................... [[32mOK[0m in 0.15s]
+[2026-07-22T01:17:04.455+0000] {docker.py:69} INFO - [0m01:17:04  2 of 9 START sql table model silver.stg_orders ................................. [RUN]
+[2026-07-22T01:17:04.543+0000] {docker.py:69} INFO - [0m01:17:04  2 of 9 OK created sql table model silver.stg_orders ............................ [[32mOK[0m in 0.08s]
+[2026-07-22T01:17:04.547+0000] {docker.py:69} INFO - [0m01:17:04  3 of 9 START sql table model silver.stg_refunds ................................ [RUN]
+[2026-07-22T01:17:04.622+0000] {docker.py:69} INFO - [0m01:17:04  3 of 9 OK created sql table model silver.stg_refunds ........................... [[32mOK[0m in 0.07s]
+[2026-07-22T01:17:04.626+0000] {docker.py:69} INFO - [0m01:17:04  4 of 9 START sql table model silver.stg_subscriptions .......................... [RUN]
+[2026-07-22T01:17:04.701+0000] {docker.py:69} INFO - [0m01:17:04  4 of 9 OK created sql table model silver.stg_subscriptions ..................... [[32mOK[0m in 0.07s]
+[2026-07-22T01:17:04.707+0000] {docker.py:69} INFO - [0m01:17:04  5 of 9 START sql table model gold.fact_customer_health ......................... [RUN]
+[2026-07-22T01:17:04.796+0000] {docker.py:69} INFO - [0m01:17:04  5 of 9 OK created sql table model gold.fact_customer_health .................... [[32mOK[0m in 0.09s]
+[2026-07-22T01:17:04.799+0000] {docker.py:69} INFO - [0m01:17:04  6 of 9 START sql table model gold.fact_weekly_revenue .......................... [RUN]
+[2026-07-22T01:17:04.872+0000] {docker.py:69} INFO - [0m01:17:04  6 of 9 OK created sql table model gold.fact_weekly_revenue ..................... [[32mOK[0m in 0.07s]
+[2026-07-22T01:17:04.876+0000] {docker.py:69} INFO - [0m01:17:04  7 of 9 START sql table model gold.fact_refund_alerts ........................... [RUN]
+[2026-07-22T01:17:04.952+0000] {docker.py:69} INFO - [0m01:17:04  7 of 9 OK created sql table model gold.fact_refund_alerts ...................... [[32mOK[0m in 0.07s]
+[2026-07-22T01:17:04.955+0000] {docker.py:69} INFO - [0m01:17:04  8 of 9 START sql table model gold.fact_customer_rfm ............................ [RUN]
+[2026-07-22T01:17:05.029+0000] {docker.py:69} INFO - [0m01:17:05  8 of 9 OK created sql table model gold.fact_customer_rfm ....................... [[32mOK[0m in 0.07s]
+[2026-07-22T01:17:05.033+0000] {docker.py:69} INFO - [0m01:17:05  9 of 9 START sql table model gold.fact_subscription_churn ...................... [RUN]
+[2026-07-22T01:17:05.114+0000] {docker.py:69} INFO - [0m01:17:05  9 of 9 OK created sql table model gold.fact_subscription_churn ................. [[32mOK[0m in 0.08s]
+[2026-07-22T01:17:05.127+0000] {docker.py:69} INFO - [0m01:17:05
+[2026-07-22T01:17:05.128+0000] {docker.py:69} INFO - [0m01:17:05  Finished running 9 table models in 0 hours 0 minutes and 1.07 seconds (1.07s).
+[2026-07-22T01:17:05.269+0000] {docker.py:69} INFO - [0m01:17:05
+[2026-07-22T01:17:05.272+0000] {docker.py:69} INFO - [0m01:17:05  [32mCompleted successfully[0m
+[2026-07-22T01:17:05.273+0000] {docker.py:69} INFO - [0m01:17:05
+[2026-07-22T01:17:05.275+0000] {docker.py:69} INFO - [0m01:17:05  Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=9
+[2026-07-22T01:17:07.311+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-07-22T01:17:07.313+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=brewline_pipeline, task_id=dbt_run, run_id=scheduled__2026-07-21T00:00:00+00:00, execution_date=20260721T000000, start_date=20260722T011700, end_date=20260722T011707
+[2026-07-22T01:17:07.364+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-07-22T01:17:07.366+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-07-22T01:17:07.367+0000] {logging_mixin.py:190} INFO - Dag name:brewline_pipeline queued_at:2026-07-22 01:16:40.228774+00:00
+[2026-07-22T01:17:07.368+0000] {logging_mixin.py:190} INFO - Task hostname:9abae33d087c operator:DockerOperator
+[2026-07-22T01:17:07.392+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-07-22T01:17:07.436+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-07-22T01:17:07.440+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

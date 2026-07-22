@@ -1,0 +1,30 @@
+[0m16:44:19.321080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B18F0DC590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B18C6C8910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B191623890>]}
+
+
+============================== 16:44:19.326136 | e01e0363-c683-4ad6-acf5-42037b0afb66 ==============================
+[0m16:44:19.326136 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:44:19.326733 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\cepot\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --select stg_customers', 'log_path': 'logs'}
+[0m16:44:19.327305 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Ijal\data_engineer\brewline_coffee_co\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:44:19.328076 [debug] [MainThread]: Command `dbt test` failed at 16:44:19.327961 after 0.13 seconds
+[0m16:44:19.328412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1916A0640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1916AC290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B191613DF0>]}
+[0m16:44:19.328761 [debug] [MainThread]: Flushing usage events
+[0m16:44:20.650609 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:10:01.510601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD465C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD1C48910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD6BA3890>]}
+
+
+============================== 20:10:01.514751 | f3edb8a8-94ba-4897-9314-294eb639c48d ==============================
+[0m20:10:01.514751 [info ] [MainThread]: Running with dbt=1.12.0
+[0m20:10:01.515339 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\cepot\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --select fact_subscription_churn', 'log_path': 'logs'}
+[0m20:10:01.515815 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Ijal\data_engineer\brewline_coffee_co\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:10:01.516632 [debug] [MainThread]: Command `dbt test` failed at 20:10:01.516520 after 0.13 seconds
+[0m20:10:01.516970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD6C20640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD6C2C290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD6B63DF0>]}
+[0m20:10:01.517312 [debug] [MainThread]: Flushing usage events
+[0m20:10:02.700386 [debug] [MainThread]: An error was encountered while trying to flush usage events

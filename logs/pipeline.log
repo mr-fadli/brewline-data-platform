@@ -22,3 +22,15 @@
 2026-07-18 09:50:22,301 [INFO] gold: [OK]   gold.fact_refund_alerts              34 rows
 2026-07-18 09:50:22,312 [INFO] gold: [OK]   gold.fact_customer_rfm              159 rows
 2026-07-18 09:50:22,337 [INFO] gold: Gold aggregation complete.
+2026-07-22 00:37:28,148 [INFO] bronze: bronze.shopify_orders loaded: 1221 rows <- shopify_orders.json
+2026-07-22 00:37:28,261 [INFO] bronze: bronze.square_transactions loaded: 1156 rows <- square_transactions.csv
+2026-07-22 00:37:28,351 [INFO] bronze: bronze.recharge_subscriptions loaded: 38 rows <- recharge_subscriptions.json
+2026-07-22 00:37:28,446 [INFO] bronze: bronze.zendesk_tickets loaded: 70 rows <- zendesk_tickets.csv
+2026-07-22 00:37:28,548 [INFO] bronze: bronze.shipstation_shipments loaded: 1013 rows <- shipstation_shipments.csv
+2026-07-22 00:37:28,637 [INFO] bronze: Bronze Ingestion Completed
+2026-07-22 01:16:47,913 [INFO] bronze: bronze.shopify_orders loaded: 1221 rows <- shopify_orders.json
+2026-07-22 01:16:48,014 [INFO] bronze: bronze.square_transactions loaded: 1156 rows <- square_transactions.csv
+2026-07-22 01:16:48,101 [INFO] bronze: bronze.recharge_subscriptions loaded: 38 rows <- recharge_subscriptions.json
+2026-07-22 01:16:48,174 [INFO] bronze: bronze.zendesk_tickets loaded: 70 rows <- zendesk_tickets.csv
+2026-07-22 01:16:48,256 [INFO] bronze: bronze.shipstation_shipments loaded: 1013 rows <- shipstation_shipments.csv
+2026-07-22 01:16:48,367 [INFO] bronze: Bronze Ingestion Completed
