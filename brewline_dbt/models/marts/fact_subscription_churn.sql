@@ -16,4 +16,4 @@ SELECT
     WHEN customer_status IN ('is_active', 'is_paused') THEN 'not_churned'
     ELSE 'unmapped_status'
   END AS churn_status
-FROM table_partition   ,cvbiuil'>?                   
+FROM table_partition                 

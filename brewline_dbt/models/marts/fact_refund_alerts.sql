@@ -24,7 +24,7 @@ daily_orders AS (
     CAST((order_ts_raw AT TIME ZONE 'UTC') AT TIME ZONE 'America/New_York' AS DATE) AS order_date,
     COUNT(*) AS total_order
   FROM {{ ref('stg_orders') }}
-  GROUP BY order_date
+  GROUP BY order_date, order_ts_raw
 ),
 daily_refunds AS (
   SELECT 
