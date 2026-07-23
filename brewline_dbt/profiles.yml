@@ -4,4 +4,10 @@ brewline_dbt:
     dev:
       type: duckdb
       path: "{{ env_var('DBT_DUCKDB_PATH', '../brewline.duckdb') }}"
-      schema: main
+    bigquery:
+      type: bigquery
+      method: oauth
+      impersonate_service_account: brewline-dbt-transform@brewline-coffee-co.iam.gserviceaccount.com
+      project: brewline-coffee-co
+      dataset: silver
+      threads: 4

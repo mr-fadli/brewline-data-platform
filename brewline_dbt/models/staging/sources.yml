@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: bronze
+    database: "{{ 'brewline-coffee-co' if target.type == 'bigquery' else target.database }}"
     schema: bronze
     tables:
       - name: shopify_orders
