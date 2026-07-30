@@ -28,3 +28,57 @@ Runtime Error
 [0m20:10:01.516970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD6C20640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD6C2C290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD6B63DF0>]}
 [0m20:10:01.517312 [debug] [MainThread]: Flushing usage events
 [0m20:10:02.700386 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:45:16.976450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F55C4D4AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F559DCCE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F55ECD79D0>]}
+
+
+============================== 11:45:16.982861 | 6e5132a4-e85b-4c39-9e5c-be510a8d5fde ==============================
+[0m11:45:16.982861 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:45:16.983550 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\cepot\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug --target bigquery', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m11:45:17.104198 [info ] [MainThread]: dbt version: 1.12.0
+[0m11:45:17.104700 [info ] [MainThread]: python version: 3.14.2
+[0m11:45:17.105285 [info ] [MainThread]: python path: C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\python.exe
+[0m11:45:17.105784 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m11:45:17.107112 [info ] [MainThread]: Using profiles dir at C:\Users\cepot\.dbt
+[0m11:45:17.107486 [info ] [MainThread]: Using profiles.yml file at C:\Users\cepot\.dbt\profiles.yml
+[0m11:45:17.107888 [info ] [MainThread]: Using dbt_project.yml file at D:\Ijal\data_engineer\brewline_coffee_co\dbt_project.yml
+[0m11:45:17.108461 [info ] [MainThread]: Configuration:
+[0m11:45:17.108937 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m11:45:17.109390 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:45:17.109809 [info ] [MainThread]: Required dependencies:
+[0m11:45:17.110282 [debug] [MainThread]: Executing "git --help"
+[0m11:45:17.145638 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:45:17.146132 [debug] [MainThread]: STDERR: "b''"
+[0m11:45:17.146697 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:45:17.147478 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m11:45:17.148024 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m11:45:17.148396 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  The profile 'brewline_dbt' does not have a target named 'bigquery'. The valid target names for this profile are:
+   - dev
+   - prod
+
+
+[0m11:45:17.148757 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Ijal\data_engineer\brewline_coffee_co\dbt_project.yml> not found
+
+[0m11:45:17.149559 [debug] [MainThread]: Command `dbt debug` failed at 11:45:17.149450 after 0.32 seconds
+[0m11:45:17.149940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F55EB276F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F55ED2A210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F55ED0EF10>]}
+[0m11:45:17.150332 [debug] [MainThread]: Flushing usage events
+[0m11:45:18.447661 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:51:04.199282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200E5F94AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200E388CF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200E8813890>]}
+
+
+============================== 16:51:04.203276 | 23ac5692-c5f6-4ac7-b9a9-22e297067e26 ==============================
+[0m16:51:04.203276 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:51:04.203880 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\cepot\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select stg_orders --target bigquery', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m16:51:04.204407 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Ijal\data_engineer\brewline_coffee_co\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:51:04.205226 [debug] [MainThread]: Command `dbt run` failed at 16:51:04.205110 after 0.13 seconds
+[0m16:51:04.205565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200E8789350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200E884CEF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200E889C270>]}
+[0m16:51:04.205925 [debug] [MainThread]: Flushing usage events
+[0m16:51:05.480479 [debug] [MainThread]: An error was encountered while trying to flush usage events

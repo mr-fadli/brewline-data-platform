@@ -1,0 +1,6 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-3029,,Box was soaked/damaged in transit,2026-06-25T12:00:00+00:00,"damaged,refund_request",
+ZD-3031,javierwashington@example.net,How do I pause my subscription?,2026-06-25T13:00:00+00:00,cancellation,#5177
+ZD-3036,williamanderson@example.com,Please cancel my subscription,2026-06-25T14:00:00+00:00,cancellation,#6079
+ZD-3047,,Please cancel my subscription,2026-06-25T15:00:00+00:00,cancellation,#5942
+ZD-3070,,Package says delivered but I don't have it,2026-06-25T18:00:00+00:00,"shipping,frustrated",

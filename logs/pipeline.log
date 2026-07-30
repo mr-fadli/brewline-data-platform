@@ -34,3 +34,967 @@
 2026-07-22 01:16:48,174 [INFO] bronze: bronze.zendesk_tickets loaded: 70 rows <- zendesk_tickets.csv
 2026-07-22 01:16:48,256 [INFO] bronze: bronze.shipstation_shipments loaded: 1013 rows <- shipstation_shipments.csv
 2026-07-22 01:16:48,367 [INFO] bronze: Bronze Ingestion Completed
+2026-07-23 16:04:30,190 [INFO] bronze_bigquery: bronze.shopify_orders loaded to BigQuery: 1221 rows
+2026-07-23 16:04:31,927 [INFO] bronze_bigquery: bronze.square_transactions loaded to BigQuery: 1156 rows
+2026-07-23 16:04:34,085 [INFO] bronze_bigquery: bronze.recharge_subscriptions loaded to BigQuery: 38 rows
+2026-07-23 16:04:36,982 [INFO] bronze_bigquery: bronze.zendesk_tickets loaded to BigQuery: 70 rows
+2026-07-23 16:04:39,302 [INFO] bronze_bigquery: bronze.shipstation_shipments loaded to BigQuery: 1013 rows
+2026-07-23 16:04:39,302 [INFO] bronze_bigquery: BigQuery bronze ingestion complete.
+2026-07-28 10:11:18,333 [INFO] gcs_upload: uploaded shopify_orders_2026-06-08.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=08/shopify_orders_2026-06-08.json
+2026-07-28 10:11:18,412 [INFO] gcs_upload: uploaded shopify_orders_2026-06-09.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=09/shopify_orders_2026-06-09.json
+2026-07-28 10:11:18,490 [INFO] gcs_upload: uploaded shopify_orders_2026-06-10.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=10/shopify_orders_2026-06-10.json
+2026-07-28 10:11:18,565 [INFO] gcs_upload: uploaded shopify_orders_2026-06-11.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=11/shopify_orders_2026-06-11.json
+2026-07-28 10:11:18,638 [INFO] gcs_upload: uploaded shopify_orders_2026-06-12.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=12/shopify_orders_2026-06-12.json
+2026-07-28 10:11:18,728 [INFO] gcs_upload: uploaded shopify_orders_2026-06-13.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=13/shopify_orders_2026-06-13.json
+2026-07-28 10:11:18,801 [INFO] gcs_upload: uploaded shopify_orders_2026-06-14.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=14/shopify_orders_2026-06-14.json
+2026-07-28 10:11:18,872 [INFO] gcs_upload: uploaded shopify_orders_2026-06-15.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=15/shopify_orders_2026-06-15.json
+2026-07-28 10:11:18,933 [INFO] gcs_upload: uploaded shopify_orders_2026-06-16.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=16/shopify_orders_2026-06-16.json
+2026-07-28 10:11:19,000 [INFO] gcs_upload: uploaded shopify_orders_2026-06-17.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=17/shopify_orders_2026-06-17.json
+2026-07-28 10:11:19,069 [INFO] gcs_upload: uploaded shopify_orders_2026-06-18.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=18/shopify_orders_2026-06-18.json
+2026-07-28 10:11:19,145 [INFO] gcs_upload: uploaded shopify_orders_2026-06-19.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=19/shopify_orders_2026-06-19.json
+2026-07-28 10:11:19,213 [INFO] gcs_upload: uploaded shopify_orders_2026-06-20.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=20/shopify_orders_2026-06-20.json
+2026-07-28 10:11:19,283 [INFO] gcs_upload: uploaded shopify_orders_2026-06-21.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=21/shopify_orders_2026-06-21.json
+2026-07-28 10:11:19,379 [INFO] gcs_upload: uploaded shopify_orders_2026-06-22.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=22/shopify_orders_2026-06-22.json
+2026-07-28 10:11:19,447 [INFO] gcs_upload: uploaded shopify_orders_2026-06-23.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=23/shopify_orders_2026-06-23.json
+2026-07-28 10:11:19,516 [INFO] gcs_upload: uploaded shopify_orders_2026-06-24.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=24/shopify_orders_2026-06-24.json
+2026-07-28 10:11:19,590 [INFO] gcs_upload: uploaded shopify_orders_2026-06-25.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=25/shopify_orders_2026-06-25.json
+2026-07-28 10:11:19,647 [INFO] gcs_upload: uploaded shopify_orders_2026-06-26.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=26/shopify_orders_2026-06-26.json
+2026-07-28 10:11:19,713 [INFO] gcs_upload: uploaded shopify_orders_2026-06-27.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=27/shopify_orders_2026-06-27.json
+2026-07-28 10:11:19,781 [INFO] gcs_upload: uploaded shopify_orders_2026-06-28.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=28/shopify_orders_2026-06-28.json
+2026-07-28 10:11:19,843 [INFO] gcs_upload: uploaded shopify_orders_2026-06-29.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=29/shopify_orders_2026-06-29.json
+2026-07-28 10:11:19,914 [INFO] gcs_upload: uploaded shopify_orders_2026-06-30.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=30/shopify_orders_2026-06-30.json
+2026-07-28 10:11:19,980 [INFO] gcs_upload: uploaded shopify_orders_2026-07-01.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=01/shopify_orders_2026-07-01.json
+2026-07-28 10:11:20,035 [INFO] gcs_upload: uploaded shopify_orders_2026-07-02.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=02/shopify_orders_2026-07-02.json
+2026-07-28 10:11:20,099 [INFO] gcs_upload: uploaded shopify_orders_2026-07-03.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=03/shopify_orders_2026-07-03.json
+2026-07-28 10:11:20,163 [INFO] gcs_upload: uploaded shopify_orders_2026-07-04.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=04/shopify_orders_2026-07-04.json
+2026-07-28 10:11:20,229 [INFO] gcs_upload: uploaded shopify_orders_2026-07-05.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=05/shopify_orders_2026-07-05.json
+2026-07-28 10:11:20,300 [INFO] gcs_upload: uploaded shopify_orders_2026-07-06.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=06/shopify_orders_2026-07-06.json
+2026-07-28 10:11:20,371 [INFO] gcs_upload: uploaded shopify_orders_2026-07-07.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=07/shopify_orders_2026-07-07.json
+2026-07-28 10:11:20,451 [INFO] gcs_upload: uploaded square_transactions_2026-06-08.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=08/square_transactions_2026-06-08.csv
+2026-07-28 10:11:20,505 [INFO] gcs_upload: uploaded square_transactions_2026-06-09.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=09/square_transactions_2026-06-09.csv
+2026-07-28 10:11:20,568 [INFO] gcs_upload: uploaded square_transactions_2026-06-10.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=10/square_transactions_2026-06-10.csv
+2026-07-28 10:11:20,625 [INFO] gcs_upload: uploaded square_transactions_2026-06-11.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=11/square_transactions_2026-06-11.csv
+2026-07-28 10:11:20,677 [INFO] gcs_upload: uploaded square_transactions_2026-06-12.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=12/square_transactions_2026-06-12.csv
+2026-07-28 10:11:20,734 [INFO] gcs_upload: uploaded square_transactions_2026-06-13.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=13/square_transactions_2026-06-13.csv
+2026-07-28 10:11:20,804 [INFO] gcs_upload: uploaded square_transactions_2026-06-14.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=14/square_transactions_2026-06-14.csv
+2026-07-28 10:11:20,867 [INFO] gcs_upload: uploaded square_transactions_2026-06-15.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=15/square_transactions_2026-06-15.csv
+2026-07-28 10:11:20,926 [INFO] gcs_upload: uploaded square_transactions_2026-06-16.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=16/square_transactions_2026-06-16.csv
+2026-07-28 10:11:20,986 [INFO] gcs_upload: uploaded square_transactions_2026-06-17.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=17/square_transactions_2026-06-17.csv
+2026-07-28 10:11:21,052 [INFO] gcs_upload: uploaded square_transactions_2026-06-18.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=18/square_transactions_2026-06-18.csv
+2026-07-28 10:11:21,110 [INFO] gcs_upload: uploaded square_transactions_2026-06-19.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=19/square_transactions_2026-06-19.csv
+2026-07-28 10:11:21,179 [INFO] gcs_upload: uploaded square_transactions_2026-06-20.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=20/square_transactions_2026-06-20.csv
+2026-07-28 10:11:21,239 [INFO] gcs_upload: uploaded square_transactions_2026-06-21.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=21/square_transactions_2026-06-21.csv
+2026-07-28 10:11:21,292 [INFO] gcs_upload: uploaded square_transactions_2026-06-22.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=22/square_transactions_2026-06-22.csv
+2026-07-28 10:11:21,352 [INFO] gcs_upload: uploaded square_transactions_2026-06-23.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=23/square_transactions_2026-06-23.csv
+2026-07-28 10:11:21,418 [INFO] gcs_upload: uploaded square_transactions_2026-06-24.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=24/square_transactions_2026-06-24.csv
+2026-07-28 10:11:21,488 [INFO] gcs_upload: uploaded square_transactions_2026-06-25.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=25/square_transactions_2026-06-25.csv
+2026-07-28 10:11:21,551 [INFO] gcs_upload: uploaded square_transactions_2026-06-26.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=26/square_transactions_2026-06-26.csv
+2026-07-28 10:11:21,606 [INFO] gcs_upload: uploaded square_transactions_2026-06-27.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=27/square_transactions_2026-06-27.csv
+2026-07-28 10:11:21,669 [INFO] gcs_upload: uploaded square_transactions_2026-06-28.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=28/square_transactions_2026-06-28.csv
+2026-07-28 10:11:21,721 [INFO] gcs_upload: uploaded square_transactions_2026-06-29.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=29/square_transactions_2026-06-29.csv
+2026-07-28 10:11:21,790 [INFO] gcs_upload: uploaded square_transactions_2026-06-30.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=30/square_transactions_2026-06-30.csv
+2026-07-28 10:11:21,850 [INFO] gcs_upload: uploaded square_transactions_2026-07-01.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=01/square_transactions_2026-07-01.csv
+2026-07-28 10:11:21,901 [INFO] gcs_upload: uploaded square_transactions_2026-07-02.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=02/square_transactions_2026-07-02.csv
+2026-07-28 10:11:21,953 [INFO] gcs_upload: uploaded square_transactions_2026-07-03.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=03/square_transactions_2026-07-03.csv
+2026-07-28 10:11:22,010 [INFO] gcs_upload: uploaded square_transactions_2026-07-04.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=04/square_transactions_2026-07-04.csv
+2026-07-28 10:11:22,068 [INFO] gcs_upload: uploaded square_transactions_2026-07-05.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=05/square_transactions_2026-07-05.csv
+2026-07-28 10:11:22,134 [INFO] gcs_upload: uploaded square_transactions_2026-07-06.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=06/square_transactions_2026-07-06.csv
+2026-07-28 10:11:22,197 [INFO] gcs_upload: uploaded square_transactions_2026-07-07.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=07/square_transactions_2026-07-07.csv
+2026-07-28 10:11:22,263 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-08.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=08/recharge_subscriptions_2026-06-08.json
+2026-07-28 10:11:22,322 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-09.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=09/recharge_subscriptions_2026-06-09.json
+2026-07-28 10:11:22,376 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-10.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=10/recharge_subscriptions_2026-06-10.json
+2026-07-28 10:11:22,434 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-11.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=11/recharge_subscriptions_2026-06-11.json
+2026-07-28 10:11:22,500 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-12.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=12/recharge_subscriptions_2026-06-12.json
+2026-07-28 10:11:22,559 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-13.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=13/recharge_subscriptions_2026-06-13.json
+2026-07-28 10:11:22,613 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-14.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=14/recharge_subscriptions_2026-06-14.json
+2026-07-28 10:11:22,665 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-15.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=15/recharge_subscriptions_2026-06-15.json
+2026-07-28 10:11:22,730 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-16.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=16/recharge_subscriptions_2026-06-16.json
+2026-07-28 10:11:22,779 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-17.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=17/recharge_subscriptions_2026-06-17.json
+2026-07-28 10:11:22,841 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-18.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=18/recharge_subscriptions_2026-06-18.json
+2026-07-28 10:11:22,896 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-19.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=19/recharge_subscriptions_2026-06-19.json
+2026-07-28 10:11:22,951 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-20.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=20/recharge_subscriptions_2026-06-20.json
+2026-07-28 10:11:23,021 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-21.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=21/recharge_subscriptions_2026-06-21.json
+2026-07-28 10:11:23,083 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-22.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=22/recharge_subscriptions_2026-06-22.json
+2026-07-28 10:11:23,143 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-23.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=23/recharge_subscriptions_2026-06-23.json
+2026-07-28 10:11:23,203 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-24.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=24/recharge_subscriptions_2026-06-24.json
+2026-07-28 10:11:23,260 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-25.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=25/recharge_subscriptions_2026-06-25.json
+2026-07-28 10:11:23,317 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-26.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=26/recharge_subscriptions_2026-06-26.json
+2026-07-28 10:11:23,388 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-27.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=27/recharge_subscriptions_2026-06-27.json
+2026-07-28 10:11:23,441 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-28.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=28/recharge_subscriptions_2026-06-28.json
+2026-07-28 10:11:23,504 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-29.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=29/recharge_subscriptions_2026-06-29.json
+2026-07-28 10:11:23,566 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-30.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=30/recharge_subscriptions_2026-06-30.json
+2026-07-28 10:11:23,621 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-01.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=01/recharge_subscriptions_2026-07-01.json
+2026-07-28 10:11:23,680 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-02.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=02/recharge_subscriptions_2026-07-02.json
+2026-07-28 10:11:23,738 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-03.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=03/recharge_subscriptions_2026-07-03.json
+2026-07-28 10:11:23,793 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-04.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=04/recharge_subscriptions_2026-07-04.json
+2026-07-28 10:11:23,852 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-05.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=05/recharge_subscriptions_2026-07-05.json
+2026-07-28 10:11:23,908 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-06.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=06/recharge_subscriptions_2026-07-06.json
+2026-07-28 10:11:23,968 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-07.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=07/recharge_subscriptions_2026-07-07.json
+2026-07-28 10:11:24,033 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-08.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=08/zendesk_tickets_2026-06-08.csv
+2026-07-28 10:11:24,087 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-09.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=09/zendesk_tickets_2026-06-09.csv
+2026-07-28 10:11:24,135 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-11.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=11/zendesk_tickets_2026-06-11.csv
+2026-07-28 10:11:24,185 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-12.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=12/zendesk_tickets_2026-06-12.csv
+2026-07-28 10:11:24,242 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-13.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=13/zendesk_tickets_2026-06-13.csv
+2026-07-28 10:11:24,299 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-15.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=15/zendesk_tickets_2026-06-15.csv
+2026-07-28 10:11:24,350 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-16.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=16/zendesk_tickets_2026-06-16.csv
+2026-07-28 10:11:24,400 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-17.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=17/zendesk_tickets_2026-06-17.csv
+2026-07-28 10:11:24,453 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-19.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=19/zendesk_tickets_2026-06-19.csv
+2026-07-28 10:11:24,509 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-20.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=20/zendesk_tickets_2026-06-20.csv
+2026-07-28 10:11:24,578 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-21.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=21/zendesk_tickets_2026-06-21.csv
+2026-07-28 10:11:24,640 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-22.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=22/zendesk_tickets_2026-06-22.csv
+2026-07-28 10:11:24,693 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-23.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=23/zendesk_tickets_2026-06-23.csv
+2026-07-28 10:11:24,750 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-24.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=24/zendesk_tickets_2026-06-24.csv
+2026-07-28 10:11:24,799 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-25.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=25/zendesk_tickets_2026-06-25.csv
+2026-07-28 10:11:24,852 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-26.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=26/zendesk_tickets_2026-06-26.csv
+2026-07-28 10:11:24,906 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-27.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=27/zendesk_tickets_2026-06-27.csv
+2026-07-28 10:11:24,968 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-28.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=28/zendesk_tickets_2026-06-28.csv
+2026-07-28 10:11:25,025 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-30.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=30/zendesk_tickets_2026-06-30.csv
+2026-07-28 10:11:25,085 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-01.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=01/zendesk_tickets_2026-07-01.csv
+2026-07-28 10:11:25,145 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-02.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=02/zendesk_tickets_2026-07-02.csv
+2026-07-28 10:11:25,199 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-03.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=03/zendesk_tickets_2026-07-03.csv
+2026-07-28 10:11:25,247 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-04.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=04/zendesk_tickets_2026-07-04.csv
+2026-07-28 10:11:25,306 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-05.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=05/zendesk_tickets_2026-07-05.csv
+2026-07-28 10:11:25,369 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-06.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=06/zendesk_tickets_2026-07-06.csv
+2026-07-28 10:11:25,429 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-07.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=07/zendesk_tickets_2026-07-07.csv
+2026-07-28 10:11:25,481 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-08.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=08/shipstation_shipments_2026-06-08.csv
+2026-07-28 10:11:25,540 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-09.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=09/shipstation_shipments_2026-06-09.csv
+2026-07-28 10:11:25,590 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-10.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=10/shipstation_shipments_2026-06-10.csv
+2026-07-28 10:11:25,648 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-11.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=11/shipstation_shipments_2026-06-11.csv
+2026-07-28 10:11:25,711 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-12.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=12/shipstation_shipments_2026-06-12.csv
+2026-07-28 10:11:25,762 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-13.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=13/shipstation_shipments_2026-06-13.csv
+2026-07-28 10:11:25,811 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-14.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=14/shipstation_shipments_2026-06-14.csv
+2026-07-28 10:11:25,879 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-15.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=15/shipstation_shipments_2026-06-15.csv
+2026-07-28 10:11:25,927 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-16.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=16/shipstation_shipments_2026-06-16.csv
+2026-07-28 10:11:25,983 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-17.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=17/shipstation_shipments_2026-06-17.csv
+2026-07-28 10:11:26,041 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-18.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=18/shipstation_shipments_2026-06-18.csv
+2026-07-28 10:11:26,103 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-19.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=19/shipstation_shipments_2026-06-19.csv
+2026-07-28 10:11:26,158 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-20.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=20/shipstation_shipments_2026-06-20.csv
+2026-07-28 10:11:26,218 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-21.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=21/shipstation_shipments_2026-06-21.csv
+2026-07-28 10:11:26,281 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-22.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=22/shipstation_shipments_2026-06-22.csv
+2026-07-28 10:11:26,330 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-23.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=23/shipstation_shipments_2026-06-23.csv
+2026-07-28 10:11:26,382 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-24.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=24/shipstation_shipments_2026-06-24.csv
+2026-07-28 10:11:26,427 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-25.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=25/shipstation_shipments_2026-06-25.csv
+2026-07-28 10:11:26,491 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-26.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=26/shipstation_shipments_2026-06-26.csv
+2026-07-28 10:11:26,556 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-27.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=27/shipstation_shipments_2026-06-27.csv
+2026-07-28 10:11:26,615 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-28.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=28/shipstation_shipments_2026-06-28.csv
+2026-07-28 10:11:26,713 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-29.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=29/shipstation_shipments_2026-06-29.csv
+2026-07-28 10:11:26,772 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-30.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=30/shipstation_shipments_2026-06-30.csv
+2026-07-28 10:11:26,830 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-01.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=01/shipstation_shipments_2026-07-01.csv
+2026-07-28 10:11:26,880 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-02.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=02/shipstation_shipments_2026-07-02.csv
+2026-07-28 10:11:26,937 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-03.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=03/shipstation_shipments_2026-07-03.csv
+2026-07-28 10:11:26,992 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-04.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=04/shipstation_shipments_2026-07-04.csv
+2026-07-28 10:11:27,044 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-05.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=05/shipstation_shipments_2026-07-05.csv
+2026-07-28 10:11:27,105 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-06.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=06/shipstation_shipments_2026-07-06.csv
+2026-07-28 10:11:27,157 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-07.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=07/shipstation_shipments_2026-07-07.csv
+2026-07-28 10:11:27,216 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-08.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=08/shipstation_shipments_2026-07-08.csv
+2026-07-28 10:11:27,268 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-09.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=09/shipstation_shipments_2026-07-09.csv
+2026-07-28 10:11:27,268 [INFO] gcs_upload: GCS raw zone seeded.
+2026-07-28 14:18:33,306 [INFO] bronze: bronze.shopify_orders              1221 rows  (all days combined)
+2026-07-28 14:18:33,403 [INFO] bronze: bronze.square_transactions         1156 rows  (all days combined)
+2026-07-28 14:18:33,422 [INFO] bronze: bronze.recharge_subscriptions        38 rows  (latest snapshot)
+2026-07-28 14:18:33,490 [INFO] bronze: bronze.zendesk_tickets               70 rows  (all days combined)
+2026-07-28 14:18:33,593 [INFO] bronze: bronze.shipstation_shipments       1013 rows  (all days combined)
+2026-07-28 14:18:33,700 [INFO] bronze: Bronze ingestion complete.
+2026-07-28 16:19:37,157 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': No raw file at gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=28/shopify_orders_2026-07-28.json
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 103, in run
+    df = fetch_raw_file(bucket, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 59, in fetch_raw_file
+    raise FileNotFoundError(f"No raw file at gs://{BUCKET_NAME}/{blob.name}")
+FileNotFoundError: No raw file at gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=28/shopify_orders_2026-07-28.json
+2026-07-28 16:25:56,897 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Cannot add storage to a non-partitioned table with a partition reference: brewline-coffee-co:bronze.shopify_orders; reason: invalid, message: Cannot add storage to a non-partitioned table with a partition reference: brewline-coffee-co:bronze.shopify_orders
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 109, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 89, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Cannot add storage to a non-partitioned table with a partition reference: brewline-coffee-co:bronze.shopify_orders; reason: invalid, message: Cannot add storage to a non-partitioned table with a partition reference: brewline-coffee-co:bronze.shopify_orders
+2026-07-28 16:27:15,973 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Partitioning specification must be provided in order to create partitioned table; reason: invalid, message: Partitioning specification must be provided in order to create partitioned table
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 109, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 89, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Partitioning specification must be provided in order to create partitioned table; reason: invalid, message: Partitioning specification must be provided in order to create partitioned table
+2026-07-29 08:36:40,169 [INFO] gcs_upload: uploaded shopify_orders_2026-06-08.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=08/shopify_orders_2026-06-08.json
+2026-07-29 08:36:40,250 [INFO] gcs_upload: uploaded shopify_orders_2026-06-09.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=09/shopify_orders_2026-06-09.json
+2026-07-29 08:36:40,329 [INFO] gcs_upload: uploaded shopify_orders_2026-06-10.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=10/shopify_orders_2026-06-10.json
+2026-07-29 08:36:40,410 [INFO] gcs_upload: uploaded shopify_orders_2026-06-11.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=11/shopify_orders_2026-06-11.json
+2026-07-29 08:36:40,491 [INFO] gcs_upload: uploaded shopify_orders_2026-06-12.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=12/shopify_orders_2026-06-12.json
+2026-07-29 08:36:40,572 [INFO] gcs_upload: uploaded shopify_orders_2026-06-13.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=13/shopify_orders_2026-06-13.json
+2026-07-29 08:36:40,646 [INFO] gcs_upload: uploaded shopify_orders_2026-06-14.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=14/shopify_orders_2026-06-14.json
+2026-07-29 08:36:40,721 [INFO] gcs_upload: uploaded shopify_orders_2026-06-15.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=15/shopify_orders_2026-06-15.json
+2026-07-29 08:36:40,802 [INFO] gcs_upload: uploaded shopify_orders_2026-06-16.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=16/shopify_orders_2026-06-16.json
+2026-07-29 08:36:40,874 [INFO] gcs_upload: uploaded shopify_orders_2026-06-17.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=17/shopify_orders_2026-06-17.json
+2026-07-29 08:36:40,949 [INFO] gcs_upload: uploaded shopify_orders_2026-06-18.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=18/shopify_orders_2026-06-18.json
+2026-07-29 08:36:41,009 [INFO] gcs_upload: uploaded shopify_orders_2026-06-19.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=19/shopify_orders_2026-06-19.json
+2026-07-29 08:36:41,086 [INFO] gcs_upload: uploaded shopify_orders_2026-06-20.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=20/shopify_orders_2026-06-20.json
+2026-07-29 08:36:41,159 [INFO] gcs_upload: uploaded shopify_orders_2026-06-21.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=21/shopify_orders_2026-06-21.json
+2026-07-29 08:36:41,221 [INFO] gcs_upload: uploaded shopify_orders_2026-06-22.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=22/shopify_orders_2026-06-22.json
+2026-07-29 08:36:41,296 [INFO] gcs_upload: uploaded shopify_orders_2026-06-23.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=23/shopify_orders_2026-06-23.json
+2026-07-29 08:36:41,366 [INFO] gcs_upload: uploaded shopify_orders_2026-06-24.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=24/shopify_orders_2026-06-24.json
+2026-07-29 08:36:41,448 [INFO] gcs_upload: uploaded shopify_orders_2026-06-25.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=25/shopify_orders_2026-06-25.json
+2026-07-29 08:36:41,512 [INFO] gcs_upload: uploaded shopify_orders_2026-06-26.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=26/shopify_orders_2026-06-26.json
+2026-07-29 08:36:41,589 [INFO] gcs_upload: uploaded shopify_orders_2026-06-27.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=27/shopify_orders_2026-06-27.json
+2026-07-29 08:36:41,653 [INFO] gcs_upload: uploaded shopify_orders_2026-06-28.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=28/shopify_orders_2026-06-28.json
+2026-07-29 08:36:41,727 [INFO] gcs_upload: uploaded shopify_orders_2026-06-29.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=29/shopify_orders_2026-06-29.json
+2026-07-29 08:36:41,793 [INFO] gcs_upload: uploaded shopify_orders_2026-06-30.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=06/day=30/shopify_orders_2026-06-30.json
+2026-07-29 08:36:41,879 [INFO] gcs_upload: uploaded shopify_orders_2026-07-01.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=01/shopify_orders_2026-07-01.json
+2026-07-29 08:36:41,948 [INFO] gcs_upload: uploaded shopify_orders_2026-07-02.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=02/shopify_orders_2026-07-02.json
+2026-07-29 08:36:42,014 [INFO] gcs_upload: uploaded shopify_orders_2026-07-03.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=03/shopify_orders_2026-07-03.json
+2026-07-29 08:36:42,109 [INFO] gcs_upload: uploaded shopify_orders_2026-07-04.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=04/shopify_orders_2026-07-04.json
+2026-07-29 08:36:42,190 [INFO] gcs_upload: uploaded shopify_orders_2026-07-05.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=05/shopify_orders_2026-07-05.json
+2026-07-29 08:36:42,255 [INFO] gcs_upload: uploaded shopify_orders_2026-07-06.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=06/shopify_orders_2026-07-06.json
+2026-07-29 08:36:42,329 [INFO] gcs_upload: uploaded shopify_orders_2026-07-07.json -> gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=07/shopify_orders_2026-07-07.json
+2026-07-29 08:36:42,392 [INFO] gcs_upload: uploaded square_transactions_2026-06-08.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=08/square_transactions_2026-06-08.csv
+2026-07-29 08:36:42,462 [INFO] gcs_upload: uploaded square_transactions_2026-06-09.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=09/square_transactions_2026-06-09.csv
+2026-07-29 08:36:42,522 [INFO] gcs_upload: uploaded square_transactions_2026-06-10.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=10/square_transactions_2026-06-10.csv
+2026-07-29 08:36:42,598 [INFO] gcs_upload: uploaded square_transactions_2026-06-11.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=11/square_transactions_2026-06-11.csv
+2026-07-29 08:36:42,663 [INFO] gcs_upload: uploaded square_transactions_2026-06-12.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=12/square_transactions_2026-06-12.csv
+2026-07-29 08:36:42,720 [INFO] gcs_upload: uploaded square_transactions_2026-06-13.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=13/square_transactions_2026-06-13.csv
+2026-07-29 08:36:42,788 [INFO] gcs_upload: uploaded square_transactions_2026-06-14.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=14/square_transactions_2026-06-14.csv
+2026-07-29 08:36:42,860 [INFO] gcs_upload: uploaded square_transactions_2026-06-15.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=15/square_transactions_2026-06-15.csv
+2026-07-29 08:36:42,917 [INFO] gcs_upload: uploaded square_transactions_2026-06-16.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=16/square_transactions_2026-06-16.csv
+2026-07-29 08:36:42,981 [INFO] gcs_upload: uploaded square_transactions_2026-06-17.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=17/square_transactions_2026-06-17.csv
+2026-07-29 08:36:43,060 [INFO] gcs_upload: uploaded square_transactions_2026-06-18.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=18/square_transactions_2026-06-18.csv
+2026-07-29 08:36:43,135 [INFO] gcs_upload: uploaded square_transactions_2026-06-19.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=19/square_transactions_2026-06-19.csv
+2026-07-29 08:36:43,196 [INFO] gcs_upload: uploaded square_transactions_2026-06-20.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=20/square_transactions_2026-06-20.csv
+2026-07-29 08:36:43,254 [INFO] gcs_upload: uploaded square_transactions_2026-06-21.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=21/square_transactions_2026-06-21.csv
+2026-07-29 08:36:43,323 [INFO] gcs_upload: uploaded square_transactions_2026-06-22.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=22/square_transactions_2026-06-22.csv
+2026-07-29 08:36:43,390 [INFO] gcs_upload: uploaded square_transactions_2026-06-23.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=23/square_transactions_2026-06-23.csv
+2026-07-29 08:36:43,456 [INFO] gcs_upload: uploaded square_transactions_2026-06-24.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=24/square_transactions_2026-06-24.csv
+2026-07-29 08:36:43,523 [INFO] gcs_upload: uploaded square_transactions_2026-06-25.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=25/square_transactions_2026-06-25.csv
+2026-07-29 08:36:43,592 [INFO] gcs_upload: uploaded square_transactions_2026-06-26.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=26/square_transactions_2026-06-26.csv
+2026-07-29 08:36:43,657 [INFO] gcs_upload: uploaded square_transactions_2026-06-27.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=27/square_transactions_2026-06-27.csv
+2026-07-29 08:36:43,721 [INFO] gcs_upload: uploaded square_transactions_2026-06-28.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=28/square_transactions_2026-06-28.csv
+2026-07-29 08:36:43,793 [INFO] gcs_upload: uploaded square_transactions_2026-06-29.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=29/square_transactions_2026-06-29.csv
+2026-07-29 08:36:43,853 [INFO] gcs_upload: uploaded square_transactions_2026-06-30.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=06/day=30/square_transactions_2026-06-30.csv
+2026-07-29 08:36:43,922 [INFO] gcs_upload: uploaded square_transactions_2026-07-01.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=01/square_transactions_2026-07-01.csv
+2026-07-29 08:36:43,975 [INFO] gcs_upload: uploaded square_transactions_2026-07-02.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=02/square_transactions_2026-07-02.csv
+2026-07-29 08:36:44,044 [INFO] gcs_upload: uploaded square_transactions_2026-07-03.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=03/square_transactions_2026-07-03.csv
+2026-07-29 08:36:44,112 [INFO] gcs_upload: uploaded square_transactions_2026-07-04.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=04/square_transactions_2026-07-04.csv
+2026-07-29 08:36:44,177 [INFO] gcs_upload: uploaded square_transactions_2026-07-05.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=05/square_transactions_2026-07-05.csv
+2026-07-29 08:36:44,251 [INFO] gcs_upload: uploaded square_transactions_2026-07-06.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=06/square_transactions_2026-07-06.csv
+2026-07-29 08:36:44,319 [INFO] gcs_upload: uploaded square_transactions_2026-07-07.csv -> gs://brewline-data-lake/raw/source_name=square_transactions/year=2026/month=07/day=07/square_transactions_2026-07-07.csv
+2026-07-29 08:36:44,380 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-08.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=08/recharge_subscriptions_2026-06-08.json
+2026-07-29 08:36:44,454 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-09.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=09/recharge_subscriptions_2026-06-09.json
+2026-07-29 08:36:44,526 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-10.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=10/recharge_subscriptions_2026-06-10.json
+2026-07-29 08:36:44,595 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-11.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=11/recharge_subscriptions_2026-06-11.json
+2026-07-29 08:36:44,649 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-12.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=12/recharge_subscriptions_2026-06-12.json
+2026-07-29 08:36:44,713 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-13.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=13/recharge_subscriptions_2026-06-13.json
+2026-07-29 08:36:44,773 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-14.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=14/recharge_subscriptions_2026-06-14.json
+2026-07-29 08:36:44,828 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-15.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=15/recharge_subscriptions_2026-06-15.json
+2026-07-29 08:36:44,891 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-16.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=16/recharge_subscriptions_2026-06-16.json
+2026-07-29 08:36:44,961 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-17.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=17/recharge_subscriptions_2026-06-17.json
+2026-07-29 08:36:45,023 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-18.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=18/recharge_subscriptions_2026-06-18.json
+2026-07-29 08:36:45,102 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-19.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=19/recharge_subscriptions_2026-06-19.json
+2026-07-29 08:36:45,166 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-20.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=20/recharge_subscriptions_2026-06-20.json
+2026-07-29 08:36:45,227 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-21.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=21/recharge_subscriptions_2026-06-21.json
+2026-07-29 08:36:45,287 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-22.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=22/recharge_subscriptions_2026-06-22.json
+2026-07-29 08:36:45,349 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-23.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=23/recharge_subscriptions_2026-06-23.json
+2026-07-29 08:36:45,404 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-24.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=24/recharge_subscriptions_2026-06-24.json
+2026-07-29 08:36:45,466 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-25.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=25/recharge_subscriptions_2026-06-25.json
+2026-07-29 08:36:45,536 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-26.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=26/recharge_subscriptions_2026-06-26.json
+2026-07-29 08:36:45,602 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-27.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=27/recharge_subscriptions_2026-06-27.json
+2026-07-29 08:36:45,664 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-28.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=28/recharge_subscriptions_2026-06-28.json
+2026-07-29 08:36:45,732 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-29.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=29/recharge_subscriptions_2026-06-29.json
+2026-07-29 08:36:45,793 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-06-30.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=06/day=30/recharge_subscriptions_2026-06-30.json
+2026-07-29 08:36:45,848 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-01.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=01/recharge_subscriptions_2026-07-01.json
+2026-07-29 08:36:45,903 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-02.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=02/recharge_subscriptions_2026-07-02.json
+2026-07-29 08:36:45,969 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-03.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=03/recharge_subscriptions_2026-07-03.json
+2026-07-29 08:36:46,039 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-04.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=04/recharge_subscriptions_2026-07-04.json
+2026-07-29 08:36:46,108 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-05.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=05/recharge_subscriptions_2026-07-05.json
+2026-07-29 08:36:46,167 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-06.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=06/recharge_subscriptions_2026-07-06.json
+2026-07-29 08:36:46,235 [INFO] gcs_upload: uploaded recharge_subscriptions_2026-07-07.json -> gs://brewline-data-lake/raw/source_name=recharge_subscriptions/year=2026/month=07/day=07/recharge_subscriptions_2026-07-07.json
+2026-07-29 08:36:46,295 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-08.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=08/zendesk_tickets_2026-06-08.csv
+2026-07-29 08:36:46,356 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-09.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=09/zendesk_tickets_2026-06-09.csv
+2026-07-29 08:36:46,417 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-11.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=11/zendesk_tickets_2026-06-11.csv
+2026-07-29 08:36:46,479 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-12.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=12/zendesk_tickets_2026-06-12.csv
+2026-07-29 08:36:46,534 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-13.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=13/zendesk_tickets_2026-06-13.csv
+2026-07-29 08:36:46,589 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-15.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=15/zendesk_tickets_2026-06-15.csv
+2026-07-29 08:36:46,649 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-16.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=16/zendesk_tickets_2026-06-16.csv
+2026-07-29 08:36:46,707 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-17.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=17/zendesk_tickets_2026-06-17.csv
+2026-07-29 08:36:46,764 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-19.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=19/zendesk_tickets_2026-06-19.csv
+2026-07-29 08:36:46,831 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-20.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=20/zendesk_tickets_2026-06-20.csv
+2026-07-29 08:36:46,896 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-21.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=21/zendesk_tickets_2026-06-21.csv
+2026-07-29 08:36:46,956 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-22.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=22/zendesk_tickets_2026-06-22.csv
+2026-07-29 08:36:47,015 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-23.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=23/zendesk_tickets_2026-06-23.csv
+2026-07-29 08:36:47,085 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-24.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=24/zendesk_tickets_2026-06-24.csv
+2026-07-29 08:36:47,145 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-25.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=25/zendesk_tickets_2026-06-25.csv
+2026-07-29 08:36:47,204 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-26.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=26/zendesk_tickets_2026-06-26.csv
+2026-07-29 08:36:47,261 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-27.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=27/zendesk_tickets_2026-06-27.csv
+2026-07-29 08:36:47,329 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-28.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=28/zendesk_tickets_2026-06-28.csv
+2026-07-29 08:36:47,399 [INFO] gcs_upload: uploaded zendesk_tickets_2026-06-30.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=30/zendesk_tickets_2026-06-30.csv
+2026-07-29 08:36:47,464 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-01.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=01/zendesk_tickets_2026-07-01.csv
+2026-07-29 08:36:47,537 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-02.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=02/zendesk_tickets_2026-07-02.csv
+2026-07-29 08:36:47,594 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-03.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=03/zendesk_tickets_2026-07-03.csv
+2026-07-29 08:36:47,652 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-04.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=04/zendesk_tickets_2026-07-04.csv
+2026-07-29 08:36:47,719 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-05.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=05/zendesk_tickets_2026-07-05.csv
+2026-07-29 08:36:47,782 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-06.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=06/zendesk_tickets_2026-07-06.csv
+2026-07-29 08:36:47,848 [INFO] gcs_upload: uploaded zendesk_tickets_2026-07-07.csv -> gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=07/day=07/zendesk_tickets_2026-07-07.csv
+2026-07-29 08:36:47,910 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-08.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=08/shipstation_shipments_2026-06-08.csv
+2026-07-29 08:36:47,968 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-09.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=09/shipstation_shipments_2026-06-09.csv
+2026-07-29 08:36:48,030 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-10.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=10/shipstation_shipments_2026-06-10.csv
+2026-07-29 08:36:48,094 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-11.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=11/shipstation_shipments_2026-06-11.csv
+2026-07-29 08:36:48,152 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-12.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=12/shipstation_shipments_2026-06-12.csv
+2026-07-29 08:36:48,208 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-13.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=13/shipstation_shipments_2026-06-13.csv
+2026-07-29 08:36:48,281 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-14.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=14/shipstation_shipments_2026-06-14.csv
+2026-07-29 08:36:48,345 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-15.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=15/shipstation_shipments_2026-06-15.csv
+2026-07-29 08:36:48,405 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-16.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=16/shipstation_shipments_2026-06-16.csv
+2026-07-29 08:36:48,475 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-17.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=17/shipstation_shipments_2026-06-17.csv
+2026-07-29 08:36:48,548 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-18.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=18/shipstation_shipments_2026-06-18.csv
+2026-07-29 08:36:48,609 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-19.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=19/shipstation_shipments_2026-06-19.csv
+2026-07-29 08:36:48,669 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-20.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=20/shipstation_shipments_2026-06-20.csv
+2026-07-29 08:36:48,729 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-21.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=21/shipstation_shipments_2026-06-21.csv
+2026-07-29 08:36:48,796 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-22.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=22/shipstation_shipments_2026-06-22.csv
+2026-07-29 08:36:48,855 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-23.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=23/shipstation_shipments_2026-06-23.csv
+2026-07-29 08:36:48,924 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-24.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=24/shipstation_shipments_2026-06-24.csv
+2026-07-29 08:36:48,999 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-25.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=25/shipstation_shipments_2026-06-25.csv
+2026-07-29 08:36:49,052 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-26.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=26/shipstation_shipments_2026-06-26.csv
+2026-07-29 08:36:49,112 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-27.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=27/shipstation_shipments_2026-06-27.csv
+2026-07-29 08:36:49,177 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-28.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=28/shipstation_shipments_2026-06-28.csv
+2026-07-29 08:36:49,240 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-29.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=29/shipstation_shipments_2026-06-29.csv
+2026-07-29 08:36:49,311 [INFO] gcs_upload: uploaded shipstation_shipments_2026-06-30.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=06/day=30/shipstation_shipments_2026-06-30.csv
+2026-07-29 08:36:49,376 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-01.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=01/shipstation_shipments_2026-07-01.csv
+2026-07-29 08:36:49,440 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-02.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=02/shipstation_shipments_2026-07-02.csv
+2026-07-29 08:36:49,505 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-03.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=03/shipstation_shipments_2026-07-03.csv
+2026-07-29 08:36:49,569 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-04.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=04/shipstation_shipments_2026-07-04.csv
+2026-07-29 08:36:49,628 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-05.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=05/shipstation_shipments_2026-07-05.csv
+2026-07-29 08:36:49,690 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-06.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=06/shipstation_shipments_2026-07-06.csv
+2026-07-29 08:36:49,754 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-07.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=07/shipstation_shipments_2026-07-07.csv
+2026-07-29 08:36:49,821 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-08.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=08/shipstation_shipments_2026-07-08.csv
+2026-07-29 08:36:49,885 [INFO] gcs_upload: uploaded shipstation_shipments_2026-07-09.csv -> gs://brewline-data-lake/raw/source_name=shipstation_shipments/year=2026/month=07/day=09/shipstation_shipments_2026-07-09.csv
+2026-07-29 08:36:49,885 [INFO] gcs_upload: GCS raw zone seeded.
+2026-07-29 08:37:44,057 [INFO] bronze: bronze.shopify_orders              1221 rows  (all days combined)
+2026-07-29 08:37:44,150 [INFO] bronze: bronze.square_transactions         1156 rows  (all days combined)
+2026-07-29 08:37:44,167 [INFO] bronze: bronze.recharge_subscriptions        38 rows  (latest snapshot)
+2026-07-29 08:37:44,228 [INFO] bronze: bronze.zendesk_tickets               70 rows  (all days combined)
+2026-07-29 08:37:44,303 [INFO] bronze: bronze.shipstation_shipments       1013 rows  (all days combined)
+2026-07-29 08:37:44,384 [INFO] bronze: Bronze ingestion complete.
+2026-07-29 08:39:03,401 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': No raw file at gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=29/shopify_orders_2026-07-29.json
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 130, in run
+    df = fetch_raw_file(bucket, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 60, in fetch_raw_file
+    raise FileNotFoundError(f"No raw file at gs://{BUCKET_NAME}/{blob.name}")
+FileNotFoundError: No raw file at gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=29/shopify_orders_2026-07-29.json
+2026-07-29 08:40:36,804 [INFO] bronze_bigquery: created partitioned table brewline-coffee-co.bronze.shopify_orders
+2026-07-29 08:40:37,708 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Some rows belong to different partitions rather than destination partition; reason: invalid, message: Some rows belong to different partitions rather than destination partition
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 136, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 116, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Some rows belong to different partitions rather than destination partition; reason: invalid, message: Some rows belong to different partitions rather than destination partition
+2026-07-29 08:41:29,340 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Some rows belong to different partitions rather than destination partition; reason: invalid, message: Some rows belong to different partitions rather than destination partition
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 136, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 116, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Some rows belong to different partitions rather than destination partition; reason: invalid, message: Some rows belong to different partitions rather than destination partition
+2026-07-29 08:45:43,399 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': No raw file at gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=29/shopify_orders_2026-07-29.json
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 130, in run
+    df = fetch_raw_file(bucket, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 60, in fetch_raw_file
+    raise FileNotFoundError(f"No raw file at gs://{BUCKET_NAME}/{blob.name}")
+FileNotFoundError: No raw file at gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=29/shopify_orders_2026-07-29.json
+2026-07-29 09:10:21,051 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Some rows belong to different partitions rather than destination partition; reason: invalid, message: Some rows belong to different partitions rather than destination partition
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 136, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 116, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Some rows belong to different partitions rather than destination partition; reason: invalid, message: Some rows belong to different partitions rather than destination partition
+2026-07-29 09:12:00,880 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Some rows belong to different partitions rather than destination partition; reason: invalid, message: Some rows belong to different partitions rather than destination partition
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 136, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 116, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Some rows belong to different partitions rather than destination partition; reason: invalid, message: Some rows belong to different partitions rather than destination partition
+2026-07-29 09:22:26,604 [INFO] bronze_bigquery: created partitioned table brewline-coffee-co.bronze.shopify_orders
+2026-07-29 09:22:28,619 [INFO] bronze_bigquery: bronze.shopify_orders: 35 rows this run (partition 2026-07-02) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=07/day=02/part-0000.parquet, 35 total in BigQuery
+2026-07-29 09:22:29,030 [INFO] bronze_bigquery: created partitioned table brewline-coffee-co.bronze.square_transactions
+2026-07-29 09:22:31,767 [INFO] bronze_bigquery: bronze.square_transactions: 33 rows this run (partition 2026-07-02) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=07/day=02/part-0000.parquet, 33 total in BigQuery
+2026-07-29 09:22:33,347 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=07/day=02/part-0000.parquet, 38 total in BigQuery
+2026-07-29 09:22:33,727 [INFO] bronze_bigquery: created partitioned table brewline-coffee-co.bronze.zendesk_tickets
+2026-07-29 09:22:35,882 [INFO] bronze_bigquery: bronze.zendesk_tickets: 3 rows this run (partition 2026-07-02) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=07/day=02/part-0000.parquet, 3 total in BigQuery
+2026-07-29 09:22:36,296 [INFO] bronze_bigquery: created partitioned table brewline-coffee-co.bronze.shipstation_shipments
+2026-07-29 09:22:38,308 [INFO] bronze_bigquery: bronze.shipstation_shipments: 30 rows this run (partition 2026-07-02) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=07/day=02/part-0000.parquet, 30 total in BigQuery
+2026-07-29 09:23:27,250 [INFO] bronze_bigquery: bronze.shopify_orders: 35 rows this run (partition 2026-07-02) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=07/day=02/part-0000.parquet, 35 total in BigQuery
+2026-07-29 09:23:28,859 [INFO] bronze_bigquery: bronze.square_transactions: 33 rows this run (partition 2026-07-02) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=07/day=02/part-0000.parquet, 33 total in BigQuery
+2026-07-29 09:23:31,508 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=07/day=02/part-0000.parquet, 38 total in BigQuery
+2026-07-29 09:23:34,741 [INFO] bronze_bigquery: bronze.zendesk_tickets: 3 rows this run (partition 2026-07-02) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=07/day=02/part-0000.parquet, 3 total in BigQuery
+2026-07-29 09:23:36,319 [INFO] bronze_bigquery: bronze.shipstation_shipments: 30 rows this run (partition 2026-07-02) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=07/day=02/part-0000.parquet, 30 total in BigQuery
+2026-07-29 09:28:30,996 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Provided Schema does not match Table brewline-coffee-co:bronze.shopify_orders$20260608. Field refunds.list.element has changed type from INTEGER to RECORD; reason: invalid, message: Provided Schema does not match Table brewline-coffee-co:bronze.shopify_orders$20260608. Field refunds.list.element has changed type from INTEGER to RECORD
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 144, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 124, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Provided Schema does not match Table brewline-coffee-co:bronze.shopify_orders$20260608. Field refunds.list.element has changed type from INTEGER to RECORD; reason: invalid, message: Provided Schema does not match Table brewline-coffee-co:bronze.shopify_orders$20260608. Field refunds.list.element has changed type from INTEGER to RECORD
+2026-07-29 09:36:23,448 [INFO] bronze_bigquery: created partitioned table brewline-coffee-co.bronze.shopify_orders
+2026-07-29 09:36:26,084 [INFO] bronze_bigquery: bronze.shopify_orders: 38 rows this run (partition 2026-06-08) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, 38 total in BigQuery
+2026-07-29 09:36:26,219 [ERROR] bronze_bigquery: bronze ingestion failed for 'square_transactions': Could not convert '555-1754' with type str: tried to convert to double
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 178, in run
+    gcs_uri = write_parquet_to_gcs(bucket, df, name, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 102, in write_parquet_to_gcs
+    table = build_arrow_table(df, source_name)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 97, in build_arrow_table
+    arrays[col] = pa.array(df[col].tolist())
+                  ~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 400, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 46, in pyarrow.lib._sequence_to_array
+  File "pyarrow/error.pxi", line 155, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Could not convert '555-1754' with type str: tried to convert to double
+2026-07-29 16:09:34,255 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders with explicit schema
+2026-07-29 16:09:35,214 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 156, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 136, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+2026-07-29 16:14:47,565 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 156, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 136, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+2026-07-29 16:18:42,436 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders (partitioned=True)
+2026-07-29 16:18:43,550 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Provided Schema does not match Table brewline-coffee-co:bronze.shopify_orders$20260608. Cannot add fields (field: refunds.list); reason: invalid, message: Provided Schema does not match Table brewline-coffee-co:bronze.shopify_orders$20260608. Cannot add fields (field: refunds.list)
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 149, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 129, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Provided Schema does not match Table brewline-coffee-co:bronze.shopify_orders$20260608. Cannot add fields (field: refunds.list); reason: invalid, message: Provided Schema does not match Table brewline-coffee-co:bronze.shopify_orders$20260608. Cannot add fields (field: refunds.list)
+2026-07-29 16:55:20,339 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders (partitioned=True)
+2026-07-29 16:55:22,187 [INFO] bronze_bigquery: bronze.shopify_orders: 38 rows this run (partition 2026-06-08) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, 38 total in BigQuery
+2026-07-29 16:55:22,300 [ERROR] bronze_bigquery: bronze ingestion failed for 'square_transactions': Expected bytes, got a 'float' object
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 145, in run
+    gcs_uri = write_parquet_to_gcs(bucket, df, name, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 82, in write_parquet_to_gcs
+    table = build_arrow_table(df, source_name)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 77, in build_arrow_table
+    arrays = [pa.array(df[field.name].tolist(), type=field.type) for field in schema]
+              ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 400, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 46, in pyarrow.lib._sequence_to_array
+  File "pyarrow/error.pxi", line 155, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowTypeError: Expected bytes, got a 'float' object
+2026-07-30 09:18:14,655 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Provided Schema does not match Table brewline-coffee-co:bronze.shopify_orders$20260608. Cannot add fields (field: refunds.refund_id); reason: invalid, message: Provided Schema does not match Table brewline-coffee-co:bronze.shopify_orders$20260608. Cannot add fields (field: refunds.refund_id)
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 168, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 146, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Provided Schema does not match Table brewline-coffee-co:bronze.shopify_orders$20260608. Cannot add fields (field: refunds.refund_id); reason: invalid, message: Provided Schema does not match Table brewline-coffee-co:bronze.shopify_orders$20260608. Cannot add fields (field: refunds.refund_id)
+2026-07-30 09:19:40,565 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders with explicit schema
+2026-07-30 09:19:41,662 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 168, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 146, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+2026-07-30 09:45:55,838 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders with explicit schema
+2026-07-30 09:45:57,086 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 198, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 176, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+2026-07-30 10:01:09,148 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': brewline-coffee-co.bronze.shopify_orders already exists but its live schema no longer matches the canonical schema in schemas.py -- this table was likely created under an older version of the schema (e.g. before a struct subfield existed). BigQuery load jobs can't reconcile structural schema changes automatically. This is a deliberate migration: drop and recreate the table, e.g. `bq rm -t brewline-coffee-co.bronze.shopify_orders`, then rerun.
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 235, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 173, in load_bigquery_from_gcs
+    ensure_table(client, table_id, source["name"])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 149, in ensure_table
+    raise RuntimeError(
+    ...<7 lines>...
+    )
+RuntimeError: brewline-coffee-co.bronze.shopify_orders already exists but its live schema no longer matches the canonical schema in schemas.py -- this table was likely created under an older version of the schema (e.g. before a struct subfield existed). BigQuery load jobs can't reconcile structural schema changes automatically. This is a deliberate migration: drop and recreate the table, e.g. `bq rm -t brewline-coffee-co.bronze.shopify_orders`, then rerun.
+2026-07-30 10:01:54,581 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders with explicit schema
+2026-07-30 10:01:55,980 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 235, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 177, in load_bigquery_from_gcs
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+2026-07-30 10:11:39,535 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': No raw file at gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=30/shopify_orders_2026-07-30.json
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 278, in run
+    df = fetch_raw_file(bucket, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 65, in fetch_raw_file
+    raise FileNotFoundError(f"No raw file at gs://{BUCKET_NAME}/{blob.name}")
+FileNotFoundError: No raw file at gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=30/shopify_orders_2026-07-30.json
+2026-07-30 10:12:08,849 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders with explicit schema
+2026-07-30 10:12:09,733 [INFO] bronze_bigquery: load into freshly created brewline-coffee-co.bronze.shopify_orders$20260608 failed on attempt 1/3 (likely metadata propagation delay), retrying in 2s: 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+2026-07-30 10:12:12,375 [INFO] bronze_bigquery: load into freshly created brewline-coffee-co.bronze.shopify_orders$20260608 failed on attempt 2/3 (likely metadata propagation delay), retrying in 4s: 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+2026-07-30 10:12:17,543 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 286, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 180, in load_bigquery_from_gcs
+    _load_with_propagation_retry(client, gcs_uri, destination, job_config, just_created)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 204, in _load_with_propagation_retry
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+2026-07-30 10:18:40,345 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders with explicit schema
+2026-07-30 10:18:41,369 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 305, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 181, in load_bigquery_from_gcs
+    return _load_append_via_staging(client, gcs_uri, table_id, schema, source["name"], run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 218, in _load_append_via_staging
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+2026-07-30 10:29:26,659 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders with explicit schema
+2026-07-30 10:29:27,747 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 305, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 181, in load_bigquery_from_gcs
+    return _load_append_via_staging(client, gcs_uri, table_id, schema, source["name"], run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 218, in _load_append_via_staging
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+2026-07-30 10:30:11,044 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders with explicit schema
+2026-07-30 10:30:11,921 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 305, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 181, in load_bigquery_from_gcs
+    return _load_append_via_staging(client, gcs_uri, table_id, schema, source["name"], run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 218, in _load_append_via_staging
+    load_job.result()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\cloud\bigquery\job\base.py", line 1047, in result
+    return super(_AsyncJob, self).result(timeout=timeout, retry=retry)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cepot\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\future\polling.py", line 260, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet; reason: invalid, location: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, message: Error while reading data, error message: Schema mismatch: referenced variable 'line_items.list.element.sku' has array levels of 1, while the corresponding field path to Parquet column has 0 repeated fields File: gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet
+2026-07-30 10:50:53,960 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders with explicit schema
+2026-07-30 10:50:53,960 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': ParquetOptions.__init__() got an unexpected keyword argument 'enable_list_inference'
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 307, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 182, in load_bigquery_from_gcs
+    return _load_append_via_staging(client, gcs_uri, table_id, schema, source["name"], run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 217, in _load_append_via_staging
+    parquet_options=bigquery.ParquetOptions(enable_list_inference=True),
+                    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ParquetOptions.__init__() got an unexpected keyword argument 'enable_list_inference'
+2026-07-30 10:55:02,567 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': brewline-coffee-co.bronze.shopify_orders already exists but its live schema no longer matches the canonical schema in schemas.py -- this table was likely created under an older version of the schema (e.g. before a struct subfield existed). BigQuery load jobs can't reconcile structural schema changes automatically. This is a deliberate migration: drop and recreate the table, e.g. `bq rm -t brewline-coffee-co.bronze.shopify_orders`, then rerun.
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 303, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 195, in load_bigquery_from_gcs
+    return _load_append_via_staging(client, gcs_uri, table_id, schema, source["name"], run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 206, in _load_append_via_staging
+    ensure_table(client, table_id, source_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 168, in ensure_table
+    raise RuntimeError(
+    ...<7 lines>...
+    )
+RuntimeError: brewline-coffee-co.bronze.shopify_orders already exists but its live schema no longer matches the canonical schema in schemas.py -- this table was likely created under an older version of the schema (e.g. before a struct subfield existed). BigQuery load jobs can't reconcile structural schema changes automatically. This is a deliberate migration: drop and recreate the table, e.g. `bq rm -t brewline-coffee-co.bronze.shopify_orders`, then rerun.
+2026-07-30 10:55:54,350 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders with explicit schema
+2026-07-30 10:55:58,372 [INFO] bronze_bigquery: bronze.shopify_orders: 38 rows this run (partition 2026-06-08) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, 38 total in BigQuery
+2026-07-30 10:55:58,473 [ERROR] bronze_bigquery: bronze ingestion failed for 'square_transactions': square_transactions.customer_phone: value doesn't match declared type string (Expected bytes, got a 'float' object)
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 101, in build_arrow_table
+    arrays.append(pa.array(df[field.name].tolist(), type=field.type))
+                  ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 400, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 46, in pyarrow.lib._sequence_to_array
+  File "pyarrow/error.pxi", line 155, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowTypeError: Expected bytes, got a 'float' object
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 302, in run
+    gcs_uri = write_parquet_to_gcs(bucket, df, name, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 111, in write_parquet_to_gcs
+    table = build_arrow_table(df, source_name)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 103, in build_arrow_table
+    raise ValueError(
+    ...<2 lines>...
+    ) from exc
+ValueError: square_transactions.customer_phone: value doesn't match declared type string (Expected bytes, got a 'float' object)
+2026-07-30 11:01:15,449 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': brewline-coffee-co.bronze.shopify_orders already exists but its live schema no longer matches the canonical schema in schemas.py -- this table was likely created under an older version of the schema (e.g. before a struct subfield existed). BigQuery load jobs can't reconcile structural schema changes automatically. This is a deliberate migration: drop and recreate the table, e.g. `bq rm -t brewline-coffee-co.bronze.shopify_orders`, then rerun.
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 316, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 208, in load_bigquery_from_gcs
+    return _load_append_via_staging(client, gcs_uri, table_id, schema, source["name"], run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 219, in _load_append_via_staging
+    ensure_table(client, table_id, source_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 181, in ensure_table
+    raise RuntimeError(
+    ...<7 lines>...
+    )
+RuntimeError: brewline-coffee-co.bronze.shopify_orders already exists but its live schema no longer matches the canonical schema in schemas.py -- this table was likely created under an older version of the schema (e.g. before a struct subfield existed). BigQuery load jobs can't reconcile structural schema changes automatically. This is a deliberate migration: drop and recreate the table, e.g. `bq rm -t brewline-coffee-co.bronze.shopify_orders`, then rerun.
+2026-07-30 11:01:46,452 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders with explicit schema
+2026-07-30 11:01:51,415 [INFO] bronze_bigquery: bronze.shopify_orders: 38 rows this run (partition 2026-06-08) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, 38 total in BigQuery
+2026-07-30 11:01:51,832 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.square_transactions with explicit schema
+2026-07-30 11:01:55,479 [INFO] bronze_bigquery: bronze.square_transactions: 50 rows this run (partition 2026-06-08) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=08/part-0000.parquet, 50 total in BigQuery
+2026-07-30 11:01:56,763 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 35 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=08/part-0000.parquet, 35 total in BigQuery
+2026-07-30 11:01:57,120 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.zendesk_tickets with explicit schema
+2026-07-30 11:02:02,428 [INFO] bronze_bigquery: bronze.zendesk_tickets: 2 rows this run (partition 2026-06-08) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=08/part-0000.parquet, 2 total in BigQuery
+2026-07-30 11:02:02,831 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shipstation_shipments with explicit schema
+2026-07-30 11:02:07,493 [INFO] bronze_bigquery: bronze.shipstation_shipments: 18 rows this run (partition 2026-06-08) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=08/part-0000.parquet, 18 total in BigQuery
+2026-07-30 11:02:23,927 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': brewline-coffee-co.bronze.shopify_orders already exists but its live schema no longer matches the canonical schema in schemas.py -- this table was likely created under an older version of the schema (e.g. before a struct subfield existed). BigQuery load jobs can't reconcile structural schema changes automatically. This is a deliberate migration: drop and recreate the table, e.g. `bq rm -t brewline-coffee-co.bronze.shopify_orders`, then rerun.
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 316, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 208, in load_bigquery_from_gcs
+    return _load_append_via_staging(client, gcs_uri, table_id, schema, source["name"], run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 219, in _load_append_via_staging
+    ensure_table(client, table_id, source_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 181, in ensure_table
+    raise RuntimeError(
+    ...<7 lines>...
+    )
+RuntimeError: brewline-coffee-co.bronze.shopify_orders already exists but its live schema no longer matches the canonical schema in schemas.py -- this table was likely created under an older version of the schema (e.g. before a struct subfield existed). BigQuery load jobs can't reconcile structural schema changes automatically. This is a deliberate migration: drop and recreate the table, e.g. `bq rm -t brewline-coffee-co.bronze.shopify_orders`, then rerun.
+2026-07-30 11:08:44,037 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': brewline-coffee-co.bronze.shopify_orders already exists but its live schema no longer matches the canonical schema in schemas.py -- this table was likely created under an older version of the schema (e.g. before a struct subfield existed). BigQuery load jobs can't reconcile structural schema changes automatically. This is a deliberate migration: drop and recreate the table, e.g. `bq rm -t brewline-coffee-co.bronze.shopify_orders`, then rerun.
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 316, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 208, in load_bigquery_from_gcs
+    return _load_append_via_staging(client, gcs_uri, table_id, schema, source["name"], run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 219, in _load_append_via_staging
+    ensure_table(client, table_id, source_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 181, in ensure_table
+    raise RuntimeError(
+    ...<7 lines>...
+    )
+RuntimeError: brewline-coffee-co.bronze.shopify_orders already exists but its live schema no longer matches the canonical schema in schemas.py -- this table was likely created under an older version of the schema (e.g. before a struct subfield existed). BigQuery load jobs can't reconcile structural schema changes automatically. This is a deliberate migration: drop and recreate the table, e.g. `bq rm -t brewline-coffee-co.bronze.shopify_orders`, then rerun.
+2026-07-30 11:11:49,262 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shopify_orders with explicit schema
+2026-07-30 11:11:53,449 [INFO] bronze_bigquery: bronze.shopify_orders: 38 rows this run (partition 2026-06-08) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=08/part-0000.parquet, 38 total in BigQuery
+2026-07-30 11:11:53,816 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.square_transactions with explicit schema
+2026-07-30 11:11:57,744 [INFO] bronze_bigquery: bronze.square_transactions: 50 rows this run (partition 2026-06-08) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=08/part-0000.parquet, 50 total in BigQuery
+2026-07-30 11:11:59,505 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 35 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=08/part-0000.parquet, 35 total in BigQuery
+2026-07-30 11:11:59,889 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.zendesk_tickets with explicit schema
+2026-07-30 11:12:04,459 [INFO] bronze_bigquery: bronze.zendesk_tickets: 2 rows this run (partition 2026-06-08) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=08/part-0000.parquet, 2 total in BigQuery
+2026-07-30 11:12:04,824 [INFO] bronze_bigquery: created table brewline-coffee-co.bronze.shipstation_shipments with explicit schema
+2026-07-30 11:12:08,522 [INFO] bronze_bigquery: bronze.shipstation_shipments: 18 rows this run (partition 2026-06-08) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=08/part-0000.parquet, 18 total in BigQuery
+2026-07-30 11:12:17,009 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': brewline-coffee-co.bronze.shopify_orders already exists but its live schema no longer matches the canonical schema in schemas.py -- this table was likely created under an older version of the schema (e.g. before a struct subfield existed). BigQuery load jobs can't reconcile structural schema changes automatically. This is a deliberate migration: drop and recreate the table, e.g. `bq rm -t brewline-coffee-co.bronze.shopify_orders`, then rerun.
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 316, in run
+    total_rows = load_bigquery_from_gcs(bq_client, gcs_uri, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 208, in load_bigquery_from_gcs
+    return _load_append_via_staging(client, gcs_uri, table_id, schema, source["name"], run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 219, in _load_append_via_staging
+    ensure_table(client, table_id, source_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 181, in ensure_table
+    raise RuntimeError(
+    ...<7 lines>...
+    )
+RuntimeError: brewline-coffee-co.bronze.shopify_orders already exists but its live schema no longer matches the canonical schema in schemas.py -- this table was likely created under an older version of the schema (e.g. before a struct subfield existed). BigQuery load jobs can't reconcile structural schema changes automatically. This is a deliberate migration: drop and recreate the table, e.g. `bq rm -t brewline-coffee-co.bronze.shopify_orders`, then rerun.
+2026-07-30 11:33:12,127 [INFO] bronze_bigquery: bronze.shopify_orders: 42 rows this run (partition 2026-06-09) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=09/part-0000.parquet, 80 total in BigQuery
+2026-07-30 11:33:16,381 [INFO] bronze_bigquery: bronze.square_transactions: 29 rows this run (partition 2026-06-09) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=09/part-0000.parquet, 79 total in BigQuery
+2026-07-30 11:33:18,067 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 35 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=09/part-0000.parquet, 35 total in BigQuery
+2026-07-30 11:33:22,605 [INFO] bronze_bigquery: bronze.zendesk_tickets: 3 rows this run (partition 2026-06-09) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=09/part-0000.parquet, 5 total in BigQuery
+2026-07-30 11:33:26,378 [INFO] bronze_bigquery: bronze.shipstation_shipments: 24 rows this run (partition 2026-06-09) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=09/part-0000.parquet, 42 total in BigQuery
+2026-07-30 11:33:42,871 [INFO] bronze_bigquery: bronze.shopify_orders: 42 rows this run (partition 2026-06-10) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=10/part-0000.parquet, 122 total in BigQuery
+2026-07-30 11:33:47,019 [INFO] bronze_bigquery: bronze.square_transactions: 45 rows this run (partition 2026-06-10) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=10/part-0000.parquet, 124 total in BigQuery
+2026-07-30 11:33:49,589 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 35 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=10/part-0000.parquet, 35 total in BigQuery
+2026-07-30 11:33:49,617 [ERROR] bronze_bigquery: bronze ingestion failed for 'zendesk_tickets': No raw file at gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=10/zendesk_tickets_2026-06-10.csv
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 330, in run
+    df = fetch_raw_file(bucket, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 84, in fetch_raw_file
+    raise FileNotFoundError(f"No raw file at gs://{BUCKET_NAME}/{blob.name}")
+FileNotFoundError: No raw file at gs://brewline-data-lake/raw/source_name=zendesk_tickets/year=2026/month=06/day=10/zendesk_tickets_2026-06-10.csv
+2026-07-30 11:44:47,667 [INFO] bronze_bigquery: bronze.shopify_orders: 42 rows this run (partition 2026-06-10) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=10/part-0000.parquet, 122 total in BigQuery
+2026-07-30 11:44:52,895 [INFO] bronze_bigquery: bronze.square_transactions: 45 rows this run (partition 2026-06-10) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=10/part-0000.parquet, 124 total in BigQuery
+2026-07-30 11:44:54,293 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 35 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=10/part-0000.parquet, 35 total in BigQuery
+2026-07-30 11:44:54,319 [INFO] bronze_bigquery: no raw file for 'zendesk_tickets' on 2026-06-10 -- treating as zero rows (not required daily)
+2026-07-30 11:44:54,319 [INFO] bronze_bigquery: bronze.zendesk_tickets: skipped, no data for 2026-06-10
+2026-07-30 11:44:58,523 [INFO] bronze_bigquery: bronze.shipstation_shipments: 30 rows this run (partition 2026-06-10) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=10/part-0000.parquet, 72 total in BigQuery
+2026-07-30 11:46:41,788 [INFO] bronze_bigquery: bronze.shopify_orders: 36 rows this run (partition 2026-06-11) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=11/part-0000.parquet, 158 total in BigQuery
+2026-07-30 11:46:45,447 [INFO] bronze_bigquery: bronze.square_transactions: 31 rows this run (partition 2026-06-11) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=11/part-0000.parquet, 155 total in BigQuery
+2026-07-30 11:46:48,929 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 35 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=11/part-0000.parquet, 35 total in BigQuery
+2026-07-30 11:46:52,687 [INFO] bronze_bigquery: bronze.zendesk_tickets: 3 rows this run (partition 2026-06-11) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=11/part-0000.parquet, 8 total in BigQuery
+2026-07-30 11:46:56,788 [INFO] bronze_bigquery: bronze.shipstation_shipments: 32 rows this run (partition 2026-06-11) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=11/part-0000.parquet, 104 total in BigQuery
+2026-07-30 12:26:35,232 [INFO] bronze_bigquery: bronze.shopify_orders: 45 rows this run (partition 2026-06-12) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=12/part-0000.parquet, 203 total in BigQuery
+2026-07-30 12:26:39,293 [INFO] bronze_bigquery: bronze.square_transactions: 44 rows this run (partition 2026-06-12) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=12/part-0000.parquet, 199 total in BigQuery
+2026-07-30 12:26:40,527 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 35 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=12/part-0000.parquet, 35 total in BigQuery
+2026-07-30 12:26:44,151 [INFO] bronze_bigquery: bronze.zendesk_tickets: 3 rows this run (partition 2026-06-12) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=12/part-0000.parquet, 11 total in BigQuery
+2026-07-30 12:26:48,436 [INFO] bronze_bigquery: bronze.shipstation_shipments: 37 rows this run (partition 2026-06-12) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=12/part-0000.parquet, 141 total in BigQuery
+2026-07-30 12:27:48,528 [INFO] bronze_bigquery: bronze.shopify_orders: 50 rows this run (partition 2026-06-13) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=13/part-0000.parquet, 253 total in BigQuery
+2026-07-30 12:27:52,442 [INFO] bronze_bigquery: bronze.square_transactions: 44 rows this run (partition 2026-06-13) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=13/part-0000.parquet, 243 total in BigQuery
+2026-07-30 12:27:54,091 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 35 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=13/part-0000.parquet, 35 total in BigQuery
+2026-07-30 12:27:58,681 [INFO] bronze_bigquery: bronze.zendesk_tickets: 1 rows this run (partition 2026-06-13) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=13/part-0000.parquet, 12 total in BigQuery
+2026-07-30 12:28:02,509 [INFO] bronze_bigquery: bronze.shipstation_shipments: 36 rows this run (partition 2026-06-13) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=13/part-0000.parquet, 177 total in BigQuery
+2026-07-30 12:28:14,710 [INFO] bronze_bigquery: bronze.shopify_orders: 45 rows this run (partition 2026-06-14) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=14/part-0000.parquet, 298 total in BigQuery
+2026-07-30 12:28:18,144 [INFO] bronze_bigquery: bronze.square_transactions: 40 rows this run (partition 2026-06-14) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=14/part-0000.parquet, 283 total in BigQuery
+2026-07-30 12:28:19,307 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 35 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=14/part-0000.parquet, 35 total in BigQuery
+2026-07-30 12:28:19,336 [INFO] bronze_bigquery: no raw file for 'zendesk_tickets' on 2026-06-14 -- treating as zero rows (not required daily)
+2026-07-30 12:28:19,337 [INFO] bronze_bigquery: bronze.zendesk_tickets: skipped, no data for 2026-06-14
+2026-07-30 12:28:23,438 [INFO] bronze_bigquery: bronze.shipstation_shipments: 35 rows this run (partition 2026-06-14) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=14/part-0000.parquet, 212 total in BigQuery
+2026-07-30 12:28:54,066 [INFO] bronze_bigquery: bronze.shopify_orders: 41 rows this run (partition 2026-06-15) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=15/part-0000.parquet, 339 total in BigQuery
+2026-07-30 12:28:57,737 [INFO] bronze_bigquery: bronze.square_transactions: 33 rows this run (partition 2026-06-15) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=15/part-0000.parquet, 316 total in BigQuery
+2026-07-30 12:29:00,755 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 35 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=15/part-0000.parquet, 35 total in BigQuery
+2026-07-30 12:29:04,484 [INFO] bronze_bigquery: bronze.zendesk_tickets: 1 rows this run (partition 2026-06-15) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=15/part-0000.parquet, 13 total in BigQuery
+2026-07-30 12:29:09,675 [INFO] bronze_bigquery: bronze.shipstation_shipments: 42 rows this run (partition 2026-06-15) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=15/part-0000.parquet, 254 total in BigQuery
+2026-07-30 12:29:22,227 [INFO] bronze_bigquery: bronze.shopify_orders: 38 rows this run (partition 2026-06-16) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=16/part-0000.parquet, 377 total in BigQuery
+2026-07-30 12:29:25,358 [INFO] bronze_bigquery: bronze.square_transactions: 33 rows this run (partition 2026-06-16) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=16/part-0000.parquet, 349 total in BigQuery
+2026-07-30 12:29:27,682 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=16/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:29:31,086 [INFO] bronze_bigquery: bronze.zendesk_tickets: 3 rows this run (partition 2026-06-16) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=16/part-0000.parquet, 16 total in BigQuery
+2026-07-30 12:29:34,898 [INFO] bronze_bigquery: bronze.shipstation_shipments: 28 rows this run (partition 2026-06-16) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=16/part-0000.parquet, 282 total in BigQuery
+2026-07-30 12:29:46,294 [INFO] bronze_bigquery: bronze.shopify_orders: 39 rows this run (partition 2026-06-17) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=17/part-0000.parquet, 416 total in BigQuery
+2026-07-30 12:29:50,551 [INFO] bronze_bigquery: bronze.square_transactions: 42 rows this run (partition 2026-06-17) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=17/part-0000.parquet, 391 total in BigQuery
+2026-07-30 12:29:52,748 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=17/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:29:56,333 [INFO] bronze_bigquery: bronze.zendesk_tickets: 4 rows this run (partition 2026-06-17) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=17/part-0000.parquet, 20 total in BigQuery
+2026-07-30 12:30:00,223 [INFO] bronze_bigquery: bronze.shipstation_shipments: 29 rows this run (partition 2026-06-17) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=17/part-0000.parquet, 311 total in BigQuery
+2026-07-30 12:30:12,702 [INFO] bronze_bigquery: bronze.shopify_orders: 43 rows this run (partition 2026-06-18) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=18/part-0000.parquet, 459 total in BigQuery
+2026-07-30 12:30:17,199 [INFO] bronze_bigquery: bronze.square_transactions: 40 rows this run (partition 2026-06-18) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=18/part-0000.parquet, 431 total in BigQuery
+2026-07-30 12:30:18,467 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=18/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:30:18,490 [INFO] bronze_bigquery: no raw file for 'zendesk_tickets' on 2026-06-18 -- treating as zero rows (not required daily)
+2026-07-30 12:30:18,490 [INFO] bronze_bigquery: bronze.zendesk_tickets: skipped, no data for 2026-06-18
+2026-07-30 12:30:22,580 [INFO] bronze_bigquery: bronze.shipstation_shipments: 40 rows this run (partition 2026-06-18) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=18/part-0000.parquet, 351 total in BigQuery
+2026-07-30 12:30:35,029 [INFO] bronze_bigquery: bronze.shopify_orders: 35 rows this run (partition 2026-06-19) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=19/part-0000.parquet, 494 total in BigQuery
+2026-07-30 12:30:40,321 [INFO] bronze_bigquery: bronze.square_transactions: 57 rows this run (partition 2026-06-19) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=19/part-0000.parquet, 488 total in BigQuery
+2026-07-30 12:30:41,683 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=19/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:30:45,314 [INFO] bronze_bigquery: bronze.zendesk_tickets: 4 rows this run (partition 2026-06-19) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=19/part-0000.parquet, 24 total in BigQuery
+2026-07-30 12:30:52,264 [INFO] bronze_bigquery: bronze.shipstation_shipments: 26 rows this run (partition 2026-06-19) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=19/part-0000.parquet, 377 total in BigQuery
+2026-07-30 12:31:09,052 [INFO] bronze_bigquery: bronze.shopify_orders: 41 rows this run (partition 2026-06-20) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=20/part-0000.parquet, 535 total in BigQuery
+2026-07-30 12:31:12,431 [INFO] bronze_bigquery: bronze.square_transactions: 34 rows this run (partition 2026-06-20) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=20/part-0000.parquet, 522 total in BigQuery
+2026-07-30 12:31:13,892 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=20/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:31:17,658 [INFO] bronze_bigquery: bronze.zendesk_tickets: 1 rows this run (partition 2026-06-20) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=20/part-0000.parquet, 25 total in BigQuery
+2026-07-30 12:31:21,231 [INFO] bronze_bigquery: bronze.shipstation_shipments: 37 rows this run (partition 2026-06-20) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=20/part-0000.parquet, 414 total in BigQuery
+2026-07-30 12:31:35,483 [INFO] bronze_bigquery: bronze.shopify_orders: 40 rows this run (partition 2026-06-21) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=21/part-0000.parquet, 575 total in BigQuery
+2026-07-30 12:31:39,934 [INFO] bronze_bigquery: bronze.square_transactions: 51 rows this run (partition 2026-06-21) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=21/part-0000.parquet, 573 total in BigQuery
+2026-07-30 12:31:42,895 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=21/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:31:47,052 [INFO] bronze_bigquery: bronze.zendesk_tickets: 5 rows this run (partition 2026-06-21) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=21/part-0000.parquet, 30 total in BigQuery
+2026-07-30 12:31:50,906 [INFO] bronze_bigquery: bronze.shipstation_shipments: 27 rows this run (partition 2026-06-21) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=21/part-0000.parquet, 441 total in BigQuery
+2026-07-30 12:32:01,566 [INFO] bronze_bigquery: bronze.shopify_orders: 42 rows this run (partition 2026-06-22) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=22/part-0000.parquet, 617 total in BigQuery
+2026-07-30 12:32:06,617 [INFO] bronze_bigquery: bronze.square_transactions: 40 rows this run (partition 2026-06-22) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=22/part-0000.parquet, 613 total in BigQuery
+2026-07-30 12:32:08,619 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=22/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:32:12,849 [INFO] bronze_bigquery: bronze.zendesk_tickets: 2 rows this run (partition 2026-06-22) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=22/part-0000.parquet, 32 total in BigQuery
+2026-07-30 12:32:17,159 [INFO] bronze_bigquery: bronze.shipstation_shipments: 34 rows this run (partition 2026-06-22) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=22/part-0000.parquet, 475 total in BigQuery
+2026-07-30 12:32:33,238 [INFO] bronze_bigquery: bronze.shopify_orders: 49 rows this run (partition 2026-06-23) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=23/part-0000.parquet, 666 total in BigQuery
+2026-07-30 12:32:36,750 [INFO] bronze_bigquery: bronze.square_transactions: 51 rows this run (partition 2026-06-23) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=23/part-0000.parquet, 664 total in BigQuery
+2026-07-30 12:32:39,360 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=23/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:32:43,772 [INFO] bronze_bigquery: bronze.zendesk_tickets: 7 rows this run (partition 2026-06-23) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=23/part-0000.parquet, 39 total in BigQuery
+2026-07-30 12:32:47,652 [INFO] bronze_bigquery: bronze.shipstation_shipments: 27 rows this run (partition 2026-06-23) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=23/part-0000.parquet, 502 total in BigQuery
+2026-07-30 12:32:58,129 [INFO] bronze_bigquery: bronze.shopify_orders: 40 rows this run (partition 2026-06-24) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=24/part-0000.parquet, 706 total in BigQuery
+2026-07-30 12:33:01,760 [INFO] bronze_bigquery: bronze.square_transactions: 25 rows this run (partition 2026-06-24) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=24/part-0000.parquet, 689 total in BigQuery
+2026-07-30 12:33:04,421 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=24/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:33:09,949 [INFO] bronze_bigquery: bronze.zendesk_tickets: 1 rows this run (partition 2026-06-24) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=24/part-0000.parquet, 40 total in BigQuery
+2026-07-30 12:33:13,306 [INFO] bronze_bigquery: bronze.shipstation_shipments: 43 rows this run (partition 2026-06-24) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=24/part-0000.parquet, 545 total in BigQuery
+2026-07-30 12:33:23,936 [INFO] bronze_bigquery: bronze.shopify_orders: 42 rows this run (partition 2026-06-25) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=25/part-0000.parquet, 748 total in BigQuery
+2026-07-30 12:33:28,140 [INFO] bronze_bigquery: bronze.square_transactions: 33 rows this run (partition 2026-06-25) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=25/part-0000.parquet, 722 total in BigQuery
+2026-07-30 12:33:29,845 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=25/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:33:33,607 [INFO] bronze_bigquery: bronze.zendesk_tickets: 5 rows this run (partition 2026-06-25) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=25/part-0000.parquet, 45 total in BigQuery
+2026-07-30 12:33:37,353 [INFO] bronze_bigquery: bronze.shipstation_shipments: 37 rows this run (partition 2026-06-25) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=25/part-0000.parquet, 582 total in BigQuery
+2026-07-30 12:33:48,588 [INFO] bronze_bigquery: bronze.shopify_orders: 36 rows this run (partition 2026-06-26) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=26/part-0000.parquet, 784 total in BigQuery
+2026-07-30 12:33:52,574 [INFO] bronze_bigquery: bronze.square_transactions: 33 rows this run (partition 2026-06-26) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=26/part-0000.parquet, 755 total in BigQuery
+2026-07-30 12:33:53,801 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=26/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:33:57,855 [INFO] bronze_bigquery: bronze.zendesk_tickets: 3 rows this run (partition 2026-06-26) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=26/part-0000.parquet, 48 total in BigQuery
+2026-07-30 12:34:02,357 [INFO] bronze_bigquery: bronze.shipstation_shipments: 29 rows this run (partition 2026-06-26) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=26/part-0000.parquet, 611 total in BigQuery
+2026-07-30 12:34:13,769 [INFO] bronze_bigquery: bronze.shopify_orders: 38 rows this run (partition 2026-06-27) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=27/part-0000.parquet, 822 total in BigQuery
+2026-07-30 12:34:17,341 [INFO] bronze_bigquery: bronze.square_transactions: 34 rows this run (partition 2026-06-27) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=27/part-0000.parquet, 789 total in BigQuery
+2026-07-30 12:34:18,835 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=27/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:34:22,160 [INFO] bronze_bigquery: bronze.zendesk_tickets: 1 rows this run (partition 2026-06-27) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=27/part-0000.parquet, 49 total in BigQuery
+2026-07-30 12:34:26,045 [INFO] bronze_bigquery: bronze.shipstation_shipments: 30 rows this run (partition 2026-06-27) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=27/part-0000.parquet, 641 total in BigQuery
+2026-07-30 12:34:40,292 [INFO] bronze_bigquery: bronze.shopify_orders: 45 rows this run (partition 2026-06-28) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=28/part-0000.parquet, 867 total in BigQuery
+2026-07-30 12:34:45,608 [INFO] bronze_bigquery: bronze.square_transactions: 51 rows this run (partition 2026-06-28) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=28/part-0000.parquet, 840 total in BigQuery
+2026-07-30 12:34:46,807 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=28/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:34:50,442 [INFO] bronze_bigquery: bronze.zendesk_tickets: 2 rows this run (partition 2026-06-28) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=28/part-0000.parquet, 51 total in BigQuery
+2026-07-30 12:34:53,932 [INFO] bronze_bigquery: bronze.shipstation_shipments: 33 rows this run (partition 2026-06-28) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=28/part-0000.parquet, 674 total in BigQuery
+2026-07-30 12:35:14,041 [INFO] bronze_bigquery: bronze.shopify_orders: 36 rows this run (partition 2026-06-29) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=29/part-0000.parquet, 903 total in BigQuery
+2026-07-30 12:35:17,918 [INFO] bronze_bigquery: bronze.square_transactions: 33 rows this run (partition 2026-06-29) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=29/part-0000.parquet, 873 total in BigQuery
+2026-07-30 12:35:19,308 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=29/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:35:19,336 [INFO] bronze_bigquery: no raw file for 'zendesk_tickets' on 2026-06-29 -- treating as zero rows (not required daily)
+2026-07-30 12:35:19,336 [INFO] bronze_bigquery: bronze.zendesk_tickets: skipped, no data for 2026-06-29
+2026-07-30 12:35:23,240 [INFO] bronze_bigquery: bronze.shipstation_shipments: 36 rows this run (partition 2026-06-29) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=29/part-0000.parquet, 710 total in BigQuery
+2026-07-30 12:35:37,660 [INFO] bronze_bigquery: bronze.shopify_orders: 36 rows this run (partition 2026-06-30) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=06/day=30/part-0000.parquet, 939 total in BigQuery
+2026-07-30 12:35:42,193 [INFO] bronze_bigquery: bronze.square_transactions: 29 rows this run (partition 2026-06-30) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=06/day=30/part-0000.parquet, 902 total in BigQuery
+2026-07-30 12:35:44,042 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=06/day=30/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:35:48,286 [INFO] bronze_bigquery: bronze.zendesk_tickets: 3 rows this run (partition 2026-06-30) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=06/day=30/part-0000.parquet, 54 total in BigQuery
+2026-07-30 12:35:51,847 [INFO] bronze_bigquery: bronze.shipstation_shipments: 31 rows this run (partition 2026-06-30) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=06/day=30/part-0000.parquet, 741 total in BigQuery
+2026-07-30 12:36:08,293 [INFO] bronze_bigquery: bronze.shopify_orders: 45 rows this run (partition 2026-07-01) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=07/day=01/part-0000.parquet, 984 total in BigQuery
+2026-07-30 12:36:11,906 [INFO] bronze_bigquery: bronze.square_transactions: 26 rows this run (partition 2026-07-01) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=07/day=01/part-0000.parquet, 928 total in BigQuery
+2026-07-30 12:36:13,322 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=07/day=01/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:36:17,111 [INFO] bronze_bigquery: bronze.zendesk_tickets: 1 rows this run (partition 2026-07-01) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=07/day=01/part-0000.parquet, 55 total in BigQuery
+2026-07-30 12:36:20,768 [INFO] bronze_bigquery: bronze.shipstation_shipments: 33 rows this run (partition 2026-07-01) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=07/day=01/part-0000.parquet, 774 total in BigQuery
+2026-07-30 12:36:31,300 [INFO] bronze_bigquery: bronze.shopify_orders: 35 rows this run (partition 2026-07-02) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=07/day=02/part-0000.parquet, 1019 total in BigQuery
+2026-07-30 12:36:35,174 [INFO] bronze_bigquery: bronze.square_transactions: 33 rows this run (partition 2026-07-02) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=07/day=02/part-0000.parquet, 961 total in BigQuery
+2026-07-30 12:36:37,304 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=07/day=02/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:36:42,028 [INFO] bronze_bigquery: bronze.zendesk_tickets: 3 rows this run (partition 2026-07-02) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=07/day=02/part-0000.parquet, 58 total in BigQuery
+2026-07-30 12:36:45,555 [INFO] bronze_bigquery: bronze.shipstation_shipments: 30 rows this run (partition 2026-07-02) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=07/day=02/part-0000.parquet, 804 total in BigQuery
+2026-07-30 12:36:58,757 [INFO] bronze_bigquery: bronze.shopify_orders: 35 rows this run (partition 2026-07-03) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=07/day=03/part-0000.parquet, 1054 total in BigQuery
+2026-07-30 12:37:03,192 [INFO] bronze_bigquery: bronze.square_transactions: 40 rows this run (partition 2026-07-03) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=07/day=03/part-0000.parquet, 1001 total in BigQuery
+2026-07-30 12:37:05,280 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=07/day=03/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:37:09,362 [INFO] bronze_bigquery: bronze.zendesk_tickets: 3 rows this run (partition 2026-07-03) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=07/day=03/part-0000.parquet, 61 total in BigQuery
+2026-07-30 12:37:13,650 [INFO] bronze_bigquery: bronze.shipstation_shipments: 31 rows this run (partition 2026-07-03) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=07/day=03/part-0000.parquet, 835 total in BigQuery
+2026-07-30 12:37:25,088 [INFO] bronze_bigquery: bronze.shopify_orders: 36 rows this run (partition 2026-07-04) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=07/day=04/part-0000.parquet, 1090 total in BigQuery
+2026-07-30 12:37:28,423 [INFO] bronze_bigquery: bronze.square_transactions: 29 rows this run (partition 2026-07-04) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=07/day=04/part-0000.parquet, 1030 total in BigQuery
+2026-07-30 12:37:30,768 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=07/day=04/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:37:34,192 [INFO] bronze_bigquery: bronze.zendesk_tickets: 1 rows this run (partition 2026-07-04) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=07/day=04/part-0000.parquet, 62 total in BigQuery
+2026-07-30 12:37:37,635 [INFO] bronze_bigquery: bronze.shipstation_shipments: 35 rows this run (partition 2026-07-04) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=07/day=04/part-0000.parquet, 870 total in BigQuery
+2026-07-30 12:37:48,682 [INFO] bronze_bigquery: bronze.shopify_orders: 46 rows this run (partition 2026-07-05) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=07/day=05/part-0000.parquet, 1136 total in BigQuery
+2026-07-30 12:37:53,148 [INFO] bronze_bigquery: bronze.square_transactions: 43 rows this run (partition 2026-07-05) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=07/day=05/part-0000.parquet, 1073 total in BigQuery
+2026-07-30 12:37:55,403 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=07/day=05/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:37:58,516 [INFO] bronze_bigquery: bronze.zendesk_tickets: 2 rows this run (partition 2026-07-05) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=07/day=05/part-0000.parquet, 64 total in BigQuery
+2026-07-30 12:38:02,009 [INFO] bronze_bigquery: bronze.shipstation_shipments: 30 rows this run (partition 2026-07-05) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=07/day=05/part-0000.parquet, 900 total in BigQuery
+2026-07-30 12:38:19,428 [INFO] bronze_bigquery: bronze.shopify_orders: 45 rows this run (partition 2026-07-06) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=07/day=06/part-0000.parquet, 1181 total in BigQuery
+2026-07-30 12:38:23,849 [INFO] bronze_bigquery: bronze.square_transactions: 34 rows this run (partition 2026-07-06) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=07/day=06/part-0000.parquet, 1107 total in BigQuery
+2026-07-30 12:38:25,307 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=07/day=06/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:38:29,373 [INFO] bronze_bigquery: bronze.zendesk_tickets: 2 rows this run (partition 2026-07-06) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=07/day=06/part-0000.parquet, 66 total in BigQuery
+2026-07-30 12:38:32,957 [INFO] bronze_bigquery: bronze.shipstation_shipments: 40 rows this run (partition 2026-07-06) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=07/day=06/part-0000.parquet, 940 total in BigQuery
+2026-07-30 12:38:43,925 [INFO] bronze_bigquery: bronze.shopify_orders: 40 rows this run (partition 2026-07-07) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=07/day=07/part-0000.parquet, 1221 total in BigQuery
+2026-07-30 12:38:47,768 [INFO] bronze_bigquery: bronze.square_transactions: 49 rows this run (partition 2026-07-07) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=07/day=07/part-0000.parquet, 1156 total in BigQuery
+2026-07-30 12:38:49,237 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=07/day=07/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:38:52,582 [INFO] bronze_bigquery: bronze.zendesk_tickets: 4 rows this run (partition 2026-07-07) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=07/day=07/part-0000.parquet, 70 total in BigQuery
+2026-07-30 12:38:56,397 [INFO] bronze_bigquery: bronze.shipstation_shipments: 38 rows this run (partition 2026-07-07) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=07/day=07/part-0000.parquet, 978 total in BigQuery
+2026-07-30 12:39:11,582 [INFO] bronze_bigquery: bronze.shopify_orders: 45 rows this run (partition 2026-07-01) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=07/day=01/part-0000.parquet, 1221 total in BigQuery
+2026-07-30 12:39:15,719 [INFO] bronze_bigquery: bronze.square_transactions: 26 rows this run (partition 2026-07-01) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=07/day=01/part-0000.parquet, 1156 total in BigQuery
+2026-07-30 12:39:17,465 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=07/day=01/part-0000.parquet, 38 total in BigQuery
+2026-07-30 12:39:22,026 [INFO] bronze_bigquery: bronze.zendesk_tickets: 1 rows this run (partition 2026-07-01) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=07/day=01/part-0000.parquet, 70 total in BigQuery
+2026-07-30 12:39:25,510 [INFO] bronze_bigquery: bronze.shipstation_shipments: 33 rows this run (partition 2026-07-01) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=07/day=01/part-0000.parquet, 978 total in BigQuery
+2026-07-30 12:39:38,064 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': No raw file at gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=30/shopify_orders_2026-07-30.json
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 338, in run
+    df = fetch_raw_file(bucket, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 92, in fetch_raw_file
+    raise FileNotFoundError(f"No raw file at gs://{BUCKET_NAME}/{blob.name}")
+FileNotFoundError: No raw file at gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=30/shopify_orders_2026-07-30.json
+2026-07-30 14:49:37,560 [ERROR] bronze_bigquery: bronze ingestion failed for 'shopify_orders': No raw file at gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=30/shopify_orders_2026-07-30.json
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 343, in run
+    df = fetch_raw_file(bucket, source, run_date)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest_bigquery.py", line 97, in fetch_raw_file
+    raise FileNotFoundError(f"No raw file at gs://{BUCKET_NAME}/{blob.name}")
+FileNotFoundError: No raw file at gs://brewline-data-lake/raw/source_name=shopify_orders/year=2026/month=07/day=30/shopify_orders_2026-07-30.json
+2026-07-30 14:49:50,311 [INFO] bronze_bigquery: bronze.shopify_orders: 46 rows this run (partition 2026-07-05) -> gs://brewline-data-lake/bronze/source_name=shopify_orders/year=2026/month=07/day=05/part-0000.parquet, 1221 total in BigQuery
+2026-07-30 14:49:54,384 [INFO] bronze_bigquery: bronze.square_transactions: 43 rows this run (partition 2026-07-05) -> gs://brewline-data-lake/bronze/source_name=square_transactions/year=2026/month=07/day=05/part-0000.parquet, 1156 total in BigQuery
+2026-07-30 14:49:55,752 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=07/day=05/part-0000.parquet, 38 total in BigQuery
+2026-07-30 14:49:59,499 [INFO] bronze_bigquery: bronze.zendesk_tickets: 2 rows this run (partition 2026-07-05) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=07/day=05/part-0000.parquet, 70 total in BigQuery
+2026-07-30 14:50:03,266 [INFO] bronze_bigquery: bronze.shipstation_shipments: 30 rows this run (partition 2026-07-05) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=07/day=05/part-0000.parquet, 978 total in BigQuery

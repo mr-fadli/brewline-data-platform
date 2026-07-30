@@ -1,0 +1,4 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-3016,,Box was soaked/damaged in transit,2026-06-11T13:00:00+00:00,"damaged,refund_request",
+ZD-3022,yherrera@example.org,Box was soaked/damaged in transit,2026-06-11T08:00:00+00:00,"damaged,refund_request",
+ZD-3060,tsanders@example.org,Package says delivered but I don't have it,2026-06-11T18:00:00+00:00,"shipping,frustrated",#6011

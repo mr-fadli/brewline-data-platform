@@ -1,0 +1,5 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-3001,jason31@example.com,"My coffee tastes off, tastes stale",2026-06-19T19:52:00-07:00,"quality,refund_request",#5455
+ZD-3021,barbara10@example.net,Box was soaked/damaged in transit,2026-06-19T18:00:00+00:00,"damaged,refund_request",#6202
+ZD-3042,,How do I pause my subscription?,2026-06-19T17:00:00+00:00,cancellation,
+ZD-3069,brian97@example.net,How do I pause my subscription?,2026-06-19T21:00:00+00:00,cancellation,

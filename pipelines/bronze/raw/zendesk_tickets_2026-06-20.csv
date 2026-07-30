@@ -1,0 +1,2 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-3004,,"Wrong grind size sent, whole bean expected",2026-06-20T22:41:00-07:00,"quality,refund_request",#5487

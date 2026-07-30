@@ -13,12 +13,16 @@ DB_PATH = PROJECT_ROOT / "brewline.duckdb"
 
 BRONZE_PARQUET_DIR.mkdir(parents=True, exist_ok=True)
 
-# Each source only declares what's actually independent (name + format).
-# file_pattern and table_name are conventions derived from name, not duplicated by hand.
+# load_strategy:
+#   "append"   -- each day's file is new, distinct facts; local dev loads ALL days,
+#                 concatenated, to reproduce full history for testing.
+#   "snapshot" -- each day's file is a full current-state snapshot; local dev loads
+#                 only the LATEST day's file, since older snapshots are redundant
+#                 with the newest one (loading all would triple/30x-count rows).
 SOURCES = [
-    {"name": "shopify_orders", "format": "json"},
-    {"name": "square_transactions", "format": "csv"},
-    {"name": "recharge_subscriptions", "format": "json"},
-    {"name": "zendesk_tickets", "format": "csv"},
-    {"name": "shipstation_shipments", "format": "csv"},
+    {"name": "shopify_orders", "format": "json", "load_strategy": "append"},
+    {"name": "square_transactions", "format": "csv", "load_strategy": "append"},
+    {"name": "recharge_subscriptions", "format": "json", "load_strategy": "snapshot"},
+    {"name": "zendesk_tickets", "format": "csv", "load_strategy": "append", "required": False},
+    {"name": "shipstation_shipments", "format": "csv", "load_strategy": "append"},
 ]

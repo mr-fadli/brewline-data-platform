@@ -1,5 +1,6 @@
 # data generator and tester
 generate.py
+generate2.py
 sample_data
 __pycache__
 
@@ -10,3 +11,4 @@ brewline.duckdb.wal
 #miscellaneous
 notes.md
 notes2.md
+.env

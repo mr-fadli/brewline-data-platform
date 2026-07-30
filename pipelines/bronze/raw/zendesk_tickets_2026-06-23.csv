@@ -1,0 +1,8 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-3006,,"Wrong grind size sent, whole bean expected",2026-06-23T15:21:00-07:00,"quality,refund_request",#5496
+ZD-3008,wrightcaleb@example.org,"My coffee tastes off, tastes stale",2026-06-23T17:14:00-05:00,"quality,refund_request",#5531
+ZD-3010,,"Wrong grind size sent, whole bean expected",2026-06-23T16:53:00-04:00,"quality,refund_request",#5560
+ZD-3015,,How do I pause my subscription?,2026-06-23T08:00:00+00:00,cancellation,
+ZD-3043,,Where is my box??,2026-06-23T21:00:00+00:00,"shipping,frustrated",
+ZD-3046,,Tracking hasn't updated in days,2026-06-23T13:00:00+00:00,"shipping,frustrated",
+ZD-3055,jacqueline71@example.net,How do I pause my subscription?,2026-06-23T15:00:00+00:00,cancellation,#5719
