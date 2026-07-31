@@ -24,7 +24,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 vars:
   reporting_timezone: "America/New_York"
-  
+  customer_churn_days_threshold: 60
+  customer_at_risk_days_threshold: 45
+
 seeds:
   brewline_dbt:
     +schema: silver
