@@ -998,3 +998,22 @@ FileNotFoundError: No raw file at gs://brewline-data-lake/raw/source_name=shopif
 2026-07-30 14:49:55,752 [INFO] bronze_bigquery: bronze.recharge_subscriptions: 38 rows this run (full snapshot replace) -> gs://brewline-data-lake/bronze/source_name=recharge_subscriptions/year=2026/month=07/day=05/part-0000.parquet, 38 total in BigQuery
 2026-07-30 14:49:59,499 [INFO] bronze_bigquery: bronze.zendesk_tickets: 2 rows this run (partition 2026-07-05) -> gs://brewline-data-lake/bronze/source_name=zendesk_tickets/year=2026/month=07/day=05/part-0000.parquet, 70 total in BigQuery
 2026-07-30 14:50:03,266 [INFO] bronze_bigquery: bronze.shipstation_shipments: 30 rows this run (partition 2026-07-05) -> gs://brewline-data-lake/bronze/source_name=shipstation_shipments/year=2026/month=07/day=05/part-0000.parquet, 978 total in BigQuery
+2026-07-31 08:52:10,937 [ERROR] bronze: shopify_orders failed: stamp_lineage() got an unexpected keyword argument 'file_path'
+Traceback (most recent call last):
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest.py", line 88, in run
+    df = load_source(source)
+  File "D:\Ijal\data_engineer\brewline_coffee_co\pipelines\bronze\ingest.py", line 61, in load_source
+    df = stamp_lineage(df, source_name=source["name"], file_path=file_path)
+TypeError: stamp_lineage() got an unexpected keyword argument 'file_path'
+2026-07-31 08:56:07,473 [INFO] bronze: bronze.shopify_orders              1221 rows  (all days combined)
+2026-07-31 08:56:07,800 [INFO] bronze: bronze.square_transactions         1156 rows  (all days combined)
+2026-07-31 08:56:07,827 [INFO] bronze: bronze.recharge_subscriptions        38 rows  (latest snapshot)
+2026-07-31 08:56:08,083 [INFO] bronze: bronze.zendesk_tickets               70 rows  (all days combined)
+2026-07-31 08:56:08,424 [INFO] bronze: bronze.shipstation_shipments       1013 rows  (all days combined)
+2026-07-31 08:56:08,498 [INFO] bronze: Bronze ingestion complete.
+2026-07-31 08:57:35,037 [INFO] bronze: bronze.shopify_orders              1221 rows  (all days combined)
+2026-07-31 08:57:35,121 [INFO] bronze: bronze.square_transactions         1156 rows  (all days combined)
+2026-07-31 08:57:35,136 [INFO] bronze: bronze.recharge_subscriptions        38 rows  (latest snapshot)
+2026-07-31 08:57:35,194 [INFO] bronze: bronze.zendesk_tickets               70 rows  (all days combined)
+2026-07-31 08:57:35,270 [INFO] bronze: bronze.shipstation_shipments       1013 rows  (all days combined)
+2026-07-31 08:57:35,348 [INFO] bronze: Bronze ingestion complete.
