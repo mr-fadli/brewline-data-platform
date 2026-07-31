@@ -28,6 +28,8 @@ vars:
   customer_at_risk_days_threshold: 45
   subscriber_tenure_bonus_days_lower: 90
   subscriber_tenure_bonus_days_upper: 130
+  refund_rolling_window_days: 7
+  refund_alert_multiplier: 2
   
 seeds:
   brewline_dbt:
