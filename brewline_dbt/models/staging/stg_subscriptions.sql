@@ -1,9 +1,15 @@
--- models/staging/stg_subscriptions.sql
+{{
+  config(
+    materialized='table',
+    cluster_by=['customer_key'] if target.type == 'bigquery' else none
+  )
+}}
+
 SELECT
     subscription_id,
     customer_email AS customer_key,
-    timezone('UTC', CAST(created_at AS TIMESTAMPTZ)) AS subscription_created_at,
-    timezone('UTC', CAST(cancelled_at AS TIMESTAMPTZ)) AS cancelled_at,
+    {{ parse_and_convert_to_utc('created_at') }} AS subscription_created_at,
+    {{ parse_and_convert_to_utc('cancelled_at') }} AS cancelled_at,
     frequency_days,
     CASE
         WHEN status = 'active' THEN 'is_active'
