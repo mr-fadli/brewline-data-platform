@@ -26,7 +26,9 @@ vars:
   reporting_timezone: "America/New_York"
   customer_churn_days_threshold: 60
   customer_at_risk_days_threshold: 45
-
+  subscriber_tenure_bonus_days_lower: 90
+  subscriber_tenure_bonus_days_upper: 130
+  
 seeds:
   brewline_dbt:
     +schema: silver
