@@ -1,14 +1,15 @@
-# v1.0.0 
-- run locally by hand
-- Programming Language using Python/SQL
-- database will be using DuckDB
-- pipeline will process into Bronze - Silver - Gold
-- bronze data will be stored using parquet and added a minimum data lineage for traceability
-- Data Provided will be in CSV and JSON
-- silver and gold will be processed inside the database via SQL
+# Roadmap
 
-# v2.0.0
-- silver and gold will be run through dbt
-- add orchestrator airflow as the scheduler
-- enrich the observability layer.
-- database will be swapped to free tier cloud
+## Done
+- v1.0.0 — Local pipeline
+- v2.0.0 — dbt
+- v3.0.0 — Airflow
+- v4.0.0 — BigQuery
+
+## Under consideration
+- Real daily-arriving source files (current generator produces one static
+  historical batch; resolve_file()/logical_date wiring already supports
+  per-day files, demonstrated via backfill testing in ingest_bigquery.py)
+- Data quality alerting beyond dbt test failures (e.g. Slack/email on
+  pipeline failure via Airflow)
+- DECIMAL/NUMERIC currency types instead of DOUBLE (see ADR-015)
