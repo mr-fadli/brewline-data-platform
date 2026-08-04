@@ -161,7 +161,7 @@ I don't think there's a written internal policy doc for partial refunds — this
 ---
 
 ## ME (Final Judgment)
-see in the docs/final_judgment.md
+see in the docs/design_decisions_log.md
 
 ## Sarah
 *Sarah responds:*
