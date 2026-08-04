@@ -11,6 +11,10 @@ from datetime import datetime
 from google.cloud import storage
 from google.auth import impersonated_credentials
 import google.auth
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from config import RAW_DIR, SOURCES
@@ -18,9 +22,9 @@ from logging_config import get_logger
 
 logger = get_logger("gcs_upload")
 
-BUCKET_NAME = "brewline-data-lake"
-PROJECT_ID = "brewline-coffee-co"
-IMPERSONATED_SA = f"brewline-bronze-ingest@{PROJECT_ID}.iam.gserviceaccount.com"
+BUCKET_NAME = os.environ["GCS_BUCKET_NAME"]
+PROJECT_ID = os.environ["GCP_PROJECT_ID"]
+IMPERSONATED_SA = os.environ["BRONZE_INGEST_SA"]
 
 #getting the client credentials to run in GCS
 def get_gcs_client() -> storage.Client:

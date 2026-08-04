@@ -21,9 +21,11 @@ file gets written into BigQuery:
 import sys
 import io
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 
 import json
 from datetime import datetime, date, timezone
@@ -362,7 +364,6 @@ def run(run_date: date = None):
         except Exception as exc:
             logger.error(f"bronze ingestion failed for '{name}': {exc}", exc_info=True)
             raise
-
 
 def _parse_cli_date() -> date:
     if len(sys.argv) > 1:
