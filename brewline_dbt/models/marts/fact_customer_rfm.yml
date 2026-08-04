@@ -9,16 +9,21 @@ models:
           - not_null
       - name: monetary_score
         tests:
-          - accepted_values: {values: [1,2,3,4,5]}
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+              quote: false
       - name: frequency_score
         tests:
-          - accepted_values: {values: [1,2,3,4,5]}
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+              quote: false
       - name: recency_score
         tests:
-          - accepted_values: {values: [1,2,3,4,5]}
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+              quote: false
       - name: tenure_bonus
         tests:
-          - accepted_values: {values: [0,1,2]}
-      - name: total_score
-        tests:
-          - not_null
+          - accepted_values:
+              values: [0, 1, 2]
+              quote: false

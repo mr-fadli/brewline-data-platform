@@ -1,3 +1,9 @@
+{{ 
+  config(
+    materialized='table'
+  ) 
+}}
+
 WITH
 table_partition AS (
   SELECT *

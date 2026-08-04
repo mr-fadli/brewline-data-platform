@@ -49,8 +49,6 @@ SELECT
   r.delivered_at,
   {{ parse_and_convert_to_utc('s.refund.created_at') }} AS refund_ts,
   {{ dbt.datediff('r.delivered_at', parse_and_convert_to_utc('s.refund.created_at'), 'day')}} AS days_since_delivery
-  
-  
 FROM reference_tbl s
 LEFT JOIN shipment_tbl r
   ON s.order_id = r.order_id
@@ -66,16 +64,17 @@ LEFT JOIN shipment_tbl r
     s.delivered_at,
     s.refund_ts,
     s.days_since_delivery,
+    s.order_run_date,
   CASE
-    WHEN s.delivered_at IS NULL THEN NULL  -- can't evaluate policy window without a known delivery date
-    WHEN s.days_since_delivery < 0 THEN TRUE  -- refunded before/at delivery — trivially within any window
-    WHEN s.days_since_delivery <= 30 THEN TRUE
+    WHEN s.delivered_at IS NULL THEN NULL
+    WHEN s.days_since_delivery < 0 THEN TRUE
+    WHEN s.days_since_delivery <= {{ var('refund_policy_window') }} THEN TRUE
     ELSE FALSE
   END AS within_policy_window,
   CASE
-    WHEN s.delivered_at IS NULL THEN NULL   -- genuinely unknown
+    WHEN s.delivered_at IS NULL THEN NULL
     WHEN s.days_since_delivery < 0 THEN TRUE
-    ELSE FALSE                             -- known, and definitively not early
+    ELSE FALSE
   END AS refunded_before_delivery_confirmed
   FROM refunds_shaped s
   LEFT JOIN {{ref('exchange_rates')}} r

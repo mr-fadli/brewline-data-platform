@@ -3,7 +3,7 @@
 {% endmacro %}
 
 {% macro duckdb__extract_date_from_timestamp(ts_column) %}
-  CAST(CAST({{ ts_column }} AS TIMESTAMPTZ) AS DATE)
+  CAST((CAST({{ ts_column }} AS TIMESTAMPTZ) AT TIME ZONE 'UTC') AS DATE)
 {% endmacro %}
 
 {% macro bigquery__extract_date_from_timestamp(ts_column) %}
