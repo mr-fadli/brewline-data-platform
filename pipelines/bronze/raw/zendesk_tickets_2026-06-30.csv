@@ -1,4 +1,0 @@
-ticket_id,requester_email,subject,created_at,tags,related_order_id
-ZD-3028,kingmichelle@example.org,How do I pause my subscription?,2026-06-30T09:00:00+00:00,cancellation,#5805
-ZD-3049,erik16@example.org,Tracking hasn't updated in days,2026-06-30T18:00:00+00:00,"shipping,frustrated",#6128
-ZD-3058,ronaldstephens@example.net,Tracking hasn't updated in days,2026-06-30T17:00:00+00:00,"shipping,frustrated",

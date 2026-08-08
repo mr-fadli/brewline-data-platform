@@ -1,4 +1,0 @@
-ticket_id,requester_email,subject,created_at,tags,related_order_id
-ZD-3026,whitesandra@example.com,Box was soaked/damaged in transit,2026-06-26T13:00:00+00:00,"damaged,refund_request",
-ZD-3032,,Please cancel my subscription,2026-06-26T07:00:00+00:00,cancellation,#5821
-ZD-3051,,Where is my box??,2026-06-26T16:00:00+00:00,"shipping,frustrated",

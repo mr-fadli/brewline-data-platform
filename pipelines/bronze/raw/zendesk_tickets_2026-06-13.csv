@@ -1,2 +1,0 @@
-ticket_id,requester_email,subject,created_at,tags,related_order_id
-ZD-3062,frazierdanny@example.net,Package says delivered but I don't have it,2026-06-13T10:00:00+00:00,"shipping,frustrated",#5345

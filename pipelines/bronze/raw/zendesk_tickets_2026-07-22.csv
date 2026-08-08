@@ -1,0 +1,6 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-4003,lrosales@example.com,"Wrong grind size sent, whole bean expected",2026-07-22T10:44:00-05:00,"quality,refund_request",#6473
+ZD-4006,,"Wrong grind size sent, whole bean expected",2026-07-22T15:21:00-07:00,"quality,refund_request",#6496
+ZD-4008,wrightcaleb@example.org,"My coffee tastes off, tastes stale",2026-07-22T17:14:00-05:00,"quality,refund_request",#6531
+ZD-4034,herringjames@example.org,Bag arrived crushed,2026-07-22T14:00:00+00:00,"damaged,refund_request",#6937
+ZD-4066,sheila14@example.org,Package says delivered but I don't have it,2026-07-22T12:00:00+00:00,"shipping,frustrated",#8416

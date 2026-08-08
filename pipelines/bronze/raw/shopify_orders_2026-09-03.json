@@ -1,0 +1,1092 @@
+[
+  {
+    "order_id": "#8377",
+    "customer_email": "agarcia@example.net",
+    "created_at": "2026-09-03T15:44:00-07:00",
+    "currency": "USD",
+    "total_price": 6.5,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "GM-8OZ",
+        "name": "Ground Medium 8oz",
+        "qty": 1,
+        "price": 6.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8378",
+    "customer_email": "sarah10@example.com",
+    "created_at": "2026-09-03T07:44:00-05:00",
+    "currency": "USD",
+    "total_price": 36.5,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "LR-12OZ",
+        "name": "Light Roast 12oz",
+        "qty": 2,
+        "price": 15.0
+      },
+      {
+        "sku": "GM-8OZ",
+        "name": "Ground Medium 8oz",
+        "qty": 1,
+        "price": 6.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8379",
+    "customer_email": "wallkenneth@example.com",
+    "created_at": "2026-09-03T13:28:00-04:00",
+    "currency": "USD",
+    "total_price": 27.5,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "MUG-CER",
+        "name": "Ceramic Mug",
+        "qty": 1,
+        "price": 12.0
+      },
+      {
+        "sku": "MR-12OZ",
+        "name": "Medium Roast 12oz",
+        "qty": 1,
+        "price": 15.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8380",
+    "customer_email": "ncalhoun@example.net",
+    "created_at": "2026-09-03T08:19:00-05:00",
+    "currency": "USD",
+    "total_price": 57.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "DR-12OZ",
+        "name": "Dark Roast 12oz",
+        "qty": 1,
+        "price": 16.0
+      },
+      {
+        "sku": "DR-8OZ",
+        "name": "Dark Roast 8oz",
+        "qty": 1,
+        "price": 11.0
+      },
+      {
+        "sku": "LR-12OZ",
+        "name": "Light Roast 12oz",
+        "qty": 2,
+        "price": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8381",
+    "customer_email": "brian97@example.net",
+    "created_at": "2026-09-03T18:18:00-07:00",
+    "currency": "USD",
+    "total_price": 86.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "DRIPPER-01",
+        "name": "Pour-Over Dripper",
+        "qty": 2,
+        "price": 22.0
+      },
+      {
+        "sku": "GRINDER-01",
+        "name": "Burr Grinder",
+        "qty": 1,
+        "price": 42.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8382",
+    "customer_email": "richardolson@example.com",
+    "created_at": "2026-09-03T13:47:00-04:00",
+    "currency": "USD",
+    "total_price": 22.5,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CUSTOM",
+        "name": "Subscription Box - Customize",
+        "qty": 1,
+        "price": 22.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8383",
+    "customer_email": "ujenkins@example.org",
+    "created_at": "2026-09-03T14:05:00-04:00",
+    "currency": "CAD",
+    "total_price": 28.0,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CURATED",
+        "name": "Subscription Box - Curated",
+        "qty": 1,
+        "price": 28.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8384",
+    "customer_email": "katie87@example.net",
+    "created_at": "2026-09-03T09:20:00-05:00",
+    "currency": "USD",
+    "total_price": 39.5,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "MUG-CER",
+        "name": "Ceramic Mug",
+        "qty": 2,
+        "price": 12.0
+      },
+      {
+        "sku": "MR-12OZ",
+        "name": "Medium Roast 12oz",
+        "qty": 1,
+        "price": 15.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8385",
+    "customer_email": "jason31@example.com",
+    "created_at": "2026-09-03T14:10:00-04:00",
+    "currency": "USD",
+    "total_price": 27.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "DR-12OZ",
+        "name": "Dark Roast 12oz",
+        "qty": 1,
+        "price": 16.0
+      },
+      {
+        "sku": "DR-8OZ",
+        "name": "Dark Roast 8oz",
+        "qty": 1,
+        "price": 11.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8386",
+    "customer_email": "ddavis@example.org",
+    "created_at": "2026-09-03T11:59:00-05:00",
+    "currency": "USD",
+    "total_price": 28.0,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CURATED",
+        "name": "Subscription Box - Curated",
+        "qty": 1,
+        "price": 28.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8387",
+    "customer_email": "yherrera@example.org",
+    "created_at": "2026-09-03T18:14:00-07:00",
+    "currency": "USD",
+    "total_price": 100.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "DR-12OZ",
+        "name": "Dark Roast 12oz",
+        "qty": 1,
+        "price": 16.0
+      },
+      {
+        "sku": "GRINDER-01",
+        "name": "Burr Grinder",
+        "qty": 2,
+        "price": 42.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8388",
+    "customer_email": "emilywalker@example.org",
+    "created_at": "2026-09-03T11:06:00-05:00",
+    "currency": "USD",
+    "total_price": 21.5,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": "2026-09-03T11:36:00-05:00",
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "LR-12OZ",
+        "name": "Light Roast 12oz",
+        "qty": 1,
+        "price": 15.0
+      },
+      {
+        "sku": "GM-8OZ",
+        "name": "Ground Medium 8oz",
+        "qty": 1,
+        "price": 6.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8389",
+    "customer_email": "umarshall@example.net",
+    "created_at": "2026-09-03T09:22:00-04:00",
+    "currency": "USD",
+    "total_price": 30.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "LR-12OZ",
+        "name": "Light Roast 12oz",
+        "qty": 2,
+        "price": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8390",
+    "customer_email": "moorericky@example.net",
+    "created_at": "2026-09-03T13:08:00-05:00",
+    "currency": "USD",
+    "total_price": 27.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "DR-12OZ",
+        "name": "Dark Roast 12oz",
+        "qty": 1,
+        "price": 16.0
+      },
+      {
+        "sku": "DR-8OZ",
+        "name": "Dark Roast 8oz",
+        "qty": 1,
+        "price": 11.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8391",
+    "customer_email": "richardolson@example.com",
+    "created_at": "2026-09-03T06:11:00-05:00",
+    "currency": "USD",
+    "total_price": 28.0,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CURATED",
+        "name": "Subscription Box - Curated",
+        "qty": 1,
+        "price": 28.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8392",
+    "customer_email": "richardolson@example.com",
+    "created_at": "2026-09-03T13:41:00-07:00",
+    "currency": "CAD",
+    "total_price": 12.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "MUG-CER",
+        "name": "Ceramic Mug",
+        "qty": 1,
+        "price": 12.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8393",
+    "customer_email": "angela83@example.org",
+    "created_at": "2026-09-03T06:11:00-07:00",
+    "currency": "CAD",
+    "total_price": 55.5,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "MUG-CER",
+        "name": "Ceramic Mug",
+        "qty": 2,
+        "price": 12.0
+      },
+      {
+        "sku": "MR-12OZ",
+        "name": "Medium Roast 12oz",
+        "qty": 1,
+        "price": 15.5
+      },
+      {
+        "sku": "DR-12OZ",
+        "name": "Dark Roast 12oz",
+        "qty": 1,
+        "price": 16.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8394",
+    "customer_email": "davidlee@example.org",
+    "created_at": "2026-09-03T08:32:00-05:00",
+    "currency": "USD",
+    "total_price": 30.5,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "MUG-CER",
+        "name": "Ceramic Mug",
+        "qty": 2,
+        "price": 12.0
+      },
+      {
+        "sku": "GM-8OZ",
+        "name": "Ground Medium 8oz",
+        "qty": 1,
+        "price": 6.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8395",
+    "customer_email": "yobrien@example.net",
+    "created_at": "2026-09-03T06:18:00-04:00",
+    "currency": "USD",
+    "total_price": 26.5,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "MR-12OZ",
+        "name": "Medium Roast 12oz",
+        "qty": 1,
+        "price": 15.5
+      },
+      {
+        "sku": "DR-8OZ",
+        "name": "Dark Roast 8oz",
+        "qty": 1,
+        "price": 11.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8396",
+    "customer_email": "newtoneric@example.com",
+    "created_at": "2026-09-03T08:18:00-07:00",
+    "currency": "USD",
+    "total_price": 28.5,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "GM-8OZ",
+        "name": "Ground Medium 8oz",
+        "qty": 2,
+        "price": 6.5
+      },
+      {
+        "sku": "MR-12OZ",
+        "name": "Medium Roast 12oz",
+        "qty": 1,
+        "price": 15.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8397",
+    "customer_email": "xprice@example.net",
+    "created_at": "2026-09-03T12:43:00-05:00",
+    "currency": "USD",
+    "total_price": 28.0,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CURATED",
+        "name": "Subscription Box - Curated",
+        "qty": 1,
+        "price": 28.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8398",
+    "customer_email": "yreed@example.com",
+    "created_at": "2026-09-03T19:45:00-05:00",
+    "currency": "USD",
+    "total_price": 46.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "DR-12OZ",
+        "name": "Dark Roast 12oz",
+        "qty": 1,
+        "price": 16.0
+      },
+      {
+        "sku": "LR-12OZ",
+        "name": "Light Roast 12oz",
+        "qty": 2,
+        "price": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8399",
+    "customer_email": "davidlee@example.org",
+    "created_at": "2026-09-03T11:35:00-07:00",
+    "currency": "CAD",
+    "total_price": 22.5,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CUSTOM",
+        "name": "Subscription Box - Customize",
+        "qty": 1,
+        "price": 22.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8400",
+    "customer_email": "richardolson@example.com",
+    "created_at": "2026-09-03T07:09:00-07:00",
+    "currency": "USD",
+    "total_price": 28.0,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CURATED",
+        "name": "Subscription Box - Curated",
+        "qty": 1,
+        "price": 28.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8401",
+    "customer_email": "yreed@example.com",
+    "created_at": "2026-09-03T20:01:00-07:00",
+    "currency": "USD",
+    "total_price": 22.5,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CUSTOM",
+        "name": "Subscription Box - Customize",
+        "qty": 1,
+        "price": 22.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8402",
+    "customer_email": "dwhite@example.org",
+    "created_at": "2026-09-03T12:43:00-04:00",
+    "currency": "USD",
+    "total_price": 28.0,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CURATED",
+        "name": "Subscription Box - Curated",
+        "qty": 1,
+        "price": 28.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8403",
+    "customer_email": "stricklandfrank@example.com",
+    "created_at": "2026-09-03T18:52:00-04:00",
+    "currency": "CAD",
+    "total_price": 59.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "GM-8OZ",
+        "name": "Ground Medium 8oz",
+        "qty": 2,
+        "price": 6.5
+      },
+      {
+        "sku": "MUG-CER",
+        "name": "Ceramic Mug",
+        "qty": 2,
+        "price": 12.0
+      },
+      {
+        "sku": "DRIPPER-01",
+        "name": "Pour-Over Dripper",
+        "qty": 1,
+        "price": 22.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8404",
+    "customer_email": "blakeerik@example.com",
+    "created_at": "2026-09-03T12:01:00-05:00",
+    "currency": "USD",
+    "total_price": 28.0,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CURATED",
+        "name": "Subscription Box - Curated",
+        "qty": 1,
+        "price": 28.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8405",
+    "customer_email": "ddavis@example.org",
+    "created_at": "2026-09-03T10:55:00-04:00",
+    "currency": "USD",
+    "total_price": 28.0,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CURATED",
+        "name": "Subscription Box - Curated",
+        "qty": 1,
+        "price": 28.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8406",
+    "customer_email": "yreed@example.com",
+    "created_at": "2026-09-03T22:54:00-07:00",
+    "currency": "USD",
+    "total_price": 22.5,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CUSTOM",
+        "name": "Subscription Box - Customize",
+        "qty": 1,
+        "price": 22.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8407",
+    "customer_email": "dwhite@example.org",
+    "created_at": "2026-09-03T14:06:00-07:00",
+    "currency": "USD",
+    "total_price": 28.0,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CURATED",
+        "name": "Subscription Box - Curated",
+        "qty": 1,
+        "price": 28.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8408",
+    "customer_email": "esanchez@example.com",
+    "created_at": "2026-09-03T16:57:00-04:00",
+    "currency": "USD",
+    "total_price": 89.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "LR-12OZ",
+        "name": "Light Roast 12oz",
+        "qty": 1,
+        "price": 15.0
+      },
+      {
+        "sku": "DR-12OZ",
+        "name": "Dark Roast 12oz",
+        "qty": 2,
+        "price": 16.0
+      },
+      {
+        "sku": "GRINDER-01",
+        "name": "Burr Grinder",
+        "qty": 1,
+        "price": 42.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8409",
+    "customer_email": "ujenkins@example.org",
+    "created_at": "2026-09-03T11:27:00-05:00",
+    "currency": "USD",
+    "total_price": 28.0,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CURATED",
+        "name": "Subscription Box - Curated",
+        "qty": 1,
+        "price": 28.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8410",
+    "customer_email": "samueldaniels@example.com",
+    "created_at": "2026-09-03T11:17:00-05:00",
+    "currency": "USD",
+    "total_price": 99.5,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "MR-12OZ",
+        "name": "Medium Roast 12oz",
+        "qty": 1,
+        "price": 15.5
+      },
+      {
+        "sku": "GRINDER-01",
+        "name": "Burr Grinder",
+        "qty": 2,
+        "price": 42.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8411",
+    "customer_email": "smoore@example.org",
+    "created_at": "2026-09-03T21:26:00-05:00",
+    "currency": "USD",
+    "total_price": 65.5,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "DRIPPER-01",
+        "name": "Pour-Over Dripper",
+        "qty": 2,
+        "price": 22.0
+      },
+      {
+        "sku": "GM-8OZ",
+        "name": "Ground Medium 8oz",
+        "qty": 1,
+        "price": 6.5
+      },
+      {
+        "sku": "LR-12OZ",
+        "name": "Light Roast 12oz",
+        "qty": 1,
+        "price": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8412",
+    "customer_email": "curtis61@example.com",
+    "created_at": "2026-09-03T06:19:00-04:00",
+    "currency": "USD",
+    "total_price": 28.0,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CURATED",
+        "name": "Subscription Box - Curated",
+        "qty": 1,
+        "price": 28.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8413",
+    "customer_email": "whitesandra@example.com",
+    "created_at": "2026-09-03T19:20:00-07:00",
+    "currency": "USD",
+    "total_price": 86.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "MUG-CER",
+        "name": "Ceramic Mug",
+        "qty": 1,
+        "price": 12.0
+      },
+      {
+        "sku": "GRINDER-01",
+        "name": "Burr Grinder",
+        "qty": 1,
+        "price": 42.0
+      },
+      {
+        "sku": "DR-12OZ",
+        "name": "Dark Roast 12oz",
+        "qty": 2,
+        "price": 16.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8414",
+    "customer_email": "samueldaniels@example.com",
+    "created_at": "2026-09-03T13:47:00-04:00",
+    "currency": "USD",
+    "total_price": 60.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "DR-12OZ",
+        "name": "Dark Roast 12oz",
+        "qty": 1,
+        "price": 16.0
+      },
+      {
+        "sku": "GM-8OZ",
+        "name": "Ground Medium 8oz",
+        "qty": 2,
+        "price": 6.5
+      },
+      {
+        "sku": "MR-12OZ",
+        "name": "Medium Roast 12oz",
+        "qty": 2,
+        "price": 15.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8415",
+    "customer_email": "johnsonjoshua@example.org",
+    "created_at": "2026-09-03T17:57:00-07:00",
+    "currency": "USD",
+    "total_price": 15.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "LR-12OZ",
+        "name": "Light Roast 12oz",
+        "qty": 1,
+        "price": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8416",
+    "customer_email": "harrisandrea@example.com",
+    "created_at": "2026-09-03T06:18:00-07:00",
+    "currency": "USD",
+    "total_price": 56.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "DRIPPER-01",
+        "name": "Pour-Over Dripper",
+        "qty": 2,
+        "price": 22.0
+      },
+      {
+        "sku": "MUG-CER",
+        "name": "Ceramic Mug",
+        "qty": 1,
+        "price": 12.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8417",
+    "customer_email": "ddavis@example.org",
+    "created_at": "2026-09-03T06:13:00-05:00",
+    "currency": "USD",
+    "total_price": 28.0,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CURATED",
+        "name": "Subscription Box - Curated",
+        "qty": 1,
+        "price": 28.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8418",
+    "customer_email": "michaeljones@example.net",
+    "created_at": "2026-09-03T13:12:00-04:00",
+    "currency": "USD",
+    "total_price": 70.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "LR-12OZ",
+        "name": "Light Roast 12oz",
+        "qty": 2,
+        "price": 15.0
+      },
+      {
+        "sku": "MUG-CER",
+        "name": "Ceramic Mug",
+        "qty": 2,
+        "price": 12.0
+      },
+      {
+        "sku": "DR-12OZ",
+        "name": "Dark Roast 12oz",
+        "qty": 1,
+        "price": 16.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8419",
+    "customer_email": "michelle45@example.net",
+    "created_at": "2026-09-03T18:12:00-04:00",
+    "currency": "USD",
+    "total_price": 54.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "MR-12OZ",
+        "name": "Medium Roast 12oz",
+        "qty": 2,
+        "price": 15.5
+      },
+      {
+        "sku": "MUG-CER",
+        "name": "Ceramic Mug",
+        "qty": 1,
+        "price": 12.0
+      },
+      {
+        "sku": "DR-8OZ",
+        "name": "Dark Roast 8oz",
+        "qty": 1,
+        "price": 11.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8420",
+    "customer_email": "zroberts@example.net",
+    "created_at": "2026-09-03T07:57:00-04:00",
+    "currency": "USD",
+    "total_price": 80.5,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "GM-8OZ",
+        "name": "Ground Medium 8oz",
+        "qty": 1,
+        "price": 6.5
+      },
+      {
+        "sku": "DRIPPER-01",
+        "name": "Pour-Over Dripper",
+        "qty": 2,
+        "price": 22.0
+      },
+      {
+        "sku": "LR-12OZ",
+        "name": "Light Roast 12oz",
+        "qty": 2,
+        "price": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "#8421",
+    "customer_email": "ujenkins@example.org",
+    "created_at": "2026-09-03T19:54:00-04:00",
+    "currency": "USD",
+    "total_price": 22.5,
+    "source_name": "recharge",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "SUB-CUSTOM",
+        "name": "Subscription Box - Customize",
+        "qty": 1,
+        "price": 22.5
+      }
+    ]
+  },
+  {
+    "order_id": "#8422",
+    "customer_email": "tholt@example.net",
+    "created_at": "2026-09-03T18:31:00-07:00",
+    "currency": "USD",
+    "total_price": 78.0,
+    "source_name": "web",
+    "financial_status": "paid",
+    "cancelled_at": null,
+    "refunds": [],
+    "line_items": [
+      {
+        "sku": "DR-8OZ",
+        "name": "Dark Roast 8oz",
+        "qty": 2,
+        "price": 11.0
+      },
+      {
+        "sku": "MUG-CER",
+        "name": "Ceramic Mug",
+        "qty": 1,
+        "price": 12.0
+      },
+      {
+        "sku": "DRIPPER-01",
+        "name": "Pour-Over Dripper",
+        "qty": 2,
+        "price": 22.0
+      }
+    ]
+  }
+]

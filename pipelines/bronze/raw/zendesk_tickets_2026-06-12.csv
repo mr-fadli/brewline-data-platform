@@ -1,4 +1,0 @@
-ticket_id,requester_email,subject,created_at,tags,related_order_id
-ZD-3012,whitesandra@example.com,Please cancel my subscription,2026-06-12T18:00:00+00:00,cancellation,
-ZD-3019,,Bag arrived crushed,2026-06-12T17:00:00+00:00,"damaged,refund_request",#5261
-ZD-3040,georgepamela@example.net,How do I pause my subscription?,2026-06-12T17:00:00+00:00,cancellation,#5526

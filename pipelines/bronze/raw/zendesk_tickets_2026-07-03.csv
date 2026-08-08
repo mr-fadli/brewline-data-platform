@@ -1,4 +1,0 @@
-ticket_id,requester_email,subject,created_at,tags,related_order_id
-ZD-3056,cruzcaitlin@example.com,Please cancel my subscription,2026-07-03T08:00:00+00:00,cancellation,#5115
-ZD-3064,,Box was soaked/damaged in transit,2026-07-03T09:00:00+00:00,"damaged,refund_request",
-ZD-3066,millerroy@example.com,Box was soaked/damaged in transit,2026-07-03T17:00:00+00:00,"damaged,refund_request",

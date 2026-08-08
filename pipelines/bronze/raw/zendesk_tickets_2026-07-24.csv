@@ -1,0 +1,4 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-4009,,"Wrong grind size sent, whole bean expected",2026-07-24T09:40:00-05:00,"quality,refund_request",#6554
+ZD-4010,yobrien@example.net,Coffee doesn't taste like what I ordered,2026-07-24T16:53:00-04:00,"quality,refund_request",#6560
+ZD-4023,agarcia@example.net,Where is my box??,2026-07-24T12:00:00+00:00,"shipping,frustrated",

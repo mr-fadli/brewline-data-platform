@@ -1,0 +1,4 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-4024,,Tracking hasn't updated in days,2026-08-01T10:00:00+00:00,"shipping,frustrated",#7708
+ZD-4036,tsanders@example.org,Box was soaked/damaged in transit,2026-08-01T13:00:00+00:00,"damaged,refund_request",#7279
+ZD-4037,ujenkins@example.org,Package says delivered but I don't have it,2026-08-01T21:00:00+00:00,"shipping,frustrated",#7533

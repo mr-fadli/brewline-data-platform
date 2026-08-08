@@ -1,0 +1,4 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-4015,,How do I pause my subscription?,2026-08-16T07:00:00+00:00,cancellation,
+ZD-4029,,How do I pause my subscription?,2026-08-16T21:00:00+00:00,cancellation,
+ZD-4052,sarayoung@example.org,Box was soaked/damaged in transit,2026-08-16T08:00:00+00:00,"damaged,refund_request",
