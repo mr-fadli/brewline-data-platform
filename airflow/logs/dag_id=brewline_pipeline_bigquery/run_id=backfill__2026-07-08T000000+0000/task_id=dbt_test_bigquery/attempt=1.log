@@ -1,0 +1,383 @@
+[2026-08-08T06:57:59.939+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-08-08T06:58:00.091+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: brewline_pipeline_bigquery.dbt_test_bigquery backfill__2026-07-08T00:00:00+00:00 [queued]>
+[2026-08-08T06:58:00.105+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: brewline_pipeline_bigquery.dbt_test_bigquery backfill__2026-07-08T00:00:00+00:00 [queued]>
+[2026-08-08T06:58:00.106+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2026-08-08T06:58:00.121+0000] {taskinstance.py:2890} INFO - Executing <Task(DockerOperator): dbt_test_bigquery> on 2026-07-08 00:00:00+00:00
+[2026-08-08T06:58:00.132+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=112) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-08-08T06:58:00.134+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'brewline_pipeline_bigquery', 'dbt_test_bigquery', 'backfill__2026-07-08T00:00:00+00:00', '--job-id', '6', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/brewline_pipeline_bigquery_dag.py', '--cfg-path', '/tmp/tmp657sd_0w']
+[2026-08-08T06:58:00.135+0000] {standard_task_runner.py:72} INFO - Started process 114 to run task
+[2026-08-08T06:58:00.135+0000] {standard_task_runner.py:105} INFO - Job 6: Subtask dbt_test_bigquery
+[2026-08-08T06:58:00.200+0000] {task_command.py:467} INFO - Running <TaskInstance: brewline_pipeline_bigquery.dbt_test_bigquery backfill__2026-07-08T00:00:00+00:00 [running]> on host f6fc5409cbb6
+[2026-08-08T06:58:00.293+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='brewline_pipeline_bigquery' AIRFLOW_CTX_TASK_ID='dbt_test_bigquery' AIRFLOW_CTX_EXECUTION_DATE='2026-07-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2026-07-08T00:00:00+00:00'
+[2026-08-08T06:58:00.296+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-08-08T06:58:00.297+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-08-08T06:58:00.298+0000] {logging_mixin.py:190} INFO - Current task name:dbt_test_bigquery state:running start_date:2026-08-08 06:58:00.094394+00:00
+[2026-08-08T06:58:00.298+0000] {logging_mixin.py:190} INFO - Dag name:brewline_pipeline_bigquery and current dag run status:running
+[2026-08-08T06:58:00.299+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-08-08T06:58:00.357+0000] {docker.py:345} INFO - Starting docker container from image brewline-dbt:latest
+[2026-08-08T06:58:02.915+0000] {docker.py:69} INFO - [0m06:58:02  Running with dbt=1.12.0
+[2026-08-08T06:58:03.389+0000] {docker.py:69} INFO - [0m06:58:03  Installing dbt-labs/dbt_utils
+[2026-08-08T06:58:08.224+0000] {docker.py:69} INFO - [0m06:58:08  Installed from version 1.4.1
+[2026-08-08T06:58:08.225+0000] {docker.py:69} INFO - [0m06:58:08  Up to date!
+[2026-08-08T06:58:11.227+0000] {docker.py:69} INFO - [0m06:58:11  Running with dbt=1.12.0
+[2026-08-08T06:58:12.371+0000] {docker.py:69} INFO - [0m06:58:12  Registered adapter: bigquery=1.12.0
+[2026-08-08T06:58:13.561+0000] {docker.py:69} INFO - [0m06:58:13  Found 9 models, 52 data tests, 2 seeds, 5 sources, 699 macros
+[2026-08-08T06:58:13.569+0000] {docker.py:69} INFO - [0m06:58:13
+[2026-08-08T06:58:13.570+0000] {docker.py:69} INFO - [0m06:58:13  Concurrency: 4 threads (target='bigquery')
+[2026-08-08T06:58:13.571+0000] {docker.py:69} INFO - [0m06:58:13
+[2026-08-08T06:58:13.590+0000] {docker.py:69} INFO - WARNING:google.auth._default:No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable
+[2026-08-08T06:58:13.591+0000] {docker.py:69} INFO - WARNING:google.auth._default:No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable
+[2026-08-08T06:58:13.975+0000] {docker.py:69} INFO - [0m06:58:13  1 of 52 START test accepted_values_fact_customer_health_customer_health__active__at_risk__churned  [RUN]
+[2026-08-08T06:58:13.977+0000] {docker.py:69} INFO - [0m06:58:13  2 of 52 START test accepted_values_fact_customer_rfm_frequency_score__False__1__2__3__4__5  [RUN]
+[2026-08-08T06:58:13.978+0000] {docker.py:69} INFO - [0m06:58:13  3 of 52 START test accepted_values_fact_customer_rfm_monetary_score__False__1__2__3__4__5  [RUN]
+[2026-08-08T06:58:13.979+0000] {docker.py:69} INFO - [0m06:58:13  4 of 52 START test accepted_values_fact_customer_rfm_recency_score__False__1__2__3__4__5  [RUN]
+[2026-08-08T06:58:14.828+0000] {docker.py:69} INFO - [0m06:58:14  2 of 52 PASS accepted_values_fact_customer_rfm_frequency_score__False__1__2__3__4__5  [[32mPASS[0m in 0.85s]
+[2026-08-08T06:58:14.838+0000] {docker.py:69} INFO - [0m06:58:14  3 of 52 PASS accepted_values_fact_customer_rfm_monetary_score__False__1__2__3__4__5  [[32mPASS[0m in 0.85s]
+[2026-08-08T06:58:14.839+0000] {docker.py:69} INFO - [0m06:58:14  5 of 52 START test accepted_values_fact_customer_rfm_tenure_bonus__False__0__1__2  [RUN]
+[2026-08-08T06:58:14.847+0000] {docker.py:69} INFO - [0m06:58:14  1 of 52 PASS accepted_values_fact_customer_health_customer_health__active__at_risk__churned  [[32mPASS[0m in 0.86s]
+[2026-08-08T06:58:14.853+0000] {docker.py:69} INFO - [0m06:58:14  6 of 52 START test accepted_values_fact_refund_alerts_alert_system__alert__normal  [RUN]
+[2026-08-08T06:58:14.865+0000] {docker.py:69} INFO - [0m06:58:14  7 of 52 START test accepted_values_fact_subscription_churn_churn_status__voluntarily_churned__involuntarily_churned__not_churned  [RUN]
+[2026-08-08T06:58:14.934+0000] {docker.py:69} INFO - [0m06:58:14  4 of 52 PASS accepted_values_fact_customer_rfm_recency_score__False__1__2__3__4__5  [[32mPASS[0m in 0.95s]
+[2026-08-08T06:58:14.945+0000] {docker.py:69} INFO - [0m06:58:14  8 of 52 START test accepted_values_fact_weekly_revenue_channel__retail__online_oneoff__subscription  [RUN]
+[2026-08-08T06:58:15.613+0000] {docker.py:69} INFO - [0m06:58:15  5 of 52 PASS accepted_values_fact_customer_rfm_tenure_bonus__False__0__1__2 .... [[32mPASS[0m in 0.77s]
+[2026-08-08T06:58:15.617+0000] {docker.py:69} INFO - [0m06:58:15  7 of 52 PASS accepted_values_fact_subscription_churn_churn_status__voluntarily_churned__involuntarily_churned__not_churned  [[32mPASS[0m in 0.75s]
+[2026-08-08T06:58:15.627+0000] {docker.py:69} INFO - [0m06:58:15  9 of 52 START test accepted_values_stg_customers_customer_type__online__loyalty__walk_in  [RUN]
+[2026-08-08T06:58:15.629+0000] {docker.py:69} INFO - [0m06:58:15  10 of 52 START test accepted_values_stg_orders_channel__retail__online_oneoff__subscription  [RUN]
+[2026-08-08T06:58:15.676+0000] {docker.py:69} INFO - [0m06:58:15  8 of 52 PASS accepted_values_fact_weekly_revenue_channel__retail__online_oneoff__subscription  [[32mPASS[0m in 0.72s]
+[2026-08-08T06:58:15.681+0000] {docker.py:69} INFO - [0m06:58:15  11 of 52 START test accepted_values_stg_subscriptions_customer_status__is_active__is_paused__is_voluntarily_cancelled__is_payment_failure_cancelled  [RUN]
+[2026-08-08T06:58:15.721+0000] {docker.py:69} INFO - [0m06:58:15  6 of 52 PASS accepted_values_fact_refund_alerts_alert_system__alert__normal .... [[32mPASS[0m in 0.86s]
+[2026-08-08T06:58:15.740+0000] {docker.py:69} INFO - [0m06:58:15  12 of 52 START test assert_cad_orders_are_converted ............................ [RUN]
+[2026-08-08T06:58:16.468+0000] {docker.py:69} INFO - [0m06:58:16  10 of 52 PASS accepted_values_stg_orders_channel__retail__online_oneoff__subscription  [[32mPASS[0m in 0.84s]
+[2026-08-08T06:58:16.472+0000] {docker.py:69} INFO - [0m06:58:16  13 of 52 START test assert_cad_refunds_are_converted ........................... [RUN]
+[2026-08-08T06:58:16.609+0000] {docker.py:69} INFO - [0m06:58:16  9 of 52 PASS accepted_values_stg_customers_customer_type__online__loyalty__walk_in  [[32mPASS[0m in 0.98s]
+[2026-08-08T06:58:16.629+0000] {docker.py:69} INFO - [0m06:58:16  11 of 52 PASS accepted_values_stg_subscriptions_customer_status__is_active__is_paused__is_voluntarily_cancelled__is_payment_failure_cancelled  [[32mPASS[0m in 0.95s]
+[2026-08-08T06:58:16.636+0000] {docker.py:69} INFO - [0m06:58:16  14 of 52 START test assert_no_duplicate_active_subscriptions ................... [RUN]
+[2026-08-08T06:58:16.640+0000] {docker.py:69} INFO - [0m06:58:16  15 of 52 START test assert_no_negative_days_since_last_order ................... [RUN]
+[2026-08-08T06:58:16.825+0000] {docker.py:69} INFO - [0m06:58:16  12 of 52 FAIL 4 assert_cad_orders_are_converted ................................ [[31mFAIL 4[0m in 1.08s]
+[2026-08-08T06:58:16.833+0000] {docker.py:69} INFO - [0m06:58:16  16 of 52 START test assert_reactivated_customers_not_churned ................... [RUN]
+[2026-08-08T06:58:17.326+0000] {docker.py:69} INFO - [0m06:58:17  15 of 52 PASS assert_no_negative_days_since_last_order ......................... [[32mPASS[0m in 0.68s]
+[2026-08-08T06:58:17.329+0000] {docker.py:69} INFO - [0m06:58:17  17 of 52 START test assert_refund_alerts_conserves_all_refunds ................. [RUN]
+[2026-08-08T06:58:17.341+0000] {docker.py:69} INFO - [0m06:58:17  14 of 52 PASS assert_no_duplicate_active_subscriptions ......................... [[32mPASS[0m in 0.70s]
+[2026-08-08T06:58:17.352+0000] {docker.py:69} INFO - [0m06:58:17  18 of 52 START test assert_rfm_total_score_is_sum_of_parts ..................... [RUN]
+[2026-08-08T06:58:17.413+0000] {docker.py:69} INFO - [0m06:58:17  13 of 52 PASS assert_cad_refunds_are_converted ................................. [[32mPASS[0m in 0.94s]
+[2026-08-08T06:58:17.417+0000] {docker.py:69} INFO - [0m06:58:17  19 of 52 START test assert_tenure_uses_full_subscription_history ............... [RUN]
+[2026-08-08T06:58:17.540+0000] {docker.py:69} INFO - [0m06:58:17  16 of 52 PASS assert_reactivated_customers_not_churned ......................... [[32mPASS[0m in 0.70s]
+[2026-08-08T06:58:17.546+0000] {docker.py:69} INFO - [0m06:58:17  20 of 52 START test assert_weekly_revenue_reconciles_to_orders ................. [RUN]
+[2026-08-08T06:58:18.002+0000] {docker.py:69} INFO - [0m06:58:18  18 of 52 PASS assert_rfm_total_score_is_sum_of_parts ........................... [[32mPASS[0m in 0.65s]
+[2026-08-08T06:58:18.006+0000] {docker.py:69} INFO - [0m06:58:18  21 of 52 START test not_null_fact_customer_health_customer_health .............. [RUN]
+[2026-08-08T06:58:18.061+0000] {docker.py:69} INFO - [0m06:58:18  17 of 52 PASS assert_refund_alerts_conserves_all_refunds ....................... [[32mPASS[0m in 0.73s]
+[2026-08-08T06:58:18.065+0000] {docker.py:69} INFO - [0m06:58:18  22 of 52 START test not_null_fact_customer_health_customer_key ................. [RUN]
+[2026-08-08T06:58:18.126+0000] {docker.py:69} INFO - [0m06:58:18  19 of 52 PASS assert_tenure_uses_full_subscription_history ..................... [[32mPASS[0m in 0.71s]
+[2026-08-08T06:58:18.129+0000] {docker.py:69} INFO - [0m06:58:18  23 of 52 START test not_null_fact_customer_health_days_since_last_order ........ [RUN]
+[2026-08-08T06:58:18.237+0000] {docker.py:69} INFO - [0m06:58:18  20 of 52 PASS assert_weekly_revenue_reconciles_to_orders ....................... [[32mPASS[0m in 0.69s]
+[2026-08-08T06:58:18.241+0000] {docker.py:69} INFO - [0m06:58:18  24 of 52 START test not_null_fact_customer_rfm_customer_key .................... [RUN]
+[2026-08-08T06:58:18.636+0000] {docker.py:69} INFO - [0m06:58:18  21 of 52 PASS not_null_fact_customer_health_customer_health .................... [[32mPASS[0m in 0.63s]
+[2026-08-08T06:58:18.640+0000] {docker.py:69} INFO - [0m06:58:18  25 of 52 START test not_null_fact_refund_alerts_alert_system ................... [RUN]
+[2026-08-08T06:58:18.785+0000] {docker.py:69} INFO - [0m06:58:18  23 of 52 PASS not_null_fact_customer_health_days_since_last_order .............. [[32mPASS[0m in 0.65s]
+[2026-08-08T06:58:18.791+0000] {docker.py:69} INFO - [0m06:58:18  26 of 52 START test not_null_fact_refund_alerts_day ............................ [RUN]
+[2026-08-08T06:58:18.897+0000] {docker.py:69} INFO - [0m06:58:18  22 of 52 PASS not_null_fact_customer_health_customer_key ....................... [[32mPASS[0m in 0.83s]
+[2026-08-08T06:58:18.904+0000] {docker.py:69} INFO - [0m06:58:18  27 of 52 START test not_null_fact_subscription_churn_churn_status .............. [RUN]
+[2026-08-08T06:58:18.909+0000] {docker.py:69} INFO - [0m06:58:18  24 of 52 PASS not_null_fact_customer_rfm_customer_key .......................... [[32mPASS[0m in 0.67s]
+[2026-08-08T06:58:18.923+0000] {docker.py:69} INFO - [0m06:58:18  28 of 52 START test not_null_fact_subscription_churn_customer_key .............. [RUN]
+[2026-08-08T06:58:19.347+0000] {docker.py:69} INFO - [0m06:58:19  25 of 52 PASS not_null_fact_refund_alerts_alert_system ......................... [[32mPASS[0m in 0.70s]
+[2026-08-08T06:58:19.351+0000] {docker.py:69} INFO - [0m06:58:19  29 of 52 START test not_null_fact_weekly_revenue_channel ....................... [RUN]
+[2026-08-08T06:58:19.467+0000] {docker.py:69} INFO - [0m06:58:19  26 of 52 PASS not_null_fact_refund_alerts_day .................................. [[32mPASS[0m in 0.67s]
+[2026-08-08T06:58:19.474+0000] {docker.py:69} INFO - [0m06:58:19  30 of 52 START test not_null_fact_weekly_revenue_total_revenue ................. [RUN]
+[2026-08-08T06:58:19.570+0000] {docker.py:69} INFO - [0m06:58:19  28 of 52 PASS not_null_fact_subscription_churn_customer_key .................... [[32mPASS[0m in 0.64s]
+[2026-08-08T06:58:19.573+0000] {docker.py:69} INFO - [0m06:58:19  31 of 52 START test not_null_fact_weekly_revenue_week_start_date ............... [RUN]
+[2026-08-08T06:58:19.598+0000] {docker.py:69} INFO - [0m06:58:19  27 of 52 PASS not_null_fact_subscription_churn_churn_status .................... [[32mPASS[0m in 0.69s]
+[2026-08-08T06:58:19.607+0000] {docker.py:69} INFO - [0m06:58:19  32 of 52 START test not_null_stg_customers_customer_key ........................ [RUN]
+[2026-08-08T06:58:20.039+0000] {docker.py:69} INFO - [0m06:58:20  29 of 52 PASS not_null_fact_weekly_revenue_channel ............................. [[32mPASS[0m in 0.68s]
+[2026-08-08T06:58:20.043+0000] {docker.py:69} INFO - [0m06:58:20  33 of 52 START test not_null_stg_customers_customer_type ....................... [RUN]
+[2026-08-08T06:58:20.185+0000] {docker.py:69} INFO - [0m06:58:20  30 of 52 PASS not_null_fact_weekly_revenue_total_revenue ....................... [[32mPASS[0m in 0.71s]
+[2026-08-08T06:58:20.193+0000] {docker.py:69} INFO - [0m06:58:20  34 of 52 START test not_null_stg_orders_amount_usd ............................. [RUN]
+[2026-08-08T06:58:20.251+0000] {docker.py:69} INFO - [0m06:58:20  31 of 52 PASS not_null_fact_weekly_revenue_week_start_date ..................... [[32mPASS[0m in 0.68s]
+[2026-08-08T06:58:20.256+0000] {docker.py:69} INFO - [0m06:58:20  35 of 52 START test not_null_stg_orders_channel ................................ [RUN]
+[2026-08-08T06:58:20.276+0000] {docker.py:69} INFO - [0m06:58:20  32 of 52 PASS not_null_stg_customers_customer_key .............................. [[32mPASS[0m in 0.67s]
+[2026-08-08T06:58:20.281+0000] {docker.py:69} INFO - [0m06:58:20  36 of 52 START test not_null_stg_orders_customer_key ........................... [RUN]
+[2026-08-08T06:58:20.738+0000] {docker.py:69} INFO - [0m06:58:20  33 of 52 PASS not_null_stg_customers_customer_type ............................. [[32mPASS[0m in 0.69s]
+[2026-08-08T06:58:20.742+0000] {docker.py:69} INFO - [0m06:58:20  37 of 52 START test not_null_stg_orders_order_id ............................... [RUN]
+[2026-08-08T06:58:20.876+0000] {docker.py:69} INFO - [0m06:58:20  34 of 52 PASS not_null_stg_orders_amount_usd ................................... [[32mPASS[0m in 0.68s]
+[2026-08-08T06:58:20.883+0000] {docker.py:69} INFO - [0m06:58:20  38 of 52 START test not_null_stg_refunds_amount_usd ............................ [RUN]
+[2026-08-08T06:58:20.980+0000] {docker.py:69} INFO - [0m06:58:20  35 of 52 PASS not_null_stg_orders_channel ...................................... [[32mPASS[0m in 0.72s]
+[2026-08-08T06:58:20.986+0000] {docker.py:69} INFO - [0m06:58:20  39 of 52 START test not_null_stg_refunds_order_id .............................. [RUN]
+[2026-08-08T06:58:21.012+0000] {docker.py:69} INFO - [0m06:58:21  36 of 52 PASS not_null_stg_orders_customer_key ................................. [[32mPASS[0m in 0.72s]
+[2026-08-08T06:58:21.018+0000] {docker.py:69} INFO - [0m06:58:21  40 of 52 START test not_null_stg_refunds_refund_id ............................. [RUN]
+[2026-08-08T06:58:21.468+0000] {docker.py:69} INFO - [0m06:58:21  37 of 52 PASS not_null_stg_orders_order_id ..................................... [[32mPASS[0m in 0.72s]
+[2026-08-08T06:58:21.474+0000] {docker.py:69} INFO - [0m06:58:21  41 of 52 START test not_null_stg_subscriptions_customer_status ................. [RUN]
+[2026-08-08T06:58:21.626+0000] {docker.py:69} INFO - [0m06:58:21  38 of 52 PASS not_null_stg_refunds_amount_usd .................................. [[32mPASS[0m in 0.74s]
+[2026-08-08T06:58:21.633+0000] {docker.py:69} INFO - [0m06:58:21  42 of 52 START test not_null_stg_subscriptions_subscription_id ................. [RUN]
+[2026-08-08T06:58:21.700+0000] {docker.py:69} INFO - [0m06:58:21  40 of 52 PASS not_null_stg_refunds_refund_id ................................... [[32mPASS[0m in 0.68s]
+[2026-08-08T06:58:21.706+0000] {docker.py:69} INFO - [0m06:58:21  43 of 52 START test relationships_stg_orders_customer_key__customer_key__ref_stg_customers_  [RUN]
+[2026-08-08T06:58:21.741+0000] {docker.py:69} INFO - [0m06:58:21  39 of 52 PASS not_null_stg_refunds_order_id .................................... [[32mPASS[0m in 0.75s]
+[2026-08-08T06:58:21.747+0000] {docker.py:69} INFO - [0m06:58:21  44 of 52 START test relationships_stg_refunds_order_id__order_id__ref_stg_orders_  [RUN]
+[2026-08-08T06:58:22.166+0000] {docker.py:69} INFO - [0m06:58:22  41 of 52 PASS not_null_stg_subscriptions_customer_status ....................... [[32mPASS[0m in 0.69s]
+[2026-08-08T06:58:22.170+0000] {docker.py:69} INFO - [0m06:58:22  45 of 52 START test unique_fact_customer_health_customer_key ................... [RUN]
+[2026-08-08T06:58:22.320+0000] {docker.py:69} INFO - [0m06:58:22  42 of 52 PASS not_null_stg_subscriptions_subscription_id ....................... [[32mPASS[0m in 0.69s]
+[2026-08-08T06:58:22.324+0000] {docker.py:69} INFO - [0m06:58:22  46 of 52 START test unique_fact_customer_rfm_customer_key ...................... [RUN]
+[2026-08-08T06:58:22.425+0000] {docker.py:69} INFO - [0m06:58:22  43 of 52 PASS relationships_stg_orders_customer_key__customer_key__ref_stg_customers_  [[32mPASS[0m in 0.72s]
+[2026-08-08T06:58:22.430+0000] {docker.py:69} INFO - [0m06:58:22  47 of 52 START test unique_fact_refund_alerts_day .............................. [RUN]
+[2026-08-08T06:58:22.479+0000] {docker.py:69} INFO - [0m06:58:22  44 of 52 PASS relationships_stg_refunds_order_id__order_id__ref_stg_orders_ .... [[32mPASS[0m in 0.73s]
+[2026-08-08T06:58:22.488+0000] {docker.py:69} INFO - [0m06:58:22  48 of 52 START test unique_fact_subscription_churn_customer_key ................ [RUN]
+[2026-08-08T06:58:22.831+0000] {docker.py:69} INFO - [0m06:58:22  45 of 52 PASS unique_fact_customer_health_customer_key ......................... [[32mPASS[0m in 0.66s]
+[2026-08-08T06:58:22.834+0000] {docker.py:69} INFO - [0m06:58:22  49 of 52 START test unique_stg_customers_customer_key .......................... [RUN]
+[2026-08-08T06:58:22.984+0000] {docker.py:69} INFO - [0m06:58:22  46 of 52 PASS unique_fact_customer_rfm_customer_key ............................ [[32mPASS[0m in 0.66s]
+[2026-08-08T06:58:22.988+0000] {docker.py:69} INFO - [0m06:58:22  50 of 52 START test unique_stg_orders_order_id ................................. [RUN]
+[2026-08-08T06:58:23.136+0000] {docker.py:69} INFO - [0m06:58:23  47 of 52 PASS unique_fact_refund_alerts_day .................................... [[32mPASS[0m in 0.70s]
+[2026-08-08T06:58:23.139+0000] {docker.py:69} INFO - [0m06:58:23  51 of 52 START test unique_stg_refunds_refund_id ............................... [RUN]
+[2026-08-08T06:58:23.177+0000] {docker.py:69} INFO - [0m06:58:23  48 of 52 PASS unique_fact_subscription_churn_customer_key ...................... [[32mPASS[0m in 0.69s]
+[2026-08-08T06:58:23.180+0000] {docker.py:69} INFO - [0m06:58:23  52 of 52 START test unique_stg_subscriptions_subscription_id ................... [RUN]
+[2026-08-08T06:58:23.475+0000] {docker.py:69} INFO - [0m06:58:23  49 of 52 PASS unique_stg_customers_customer_key ................................ [[32mPASS[0m in 0.64s]
+[2026-08-08T06:58:23.640+0000] {docker.py:69} INFO - [0m06:58:23  50 of 52 PASS unique_stg_orders_order_id ....................................... [[32mPASS[0m in 0.65s]
+[2026-08-08T06:58:23.769+0000] {docker.py:69} INFO - [0m06:58:23  51 of 52 PASS unique_stg_refunds_refund_id ..................................... [[32mPASS[0m in 0.63s]
+[2026-08-08T06:58:23.819+0000] {docker.py:69} INFO - [0m06:58:23  52 of 52 PASS unique_stg_subscriptions_subscription_id ......................... [[32mPASS[0m in 0.64s]
+[2026-08-08T06:58:23.829+0000] {docker.py:69} INFO - [0m06:58:23
+[2026-08-08T06:58:23.830+0000] {docker.py:69} INFO - [0m06:58:23  Finished running 52 data tests in 0 hours 0 minutes and 10.26 seconds (10.26s).
+[2026-08-08T06:58:23.974+0000] {docker.py:69} INFO - [0m06:58:23
+[2026-08-08T06:58:23.975+0000] {docker.py:69} INFO - [0m06:58:23  [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[2026-08-08T06:58:23.976+0000] {docker.py:69} INFO - [0m06:58:23
+[2026-08-08T06:58:23.977+0000] {docker.py:69} INFO - [0m06:58:23  [[31mERROR[0m]: in test assert_cad_orders_are_converted (tests/assert_cad_orders_are_converted.sql)
+[2026-08-08T06:58:23.979+0000] {docker.py:69} INFO - [0m06:58:23    Got 4 results, configured to fail if != 0
+[2026-08-08T06:58:23.980+0000] {docker.py:69} INFO - [0m06:58:23
+[2026-08-08T06:58:23.981+0000] {docker.py:69} INFO - [0m06:58:23    compiled code at target/compiled/brewline_dbt/tests/assert_cad_orders_are_converted.sql
+[2026-08-08T06:58:23.982+0000] {docker.py:69} INFO - [0m06:58:23
+[2026-08-08T06:58:23.983+0000] {docker.py:69} INFO - [0m06:58:23  Done. PASS=51 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=52
+[2026-08-08T06:58:25.712+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 485, in execute
+    return self._run_image()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 362, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 419, in _run_image_with_mounts
+    raise DockerContainerFailedException(f"Docker container failed: {result!r}", logs=log_lines)
+airflow.providers.docker.exceptions.DockerContainerFailedException: Docker container failed: {'StatusCode': 1}
+[2026-08-08T06:58:25.720+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2026-08-08T06:58:25.722+0000] {logging_mixin.py:190} INFO - Task start:2026-08-08 06:58:00.094394+00:00 end:2026-08-08 06:58:25.719955+00:00 duration:25.625561
+[2026-08-08T06:58:25.723+0000] {logging_mixin.py:190} INFO - Task:<Task(DockerOperator): dbt_test_bigquery> dag:<DAG: brewline_pipeline_bigquery> dagrun:<DagRun brewline_pipeline_bigquery @ 2026-07-08 00:00:00+00:00: backfill__2026-07-08T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>
+[2026-08-08T06:58:25.725+0000] {logging_mixin.py:190} INFO - Failure caused by Docker container failed: {'StatusCode': 1}
+[2026-08-08T06:58:25.726+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=brewline_pipeline_bigquery, task_id=dbt_test_bigquery, run_id=backfill__2026-07-08T00:00:00+00:00, execution_date=20260708T000000, start_date=20260808T065800, end_date=20260808T065825
+[2026-08-08T06:58:25.770+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-08-08T06:58:25.771+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 6 for task dbt_test_bigquery (Docker container failed: {'StatusCode': 1}; 114)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 485, in execute
+    return self._run_image()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 362, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 419, in _run_image_with_mounts
+    raise DockerContainerFailedException(f"Docker container failed: {result!r}", logs=log_lines)
+airflow.providers.docker.exceptions.DockerContainerFailedException: Docker container failed: {'StatusCode': 1}
+[2026-08-08T06:58:25.830+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-08-08T06:58:25.845+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-08T06:58:25.847+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-08-11T05:33:13.062+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-08-11T05:33:13.088+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: brewline_pipeline_bigquery.dbt_test_bigquery backfill__2026-07-08T00:00:00+00:00 [queued]>
+[2026-08-11T05:33:13.100+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: brewline_pipeline_bigquery.dbt_test_bigquery backfill__2026-07-08T00:00:00+00:00 [queued]>
+[2026-08-11T05:33:13.101+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2026-08-11T05:33:13.116+0000] {taskinstance.py:2890} INFO - Executing <Task(DockerOperator): dbt_test_bigquery> on 2026-07-08 00:00:00+00:00
+[2026-08-11T05:33:13.127+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=847) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-08-11T05:33:13.129+0000] {standard_task_runner.py:72} INFO - Started process 849 to run task
+[2026-08-11T05:33:13.129+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'brewline_pipeline_bigquery', 'dbt_test_bigquery', 'backfill__2026-07-08T00:00:00+00:00', '--job-id', '73', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/brewline_pipeline_bigquery_dag.py', '--cfg-path', '/tmp/tmpyc33xvny']
+[2026-08-11T05:33:13.130+0000] {standard_task_runner.py:105} INFO - Job 73: Subtask dbt_test_bigquery
+[2026-08-11T05:33:13.201+0000] {task_command.py:467} INFO - Running <TaskInstance: brewline_pipeline_bigquery.dbt_test_bigquery backfill__2026-07-08T00:00:00+00:00 [running]> on host 5224a343584d
+[2026-08-11T05:33:13.295+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='brewline_pipeline_bigquery' AIRFLOW_CTX_TASK_ID='dbt_test_bigquery' AIRFLOW_CTX_EXECUTION_DATE='2026-07-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='backfill__2026-07-08T00:00:00+00:00'
+[2026-08-11T05:33:13.297+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-08-11T05:33:13.298+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-08-11T05:33:13.303+0000] {logging_mixin.py:190} INFO - Current task name:dbt_test_bigquery state:running start_date:2026-08-11 05:33:13.089624+00:00
+[2026-08-11T05:33:13.304+0000] {logging_mixin.py:190} INFO - Dag name:brewline_pipeline_bigquery and current dag run status:running
+[2026-08-11T05:33:13.305+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-08-11T05:33:13.371+0000] {docker.py:345} INFO - Starting docker container from image brewline-dbt:latest
+[2026-08-11T05:33:16.675+0000] {docker.py:69} INFO - [0m05:33:16  Running with dbt=1.12.0
+[2026-08-11T05:33:17.297+0000] {docker.py:69} INFO - [0m05:33:17  Installing dbt-labs/dbt_utils
+[2026-08-11T05:33:23.600+0000] {docker.py:69} INFO - [0m05:33:23  Installed from version 1.4.1
+[2026-08-11T05:33:23.607+0000] {docker.py:69} INFO - [0m05:33:23  Up to date!
+[2026-08-11T05:33:28.447+0000] {docker.py:69} INFO - [0m05:33:28  Running with dbt=1.12.0
+[2026-08-11T05:33:30.390+0000] {docker.py:69} INFO - [0m05:33:30  Registered adapter: bigquery=1.12.0
+[2026-08-11T05:33:31.789+0000] {docker.py:69} INFO - [0m05:33:31  Found 9 models, 52 data tests, 2 seeds, 5 sources, 699 macros
+[2026-08-11T05:33:31.796+0000] {docker.py:69} INFO - [0m05:33:31
+[2026-08-11T05:33:31.798+0000] {docker.py:69} INFO - [0m05:33:31  Concurrency: 4 threads (target='bigquery')
+[2026-08-11T05:33:31.800+0000] {docker.py:69} INFO - [0m05:33:31
+[2026-08-11T05:33:31.824+0000] {docker.py:69} INFO - WARNING:google.auth._default:No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable
+[2026-08-11T05:33:31.825+0000] {docker.py:69} INFO - WARNING:google.auth._default:No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable
+[2026-08-11T05:33:32.212+0000] {docker.py:69} INFO - [0m05:33:32  1 of 52 START test accepted_values_fact_customer_health_customer_health__active__at_risk__churned  [RUN]
+[2026-08-11T05:33:32.214+0000] {docker.py:69} INFO - [0m05:33:32  2 of 52 START test accepted_values_fact_customer_rfm_frequency_score__False__1__2__3__4__5  [RUN]
+[2026-08-11T05:33:32.215+0000] {docker.py:69} INFO - [0m05:33:32  3 of 52 START test accepted_values_fact_customer_rfm_monetary_score__False__1__2__3__4__5  [RUN]
+[2026-08-11T05:33:32.217+0000] {docker.py:69} INFO - [0m05:33:32  4 of 52 START test accepted_values_fact_customer_rfm_recency_score__False__1__2__3__4__5  [RUN]
+[2026-08-11T05:33:33.057+0000] {docker.py:69} INFO - [0m05:33:33  3 of 52 PASS accepted_values_fact_customer_rfm_monetary_score__False__1__2__3__4__5  [[32mPASS[0m in 0.84s]
+[2026-08-11T05:33:33.065+0000] {docker.py:69} INFO - [0m05:33:33  1 of 52 PASS accepted_values_fact_customer_health_customer_health__active__at_risk__churned  [[32mPASS[0m in 0.85s]
+[2026-08-11T05:33:33.072+0000] {docker.py:69} INFO - [0m05:33:33  4 of 52 PASS accepted_values_fact_customer_rfm_recency_score__False__1__2__3__4__5  [[32mPASS[0m in 0.84s]
+[2026-08-11T05:33:33.073+0000] {docker.py:69} INFO - [0m05:33:33  2 of 52 PASS accepted_values_fact_customer_rfm_frequency_score__False__1__2__3__4__5  [[32mPASS[0m in 0.85s]
+[2026-08-11T05:33:33.074+0000] {docker.py:69} INFO - [0m05:33:33  5 of 52 START test accepted_values_fact_customer_rfm_tenure_bonus__False__0__1__2  [RUN]
+[2026-08-11T05:33:33.083+0000] {docker.py:69} INFO - [0m05:33:33  6 of 52 START test accepted_values_fact_refund_alerts_alert_system__alert__normal  [RUN]
+[2026-08-11T05:33:33.084+0000] {docker.py:69} INFO - [0m05:33:33  7 of 52 START test accepted_values_fact_subscription_churn_churn_status__voluntarily_churned__involuntarily_churned__not_churned  [RUN]
+[2026-08-11T05:33:33.085+0000] {docker.py:69} INFO - [0m05:33:33  8 of 52 START test accepted_values_fact_weekly_revenue_channel__retail__online_oneoff__subscription  [RUN]
+[2026-08-11T05:33:33.835+0000] {docker.py:69} INFO - [0m05:33:33  6 of 52 PASS accepted_values_fact_refund_alerts_alert_system__alert__normal .... [[32mPASS[0m in 0.74s]
+[2026-08-11T05:33:33.842+0000] {docker.py:69} INFO - [0m05:33:33  8 of 52 PASS accepted_values_fact_weekly_revenue_channel__retail__online_oneoff__subscription  [[32mPASS[0m in 0.74s]
+[2026-08-11T05:33:33.843+0000] {docker.py:69} INFO - [0m05:33:33  9 of 52 START test accepted_values_stg_customers_customer_type__online__loyalty__walk_in  [RUN]
+[2026-08-11T05:33:33.849+0000] {docker.py:69} INFO - [0m05:33:33  10 of 52 START test accepted_values_stg_orders_channel__retail__online_oneoff__subscription  [RUN]
+[2026-08-11T05:33:34.017+0000] {docker.py:69} INFO - [0m05:33:34  5 of 52 PASS accepted_values_fact_customer_rfm_tenure_bonus__False__0__1__2 .... [[32mPASS[0m in 0.94s]
+[2026-08-11T05:33:34.028+0000] {docker.py:69} INFO - [0m05:33:34  7 of 52 PASS accepted_values_fact_subscription_churn_churn_status__voluntarily_churned__involuntarily_churned__not_churned  [[32mPASS[0m in 0.93s]
+[2026-08-11T05:33:34.031+0000] {docker.py:69} INFO - [0m05:33:34  11 of 52 START test accepted_values_stg_subscriptions_customer_status__is_active__is_paused__is_voluntarily_cancelled__is_payment_failure_cancelled  [RUN]
+[2026-08-11T05:33:34.042+0000] {docker.py:69} INFO - [0m05:33:34  12 of 52 START test assert_cad_orders_are_converted ............................ [RUN]
+[2026-08-11T05:33:34.605+0000] {docker.py:69} INFO - [0m05:33:34  10 of 52 PASS accepted_values_stg_orders_channel__retail__online_oneoff__subscription  [[32mPASS[0m in 0.74s]
+[2026-08-11T05:33:34.611+0000] {docker.py:69} INFO - [0m05:33:34  13 of 52 START test assert_cad_refunds_are_converted ........................... [RUN]
+[2026-08-11T05:33:34.614+0000] {docker.py:69} INFO - [0m05:33:34  9 of 52 PASS accepted_values_stg_customers_customer_type__online__loyalty__walk_in  [[32mPASS[0m in 0.77s]
+[2026-08-11T05:33:34.624+0000] {docker.py:69} INFO - [0m05:33:34  14 of 52 START test assert_no_duplicate_active_subscriptions ................... [RUN]
+[2026-08-11T05:33:34.754+0000] {docker.py:69} INFO - [0m05:33:34  12 of 52 PASS assert_cad_orders_are_converted .................................. [[32mPASS[0m in 0.70s]
+[2026-08-11T05:33:34.759+0000] {docker.py:69} INFO - [0m05:33:34  15 of 52 START test assert_no_negative_days_since_last_order ................... [RUN]
+[2026-08-11T05:33:34.781+0000] {docker.py:69} INFO - [0m05:33:34  11 of 52 PASS accepted_values_stg_subscriptions_customer_status__is_active__is_paused__is_voluntarily_cancelled__is_payment_failure_cancelled  [[32mPASS[0m in 0.74s]
+[2026-08-11T05:33:34.791+0000] {docker.py:69} INFO - [0m05:33:34  16 of 52 START test assert_reactivated_customers_not_churned ................... [RUN]
+[2026-08-11T05:33:35.327+0000] {docker.py:69} INFO - [0m05:33:35  13 of 52 PASS assert_cad_refunds_are_converted ................................. [[32mPASS[0m in 0.71s]
+[2026-08-11T05:33:35.332+0000] {docker.py:69} INFO - [0m05:33:35  17 of 52 START test assert_refund_alerts_conserves_all_refunds ................. [RUN]
+[2026-08-11T05:33:35.335+0000] {docker.py:69} INFO - [0m05:33:35  14 of 52 PASS assert_no_duplicate_active_subscriptions ......................... [[32mPASS[0m in 0.71s]
+[2026-08-11T05:33:35.344+0000] {docker.py:69} INFO - [0m05:33:35  18 of 52 START test assert_rfm_total_score_is_sum_of_parts ..................... [RUN]
+[2026-08-11T05:33:35.419+0000] {docker.py:69} INFO - [0m05:33:35  15 of 52 PASS assert_no_negative_days_since_last_order ......................... [[32mPASS[0m in 0.66s]
+[2026-08-11T05:33:35.423+0000] {docker.py:69} INFO - [0m05:33:35  19 of 52 START test assert_tenure_uses_full_subscription_history ............... [RUN]
+[2026-08-11T05:33:35.447+0000] {docker.py:69} INFO - [0m05:33:35  16 of 52 PASS assert_reactivated_customers_not_churned ......................... [[32mPASS[0m in 0.65s]
+[2026-08-11T05:33:35.457+0000] {docker.py:69} INFO - [0m05:33:35  20 of 52 START test assert_weekly_revenue_reconciles_to_orders ................. [RUN]
+[2026-08-11T05:33:36.028+0000] {docker.py:69} INFO - [0m05:33:36  18 of 52 PASS assert_rfm_total_score_is_sum_of_parts ........................... [[32mPASS[0m in 0.68s]
+[2026-08-11T05:33:36.034+0000] {docker.py:69} INFO - [0m05:33:36  21 of 52 START test not_null_fact_customer_health_customer_health .............. [RUN]
+[2026-08-11T05:33:36.193+0000] {docker.py:69} INFO - [0m05:33:36  17 of 52 PASS assert_refund_alerts_conserves_all_refunds ....................... [[32mPASS[0m in 0.85s]
+[2026-08-11T05:33:36.209+0000] {docker.py:69} INFO - [0m05:33:36  22 of 52 START test not_null_fact_customer_health_customer_key ................. [RUN]
+[2026-08-11T05:33:36.280+0000] {docker.py:69} INFO - [0m05:33:36  20 of 52 PASS assert_weekly_revenue_reconciles_to_orders ....................... [[32mPASS[0m in 0.82s]
+[2026-08-11T05:33:36.299+0000] {docker.py:69} INFO - [0m05:33:36  19 of 52 PASS assert_tenure_uses_full_subscription_history ..................... [[32mPASS[0m in 0.87s]
+[2026-08-11T05:33:36.306+0000] {docker.py:69} INFO - [0m05:33:36  23 of 52 START test not_null_fact_customer_health_days_since_last_order ........ [RUN]
+[2026-08-11T05:33:36.312+0000] {docker.py:69} INFO - [0m05:33:36  24 of 52 START test not_null_fact_customer_rfm_customer_key .................... [RUN]
+[2026-08-11T05:33:37.056+0000] {docker.py:69} INFO - [0m05:33:37  21 of 52 PASS not_null_fact_customer_health_customer_health .................... [[32mPASS[0m in 1.02s]
+[2026-08-11T05:33:37.068+0000] {docker.py:69} INFO - [0m05:33:37  25 of 52 START test not_null_fact_refund_alerts_alert_system ................... [RUN]
+[2026-08-11T05:33:37.073+0000] {docker.py:69} INFO - [0m05:33:37  24 of 52 PASS not_null_fact_customer_rfm_customer_key .......................... [[32mPASS[0m in 0.75s]
+[2026-08-11T05:33:37.086+0000] {docker.py:69} INFO - [0m05:33:37  22 of 52 PASS not_null_fact_customer_health_customer_key ....................... [[32mPASS[0m in 0.86s]
+[2026-08-11T05:33:37.091+0000] {docker.py:69} INFO - [0m05:33:37  23 of 52 PASS not_null_fact_customer_health_days_since_last_order .............. [[32mPASS[0m in 0.77s]
+[2026-08-11T05:33:37.111+0000] {docker.py:69} INFO - [0m05:33:37  26 of 52 START test not_null_fact_refund_alerts_day ............................ [RUN]
+[2026-08-11T05:33:37.115+0000] {docker.py:69} INFO - [0m05:33:37  27 of 52 START test not_null_fact_subscription_churn_churn_status .............. [RUN]
+[2026-08-11T05:33:37.119+0000] {docker.py:69} INFO - [0m05:33:37  28 of 52 START test not_null_fact_subscription_churn_customer_key .............. [RUN]
+[2026-08-11T05:33:37.826+0000] {docker.py:69} INFO - [0m05:33:37  25 of 52 PASS not_null_fact_refund_alerts_alert_system ......................... [[32mPASS[0m in 0.75s]
+[2026-08-11T05:33:37.829+0000] {docker.py:69} INFO - [0m05:33:37  29 of 52 START test not_null_fact_weekly_revenue_channel ....................... [RUN]
+[2026-08-11T05:33:37.850+0000] {docker.py:69} INFO - [0m05:33:37  26 of 52 PASS not_null_fact_refund_alerts_day .................................. [[32mPASS[0m in 0.73s]
+[2026-08-11T05:33:37.855+0000] {docker.py:69} INFO - [0m05:33:37  30 of 52 START test not_null_fact_weekly_revenue_total_revenue ................. [RUN]
+[2026-08-11T05:33:37.868+0000] {docker.py:69} INFO - [0m05:33:37  27 of 52 PASS not_null_fact_subscription_churn_churn_status .................... [[32mPASS[0m in 0.75s]
+[2026-08-11T05:33:37.889+0000] {docker.py:69} INFO - [0m05:33:37  28 of 52 PASS not_null_fact_subscription_churn_customer_key .................... [[32mPASS[0m in 0.76s]
+[2026-08-11T05:33:37.895+0000] {docker.py:69} INFO - [0m05:33:37  31 of 52 START test not_null_fact_weekly_revenue_week_start_date ............... [RUN]
+[2026-08-11T05:33:37.911+0000] {docker.py:69} INFO - [0m05:33:37  32 of 52 START test not_null_stg_customers_customer_key ........................ [RUN]
+[2026-08-11T05:33:38.555+0000] {docker.py:69} INFO - [0m05:33:38  29 of 52 PASS not_null_fact_weekly_revenue_channel ............................. [[32mPASS[0m in 0.72s]
+[2026-08-11T05:33:38.566+0000] {docker.py:69} INFO - [0m05:33:38  33 of 52 START test not_null_stg_customers_customer_type ....................... [RUN]
+[2026-08-11T05:33:38.608+0000] {docker.py:69} INFO - [0m05:33:38  31 of 52 PASS not_null_fact_weekly_revenue_week_start_date ..................... [[32mPASS[0m in 0.71s]
+[2026-08-11T05:33:38.623+0000] {docker.py:69} INFO - [0m05:33:38  32 of 52 PASS not_null_stg_customers_customer_key .............................. [[32mPASS[0m in 0.70s]
+[2026-08-11T05:33:38.625+0000] {docker.py:69} INFO - [0m05:33:38  34 of 52 START test not_null_stg_orders_amount_usd ............................. [RUN]
+[2026-08-11T05:33:38.636+0000] {docker.py:69} INFO - [0m05:33:38  35 of 52 START test not_null_stg_orders_channel ................................ [RUN]
+[2026-08-11T05:33:38.640+0000] {docker.py:69} INFO - [0m05:33:38  30 of 52 PASS not_null_fact_weekly_revenue_total_revenue ....................... [[32mPASS[0m in 0.78s]
+[2026-08-11T05:33:38.678+0000] {docker.py:69} INFO - [0m05:33:38  36 of 52 START test not_null_stg_orders_customer_key ........................... [RUN]
+[2026-08-11T05:33:39.302+0000] {docker.py:69} INFO - [0m05:33:39  33 of 52 PASS not_null_stg_customers_customer_type ............................. [[32mPASS[0m in 0.73s]
+[2026-08-11T05:33:39.313+0000] {docker.py:69} INFO - [0m05:33:39  37 of 52 START test not_null_stg_orders_order_id ............................... [RUN]
+[2026-08-11T05:33:39.374+0000] {docker.py:69} INFO - [0m05:33:39  35 of 52 PASS not_null_stg_orders_channel ...................................... [[32mPASS[0m in 0.72s]
+[2026-08-11T05:33:39.397+0000] {docker.py:69} INFO - [0m05:33:39  34 of 52 PASS not_null_stg_orders_amount_usd ................................... [[32mPASS[0m in 0.77s]
+[2026-08-11T05:33:39.399+0000] {docker.py:69} INFO - [0m05:33:39  38 of 52 START test not_null_stg_refunds_amount_usd ............................ [RUN]
+[2026-08-11T05:33:39.412+0000] {docker.py:69} INFO - [0m05:33:39  39 of 52 START test not_null_stg_refunds_order_id .............................. [RUN]
+[2026-08-11T05:33:39.415+0000] {docker.py:69} INFO - [0m05:33:39  36 of 52 PASS not_null_stg_orders_customer_key ................................. [[32mPASS[0m in 0.73s]
+[2026-08-11T05:33:39.452+0000] {docker.py:69} INFO - [0m05:33:39  40 of 52 START test not_null_stg_refunds_refund_id ............................. [RUN]
+[2026-08-11T05:33:40.051+0000] {docker.py:69} INFO - [0m05:33:40  37 of 52 PASS not_null_stg_orders_order_id ..................................... [[32mPASS[0m in 0.74s]
+[2026-08-11T05:33:40.056+0000] {docker.py:69} INFO - [0m05:33:40  41 of 52 START test not_null_stg_subscriptions_customer_status ................. [RUN]
+[2026-08-11T05:33:40.163+0000] {docker.py:69} INFO - [0m05:33:40  39 of 52 PASS not_null_stg_refunds_order_id .................................... [[32mPASS[0m in 0.73s]
+[2026-08-11T05:33:40.171+0000] {docker.py:69} INFO - [0m05:33:40  42 of 52 START test not_null_stg_subscriptions_subscription_id ................. [RUN]
+[2026-08-11T05:33:40.180+0000] {docker.py:69} INFO - [0m05:33:40  40 of 52 PASS not_null_stg_refunds_refund_id ................................... [[32mPASS[0m in 0.72s]
+[2026-08-11T05:33:40.184+0000] {docker.py:69} INFO - [0m05:33:40  38 of 52 PASS not_null_stg_refunds_amount_usd .................................. [[32mPASS[0m in 0.78s]
+[2026-08-11T05:33:40.202+0000] {docker.py:69} INFO - [0m05:33:40  43 of 52 START test relationships_stg_orders_customer_key__customer_key__ref_stg_customers_  [RUN]
+[2026-08-11T05:33:40.204+0000] {docker.py:69} INFO - [0m05:33:40  44 of 52 START test relationships_stg_refunds_order_id__order_id__ref_stg_orders_  [RUN]
+[2026-08-11T05:33:40.823+0000] {docker.py:69} INFO - [0m05:33:40  41 of 52 PASS not_null_stg_subscriptions_customer_status ....................... [[32mPASS[0m in 0.76s]
+[2026-08-11T05:33:40.829+0000] {docker.py:69} INFO - [0m05:33:40  45 of 52 START test unique_fact_customer_health_customer_key ................... [RUN]
+[2026-08-11T05:33:40.944+0000] {docker.py:69} INFO - [0m05:33:40  42 of 52 PASS not_null_stg_subscriptions_subscription_id ....................... [[32mPASS[0m in 0.76s]
+[2026-08-11T05:33:40.952+0000] {docker.py:69} INFO - [0m05:33:40  46 of 52 START test unique_fact_customer_rfm_customer_key ...................... [RUN]
+[2026-08-11T05:33:40.986+0000] {docker.py:69} INFO - [0m05:33:40  44 of 52 PASS relationships_stg_refunds_order_id__order_id__ref_stg_orders_ .... [[32mPASS[0m in 0.78s]
+[2026-08-11T05:33:41.002+0000] {docker.py:69} INFO - [0m05:33:40  43 of 52 PASS relationships_stg_orders_customer_key__customer_key__ref_stg_customers_  [[32mPASS[0m in 0.79s]
+[2026-08-11T05:33:41.004+0000] {docker.py:69} INFO - [0m05:33:41  47 of 52 START test unique_fact_refund_alerts_day .............................. [RUN]
+[2026-08-11T05:33:41.040+0000] {docker.py:69} INFO - [0m05:33:41  48 of 52 START test unique_fact_subscription_churn_customer_key ................ [RUN]
+[2026-08-11T05:33:41.555+0000] {docker.py:69} INFO - [0m05:33:41  45 of 52 PASS unique_fact_customer_health_customer_key ......................... [[32mPASS[0m in 0.72s]
+[2026-08-11T05:33:41.561+0000] {docker.py:69} INFO - [0m05:33:41  49 of 52 START test unique_stg_customers_customer_key .......................... [RUN]
+[2026-08-11T05:33:41.702+0000] {docker.py:69} INFO - [0m05:33:41  46 of 52 PASS unique_fact_customer_rfm_customer_key ............................ [[32mPASS[0m in 0.75s]
+[2026-08-11T05:33:41.707+0000] {docker.py:69} INFO - [0m05:33:41  50 of 52 START test unique_stg_orders_order_id ................................. [RUN]
+[2026-08-11T05:33:41.757+0000] {docker.py:69} INFO - [0m05:33:41  48 of 52 PASS unique_fact_subscription_churn_customer_key ...................... [[32mPASS[0m in 0.71s]
+[2026-08-11T05:33:41.763+0000] {docker.py:69} INFO - [0m05:33:41  51 of 52 START test unique_stg_refunds_refund_id ............................... [RUN]
+[2026-08-11T05:33:41.818+0000] {docker.py:69} INFO - [0m05:33:41  47 of 52 PASS unique_fact_refund_alerts_day .................................... [[32mPASS[0m in 0.81s]
+[2026-08-11T05:33:41.824+0000] {docker.py:69} INFO - [0m05:33:41  52 of 52 START test unique_stg_subscriptions_subscription_id ................... [RUN]
+[2026-08-11T05:33:42.239+0000] {docker.py:69} INFO - [0m05:33:42  49 of 52 PASS unique_stg_customers_customer_key ................................ [[32mPASS[0m in 0.68s]
+[2026-08-11T05:33:42.381+0000] {docker.py:69} INFO - [0m05:33:42  50 of 52 PASS unique_stg_orders_order_id ....................................... [[32mPASS[0m in 0.67s]
+[2026-08-11T05:33:42.457+0000] {docker.py:69} INFO - [0m05:33:42  52 of 52 PASS unique_stg_subscriptions_subscription_id ......................... [[32mPASS[0m in 0.63s]
+[2026-08-11T05:33:42.480+0000] {docker.py:69} INFO - [0m05:33:42  51 of 52 PASS unique_stg_refunds_refund_id ..................................... [[32mPASS[0m in 0.72s]
+[2026-08-11T05:33:42.490+0000] {docker.py:69} INFO - [0m05:33:42
+[2026-08-11T05:33:42.491+0000] {docker.py:69} INFO - [0m05:33:42  Finished running 52 data tests in 0 hours 0 minutes and 10.69 seconds (10.69s).
+[2026-08-11T05:33:42.652+0000] {docker.py:69} INFO - [0m05:33:42
+[2026-08-11T05:33:42.654+0000] {docker.py:69} INFO - [0m05:33:42  [32mCompleted successfully[0m
+[2026-08-11T05:33:42.656+0000] {docker.py:69} INFO - [0m05:33:42
+[2026-08-11T05:33:42.657+0000] {docker.py:69} INFO - [0m05:33:42  Done. PASS=52 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=52
+[2026-08-11T05:33:44.524+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-08-11T05:33:44.525+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=brewline_pipeline_bigquery, task_id=dbt_test_bigquery, run_id=backfill__2026-07-08T00:00:00+00:00, execution_date=20260708T000000, start_date=20260811T053313, end_date=20260811T053344
+[2026-08-11T05:33:44.564+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-08-11T05:33:44.566+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-08-11T05:33:44.567+0000] {logging_mixin.py:190} INFO - Dag name:brewline_pipeline_bigquery queued_at:None
+[2026-08-11T05:33:44.568+0000] {logging_mixin.py:190} INFO - Task hostname:5224a343584d operator:DockerOperator
+[2026-08-11T05:33:44.607+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-08-11T05:33:44.626+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-11T05:33:44.628+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,64 @@
+[2026-08-11T06:08:52.887+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-08-11T06:08:52.910+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: brewline_pipeline_bigquery.dbt_run_bigquery backfill__2026-07-27T00:00:00+00:00 [queued]>
+[2026-08-11T06:08:52.921+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: brewline_pipeline_bigquery.dbt_run_bigquery backfill__2026-07-27T00:00:00+00:00 [queued]>
+[2026-08-11T06:08:52.923+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2026-08-11T06:08:52.940+0000] {taskinstance.py:2890} INFO - Executing <Task(DockerOperator): dbt_run_bigquery> on 2026-07-27 00:00:00+00:00
+[2026-08-11T06:08:52.951+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1520) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-08-11T06:08:52.954+0000] {standard_task_runner.py:72} INFO - Started process 1529 to run task
+[2026-08-11T06:08:52.954+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'brewline_pipeline_bigquery', 'dbt_run_bigquery', 'backfill__2026-07-27T00:00:00+00:00', '--job-id', '130', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/brewline_pipeline_bigquery_dag.py', '--cfg-path', '/tmp/tmpr__o76bf']
+[2026-08-11T06:08:52.956+0000] {standard_task_runner.py:105} INFO - Job 130: Subtask dbt_run_bigquery
+[2026-08-11T06:08:53.019+0000] {task_command.py:467} INFO - Running <TaskInstance: brewline_pipeline_bigquery.dbt_run_bigquery backfill__2026-07-27T00:00:00+00:00 [running]> on host 5224a343584d
+[2026-08-11T06:08:53.121+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='brewline_pipeline_bigquery' AIRFLOW_CTX_TASK_ID='dbt_run_bigquery' AIRFLOW_CTX_EXECUTION_DATE='2026-07-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='backfill__2026-07-27T00:00:00+00:00'
+[2026-08-11T06:08:53.123+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-08-11T06:08:53.124+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-08-11T06:08:53.125+0000] {logging_mixin.py:190} INFO - Current task name:dbt_run_bigquery state:running start_date:2026-08-11 06:08:52.911117+00:00
+[2026-08-11T06:08:53.126+0000] {logging_mixin.py:190} INFO - Dag name:brewline_pipeline_bigquery and current dag run status:running
+[2026-08-11T06:08:53.127+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-08-11T06:08:53.197+0000] {docker.py:345} INFO - Starting docker container from image brewline-dbt:latest
+[2026-08-11T06:08:55.662+0000] {docker.py:69} INFO - [0m06:08:55  Running with dbt=1.12.0
+[2026-08-11T06:08:56.187+0000] {docker.py:69} INFO - [0m06:08:56  Installing dbt-labs/dbt_utils
+[2026-08-11T06:09:01.323+0000] {docker.py:69} INFO - [0m06:09:01  Installed from version 1.4.1
+[2026-08-11T06:09:01.324+0000] {docker.py:69} INFO - [0m06:09:01  Up to date!
+[2026-08-11T06:09:04.891+0000] {docker.py:69} INFO - [0m06:09:04  Running with dbt=1.12.0
+[2026-08-11T06:09:06.222+0000] {docker.py:69} INFO - [0m06:09:06  Registered adapter: bigquery=1.12.0
+[2026-08-11T06:09:07.713+0000] {docker.py:69} INFO - [0m06:09:07  Found 9 models, 52 data tests, 2 seeds, 5 sources, 699 macros
+[2026-08-11T06:09:07.720+0000] {docker.py:69} INFO - [0m06:09:07
+[2026-08-11T06:09:07.722+0000] {docker.py:69} INFO - [0m06:09:07  Concurrency: 4 threads (target='bigquery')
+[2026-08-11T06:09:07.724+0000] {docker.py:69} INFO - [0m06:09:07
+[2026-08-11T06:09:07.745+0000] {docker.py:69} INFO - WARNING:google.auth._default:No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable
+[2026-08-11T06:09:07.746+0000] {docker.py:69} INFO - WARNING:google.auth._default:No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable
+[2026-08-11T06:09:08.725+0000] {docker.py:69} INFO - [0m06:09:08  1 of 9 START sql incremental model silver.stg_customers ........................ [RUN]
+[2026-08-11T06:09:08.727+0000] {docker.py:69} INFO - [0m06:09:08  2 of 9 START sql incremental model silver.stg_orders ........................... [RUN]
+[2026-08-11T06:09:08.729+0000] {docker.py:69} INFO - [0m06:09:08  3 of 9 START sql incremental model silver.stg_refunds .......................... [RUN]
+[2026-08-11T06:09:08.730+0000] {docker.py:69} INFO - [0m06:09:08  4 of 9 START sql table model silver.stg_subscriptions .......................... [RUN]
+[2026-08-11T06:09:10.439+0000] {docker.py:69} INFO - [0m06:09:10  4 of 9 OK created sql table model silver.stg_subscriptions ..................... [[32mCREATE TABLE (38.0 rows, 3.1 KiB processed)[0m in 1.70s]
+[2026-08-11T06:09:10.444+0000] {docker.py:69} INFO - [0m06:09:10  5 of 9 START sql table model gold.fact_subscription_churn ...................... [RUN]
+[2026-08-11T06:09:10.563+0000] {docker.py:69} INFO - [0m06:09:10  1 of 9 OK created sql incremental model silver.stg_customers ................... [[32mMERGE (45.0 rows, 66.8 KiB processed)[0m in 1.83s]
+[2026-08-11T06:09:10.842+0000] {docker.py:69} INFO - [0m06:09:10  2 of 9 OK created sql incremental model silver.stg_orders ...................... [[32mMERGE (59.0 rows, 149.8 KiB processed)[0m in 2.10s]
+[2026-08-11T06:09:10.851+0000] {docker.py:69} INFO - [0m06:09:10  6 of 9 START sql table model gold.fact_customer_health ......................... [RUN]
+[2026-08-11T06:09:10.854+0000] {docker.py:69} INFO - [0m06:09:10  7 of 9 START sql table model gold.fact_customer_rfm ............................ [RUN]
+[2026-08-11T06:09:10.981+0000] {docker.py:69} INFO - [0m06:09:10  3 of 9 OK created sql incremental model silver.stg_refunds ..................... [[32mMERGE (2.0 rows, 95.4 KiB processed)[0m in 2.24s]
+[2026-08-11T06:09:10.985+0000] {docker.py:69} INFO - [0m06:09:10  8 of 9 START sql table model gold.fact_weekly_revenue .......................... [RUN]
+[2026-08-11T06:09:11.816+0000] {docker.py:69} INFO - [0m06:09:11  5 of 9 OK created sql table model gold.fact_subscription_churn ................. [[32mCREATE TABLE (35.0 rows, 2.0 KiB processed)[0m in 1.37s]
+[2026-08-11T06:09:11.820+0000] {docker.py:69} INFO - [0m06:09:11  9 of 9 START sql table model gold.fact_refund_alerts ........................... [RUN]
+[2026-08-11T06:09:12.548+0000] {docker.py:69} INFO - [0m06:09:12  8 of 9 OK created sql table model gold.fact_weekly_revenue ..................... [[32mCREATE TABLE (12.0 rows, 42.8 KiB processed)[0m in 1.56s]
+[2026-08-11T06:09:12.669+0000] {docker.py:69} INFO - [0m06:09:12  6 of 9 OK created sql table model gold.fact_customer_health .................... [[32mCREATE TABLE (160.0 rows, 41.1 KiB processed)[0m in 1.81s]
+[2026-08-11T06:09:12.981+0000] {docker.py:69} INFO - [0m06:09:12  7 of 9 OK created sql table model gold.fact_customer_rfm ....................... [[32mCREATE TABLE (160.0 rows, 61.6 KiB processed)[0m in 2.12s]
+[2026-08-11T06:09:15.074+0000] {docker.py:69} INFO - [0m06:09:15  9 of 9 OK created sql table model gold.fact_refund_alerts ...................... [[32mCREATE TABLE (23.0 rows, 9.6 KiB processed)[0m in 3.25s]
+[2026-08-11T06:09:15.086+0000] {docker.py:69} INFO - [0m06:09:15
+[2026-08-11T06:09:15.088+0000] {docker.py:69} INFO - [0m06:09:15  Finished running 3 incremental models, 6 table models in 0 hours 0 minutes and 7.36 seconds (7.36s).
+[2026-08-11T06:09:15.267+0000] {docker.py:69} INFO - [0m06:09:15
+[2026-08-11T06:09:15.268+0000] {docker.py:69} INFO - [0m06:09:15  [32mCompleted successfully[0m
+[2026-08-11T06:09:15.270+0000] {docker.py:69} INFO - [0m06:09:15
+[2026-08-11T06:09:15.271+0000] {docker.py:69} INFO - [0m06:09:15  Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=9
+[2026-08-11T06:09:17.378+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-08-11T06:09:17.379+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=brewline_pipeline_bigquery, task_id=dbt_run_bigquery, run_id=backfill__2026-07-27T00:00:00+00:00, execution_date=20260727T000000, start_date=20260811T060852, end_date=20260811T060917
+[2026-08-11T06:09:17.419+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-08-11T06:09:17.421+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-08-11T06:09:17.422+0000] {logging_mixin.py:190} INFO - Dag name:brewline_pipeline_bigquery queued_at:2026-08-11 05:31:04.356127+00:00
+[2026-08-11T06:09:17.423+0000] {logging_mixin.py:190} INFO - Task hostname:5224a343584d operator:DockerOperator
+[2026-08-11T06:09:17.460+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-08-11T06:09:17.483+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-08-11T06:09:17.486+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

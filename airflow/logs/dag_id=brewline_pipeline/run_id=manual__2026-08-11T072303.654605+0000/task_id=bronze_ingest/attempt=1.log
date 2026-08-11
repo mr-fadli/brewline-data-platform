@@ -1,0 +1,116 @@
+[2026-08-11T07:23:07.008+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-08-11T07:23:07.049+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: brewline_pipeline.bronze_ingest manual__2026-08-11T07:23:03.654605+00:00 [queued]>
+[2026-08-11T07:23:07.061+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: brewline_pipeline.bronze_ingest manual__2026-08-11T07:23:03.654605+00:00 [queued]>
+[2026-08-11T07:23:07.062+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2026-08-11T07:23:07.087+0000] {taskinstance.py:2890} INFO - Executing <Task(DockerOperator): bronze_ingest> on 2026-08-11 07:23:03.654605+00:00
+[2026-08-11T07:23:07.099+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=2656) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-08-11T07:23:07.102+0000] {standard_task_runner.py:72} INFO - Started process 2662 to run task
+[2026-08-11T07:23:07.102+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'brewline_pipeline', 'bronze_ingest', 'manual__2026-08-11T07:23:03.654605+00:00', '--job-id', '178', '--raw', '--subdir', 'DAGS_FOLDER/brewline_pipeline_dag.py', '--cfg-path', '/tmp/tmp58drechz']
+[2026-08-11T07:23:07.104+0000] {standard_task_runner.py:105} INFO - Job 178: Subtask bronze_ingest
+[2026-08-11T07:23:07.182+0000] {task_command.py:467} INFO - Running <TaskInstance: brewline_pipeline.bronze_ingest manual__2026-08-11T07:23:03.654605+00:00 [running]> on host 5224a343584d
+[2026-08-11T07:23:07.296+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='brewline_pipeline' AIRFLOW_CTX_TASK_ID='bronze_ingest' AIRFLOW_CTX_EXECUTION_DATE='2026-08-11T07:23:03.654605+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-08-11T07:23:03.654605+00:00'
+[2026-08-11T07:23:07.299+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-08-11T07:23:07.300+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-08-11T07:23:07.302+0000] {logging_mixin.py:190} INFO - Current task name:bronze_ingest state:running start_date:2026-08-11 07:23:07.051685+00:00
+[2026-08-11T07:23:07.303+0000] {logging_mixin.py:190} INFO - Dag name:brewline_pipeline and current dag run status:running
+[2026-08-11T07:23:07.304+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-08-11T07:23:07.387+0000] {docker.py:345} INFO - Starting docker container from image brewline-bronze:latest
+[2026-08-11T07:23:08.967+0000] {docker.py:69} INFO - Traceback (most recent call last):
+[2026-08-11T07:23:08.969+0000] {docker.py:69} INFO -   File "/opt/project/pipelines/bronze/ingest.py", line 108, in <module>
+[2026-08-11T07:23:08.972+0000] {docker.py:69} INFO -     run(run_date=_parse_cli_date())
+[2026-08-11T07:23:08.974+0000] {docker.py:69} INFO -   File "/opt/project/pipelines/bronze/ingest.py", line 83, in run
+[2026-08-11T07:23:08.977+0000] {docker.py:69} INFO -     con = get_connection()
+[2026-08-11T07:23:08.979+0000] {docker.py:69} INFO -           ^^^^^^^^^^^^^^^^
+[2026-08-11T07:23:08.980+0000] {docker.py:69} INFO -   File "/opt/project/db.py", line 7, in get_connection
+[2026-08-11T07:23:08.983+0000] {docker.py:69} INFO -     con = duckdb.connect(str(DB_PATH))
+[2026-08-11T07:23:08.985+0000] {docker.py:69} INFO -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-08-11T07:23:08.986+0000] {docker.py:69} INFO - _duckdb.IOException: IO Error: Could not set lock on file "/opt/project/brewline.duckdb": Conflicting lock is held in PID 0. See also https://duckdb.org/docs/stable/connect/concurrency
+[2026-08-11T07:23:09.388+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 485, in execute
+    return self._run_image()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 362, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 419, in _run_image_with_mounts
+    raise DockerContainerFailedException(f"Docker container failed: {result!r}", logs=log_lines)
+airflow.providers.docker.exceptions.DockerContainerFailedException: Docker container failed: {'StatusCode': 1}
+[2026-08-11T07:23:09.409+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2026-08-11T07:23:09.417+0000] {logging_mixin.py:190} INFO - Task start:2026-08-11 07:23:07.051685+00:00 end:2026-08-11 07:23:09.407836+00:00 duration:2.356151
+[2026-08-11T07:23:09.420+0000] {logging_mixin.py:190} INFO - Task:<Task(DockerOperator): bronze_ingest> dag:<DAG: brewline_pipeline> dagrun:<DagRun brewline_pipeline @ 2026-08-11 07:23:03.654605+00:00: manual__2026-08-11T07:23:03.654605+00:00, state:running, queued_at: 2026-08-11 07:23:03.695227+00:00. externally triggered: True>
+[2026-08-11T07:23:09.422+0000] {logging_mixin.py:190} INFO - Failure caused by Docker container failed: {'StatusCode': 1}
+[2026-08-11T07:23:09.428+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=brewline_pipeline, task_id=bronze_ingest, run_id=manual__2026-08-11T07:23:03.654605+00:00, execution_date=20260811T072303, start_date=20260811T072307, end_date=20260811T072309
+[2026-08-11T07:23:09.528+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-08-11T07:23:09.532+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 178 for task bronze_ingest (Docker container failed: {'StatusCode': 1}; 2662)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 485, in execute
+    return self._run_image()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 362, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 419, in _run_image_with_mounts
+    raise DockerContainerFailedException(f"Docker container failed: {result!r}", logs=log_lines)
+airflow.providers.docker.exceptions.DockerContainerFailedException: Docker container failed: {'StatusCode': 1}
+[2026-08-11T07:23:09.575+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-08-11T07:23:09.619+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-11T07:23:09.626+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

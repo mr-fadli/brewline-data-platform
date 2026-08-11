@@ -1,3 +1,4 @@
+# .github/workflows/ci.yml
 name: CI
 
 on:
@@ -15,17 +16,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: "pip"
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install dbt-duckdb
+      - name: Install pipeline dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install dbt
+        run: pip install dbt-duckdb
 
       - name: Generate synthetic data
-        run: python data_generator/generate.py
+        run: python generator/generate_data.py
 
-      - name: Run bronze ingestion
+      - name: Generate synthetic exchange_rates
+        run: python generator/generate_exchange_rates.py
+
+      - name: Run bronze ingestion (local/dev)
         run: python pipelines/bronze/ingest.py
+
+      - name: dbt deps
+        run: cd brewline_dbt && dbt deps
 
       - name: dbt seed
         run: cd brewline_dbt && dbt seed

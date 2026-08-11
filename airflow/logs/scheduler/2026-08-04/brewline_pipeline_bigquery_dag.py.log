@@ -1,0 +1,302 @@
+[2026-08-04T07:47:06.358+0000] {processor.py:186} INFO - Started process (PID=72) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T07:47:06.369+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T07:47:06.383+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:47:06.382+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T07:47:06.530+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T07:47:07.064+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:47:07.063+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:brewline_pipeline_bigquery
+[2026-08-04T07:47:07.091+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:47:07.090+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:brewline_pipeline_bigquery
+[2026-08-04T07:47:07.107+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:47:07.106+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:brewline_pipeline_bigquery
+[2026-08-04T07:47:07.128+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:47:07.127+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:brewline_pipeline_bigquery
+[2026-08-04T07:47:07.139+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:47:07.138+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:brewline_pipeline_bigquery
+[2026-08-04T07:47:07.151+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:47:07.151+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:brewline_pipeline_bigquery
+[2026-08-04T07:47:07.166+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:47:07.165+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:brewline_pipeline_bigquery
+[2026-08-04T07:47:07.167+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:47:07.167+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T07:47:07.193+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:47:07.193+0000] {dag.py:3262} INFO - Creating ORM DAG for brewline_pipeline_bigquery
+[2026-08-04T07:47:07.209+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:47:07.208+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T07:47:07.239+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.925 seconds
+[2026-08-04T08:21:14.541+0000] {processor.py:186} INFO - Started process (PID=72) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:21:14.544+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:21:14.549+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:21:14.549+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:21:14.608+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:21:14.682+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:21:14.682+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:21:14.727+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:21:14.727+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:21:14.760+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.232 seconds
+[2026-08-04T08:21:45.139+0000] {processor.py:186} INFO - Started process (PID=138) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:21:45.140+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:21:45.143+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:21:45.142+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:21:45.167+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:21:45.205+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:21:45.205+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:21:45.244+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:21:45.244+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:21:45.268+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.136 seconds
+[2026-08-04T08:22:15.519+0000] {processor.py:186} INFO - Started process (PID=204) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:22:15.521+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:22:15.525+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:22:15.525+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:22:15.554+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:22:15.585+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:22:15.585+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:22:15.631+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:22:15.631+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:22:15.659+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.152 seconds
+[2026-08-04T08:22:46.271+0000] {processor.py:186} INFO - Started process (PID=268) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:22:46.272+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:22:46.276+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:22:46.276+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:22:46.300+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:22:46.322+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:22:46.322+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:22:46.352+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:22:46.352+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:22:46.380+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.118 seconds
+[2026-08-04T08:23:17.096+0000] {processor.py:186} INFO - Started process (PID=333) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:23:17.097+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:23:17.100+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:23:17.100+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:23:17.122+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:23:17.142+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:23:17.142+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:23:17.173+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:23:17.173+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:23:17.199+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.110 seconds
+[2026-08-04T08:23:47.583+0000] {processor.py:186} INFO - Started process (PID=398) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:23:47.585+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:23:47.588+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:23:47.587+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:23:47.608+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:23:47.629+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:23:47.628+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:23:47.654+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:23:47.653+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:23:47.676+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.098 seconds
+[2026-08-04T08:24:18.336+0000] {processor.py:186} INFO - Started process (PID=463) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:24:18.337+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:24:18.340+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:24:18.340+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:24:18.361+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:24:18.380+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:24:18.380+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:24:18.405+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:24:18.405+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:24:18.427+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.097 seconds
+[2026-08-04T08:24:48.708+0000] {processor.py:186} INFO - Started process (PID=528) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:24:48.709+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:24:48.715+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:24:48.714+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:24:48.744+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:24:48.766+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:24:48.766+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:24:48.795+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:24:48.795+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:24:48.819+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.120 seconds
+[2026-08-04T08:25:18.879+0000] {processor.py:186} INFO - Started process (PID=593) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:25:18.881+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:25:18.885+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:25:18.884+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:25:18.912+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:25:18.937+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:25:18.936+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:25:18.968+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:25:18.967+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:25:18.999+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.129 seconds
+[2026-08-04T08:25:50.023+0000] {processor.py:186} INFO - Started process (PID=658) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:25:50.025+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:25:50.028+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:25:50.028+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:25:50.053+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:25:50.074+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:25:50.074+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:25:50.103+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:25:50.102+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:25:50.129+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.116 seconds
+[2026-08-04T08:26:20.190+0000] {processor.py:186} INFO - Started process (PID=724) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:26:20.192+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:26:20.198+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:26:20.197+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:26:20.220+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:26:20.240+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:26:20.239+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:26:20.266+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:26:20.266+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:26:20.289+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.106 seconds
+[2026-08-04T08:26:50.783+0000] {processor.py:186} INFO - Started process (PID=789) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:26:50.784+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:26:50.786+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:26:50.786+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:26:50.807+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:26:50.828+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:26:50.828+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:26:50.857+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:26:50.856+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:26:50.880+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.103 seconds
+[2026-08-04T08:27:21.068+0000] {processor.py:186} INFO - Started process (PID=854) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:27:21.069+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:27:21.072+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:27:21.072+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:27:21.091+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:27:21.110+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:27:21.110+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:27:21.134+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:27:21.133+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:27:21.155+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.095 seconds
+[2026-08-04T08:27:51.258+0000] {processor.py:186} INFO - Started process (PID=919) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:27:51.260+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:27:51.263+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:27:51.263+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:27:51.286+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:27:51.311+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:27:51.310+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:27:51.340+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:27:51.340+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:27:51.364+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.112 seconds
+[2026-08-04T08:28:21.607+0000] {processor.py:186} INFO - Started process (PID=984) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:28:21.610+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:28:21.614+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:28:21.614+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:28:21.645+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:28:21.669+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:28:21.669+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:28:21.698+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:28:21.697+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:28:21.720+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.122 seconds
+[2026-08-04T08:28:52.117+0000] {processor.py:186} INFO - Started process (PID=1049) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:28:52.118+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:28:52.122+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:28:52.121+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:28:52.148+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:28:52.172+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:28:52.172+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:28:52.204+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:28:52.204+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:28:52.229+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.120 seconds
+[2026-08-04T08:29:22.553+0000] {processor.py:186} INFO - Started process (PID=1114) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:29:22.554+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:29:22.562+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:29:22.561+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:29:22.588+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:29:22.612+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:29:22.612+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:29:22.642+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:29:22.642+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:29:22.668+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.122 seconds
+[2026-08-04T08:29:52.827+0000] {processor.py:186} INFO - Started process (PID=1180) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:29:52.829+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:29:52.833+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:29:52.832+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:29:52.861+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:29:52.891+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:29:52.891+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:29:52.926+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:29:52.926+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:29:52.952+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.132 seconds
+[2026-08-04T08:30:23.408+0000] {processor.py:186} INFO - Started process (PID=1245) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:30:23.409+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:30:23.412+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:30:23.412+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:30:23.432+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:30:23.451+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:30:23.450+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:30:23.476+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:30:23.476+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:30:23.500+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.098 seconds
+[2026-08-04T08:30:53.698+0000] {processor.py:186} INFO - Started process (PID=1310) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:30:53.700+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:30:53.704+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:30:53.704+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:30:53.727+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:30:53.747+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:30:53.747+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:30:53.773+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:30:53.773+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:30:53.796+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.105 seconds
+[2026-08-04T08:31:24.032+0000] {processor.py:186} INFO - Started process (PID=1375) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:31:24.033+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:31:24.036+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:31:24.036+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:31:24.056+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:31:24.074+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:31:24.074+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:31:24.099+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:31:24.099+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:31:24.121+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.096 seconds
+[2026-08-04T08:31:54.525+0000] {processor.py:186} INFO - Started process (PID=1440) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:31:54.527+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:31:54.529+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:31:54.529+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:31:54.548+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:31:54.569+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:31:54.569+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:31:54.599+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:31:54.599+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:31:54.623+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.105 seconds
+[2026-08-04T08:32:24.770+0000] {processor.py:186} INFO - Started process (PID=1505) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:32:24.772+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:32:24.774+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:32:24.774+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:32:24.795+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:32:24.814+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:32:24.814+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:32:24.840+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:32:24.839+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:32:24.917+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.153 seconds
+[2026-08-04T08:32:55.020+0000] {processor.py:186} INFO - Started process (PID=1570) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:32:55.021+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:32:55.023+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:32:55.023+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:32:55.047+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:32:55.070+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:32:55.070+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:32:55.101+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:32:55.101+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:32:55.124+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.111 seconds
+[2026-08-04T08:33:25.421+0000] {processor.py:186} INFO - Started process (PID=1635) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:33:25.423+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:33:25.426+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:33:25.425+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:33:25.448+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:33:25.469+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:33:25.469+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:33:25.499+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:33:25.499+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:33:25.524+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.110 seconds
+[2026-08-04T08:33:55.893+0000] {processor.py:186} INFO - Started process (PID=1700) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:33:55.894+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:33:55.897+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:33:55.897+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:33:55.918+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:33:55.940+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:33:55.939+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:33:55.969+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:33:55.969+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:33:55.992+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.108 seconds
+[2026-08-04T08:34:26.397+0000] {processor.py:186} INFO - Started process (PID=1765) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:34:26.399+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:34:26.403+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:34:26.402+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:34:26.427+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:34:26.448+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:34:26.448+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:34:26.476+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:34:26.475+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:34:26.499+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.109 seconds
+[2026-08-04T08:34:56.753+0000] {processor.py:186} INFO - Started process (PID=1823) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:34:56.754+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:34:56.757+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:34:56.757+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:34:56.780+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:34:56.798+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:34:56.798+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:34:56.823+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:34:56.823+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:34:56.842+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.095 seconds
+[2026-08-04T08:35:28.011+0000] {processor.py:186} INFO - Started process (PID=1888) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:35:28.014+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:35:28.018+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:35:28.018+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:35:28.045+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:35:28.066+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:35:28.065+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:35:28.091+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:35:28.091+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:35:28.111+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.108 seconds
+[2026-08-04T08:35:58.279+0000] {processor.py:186} INFO - Started process (PID=1944) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:35:58.280+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:35:58.283+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:35:58.283+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:35:58.305+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:35:58.325+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:35:58.324+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:35:58.350+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:35:58.350+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:35:58.369+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.097 seconds
+[2026-08-04T08:36:29.170+0000] {processor.py:186} INFO - Started process (PID=2007) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:36:29.172+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:36:29.176+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:36:29.175+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:36:29.203+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:36:29.226+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:36:29.226+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:36:29.258+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:36:29.258+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:36:29.283+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.121 seconds
+[2026-08-04T08:37:00.241+0000] {processor.py:186} INFO - Started process (PID=2072) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:37:00.242+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:37:00.246+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:37:00.246+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:37:00.271+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:37:00.292+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:37:00.292+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:37:00.322+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:37:00.322+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:37:00.349+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.116 seconds
+[2026-08-04T08:37:31.078+0000] {processor.py:186} INFO - Started process (PID=2137) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:37:31.079+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:37:31.082+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:37:31.081+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:37:31.101+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:37:31.121+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:37:31.120+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:37:31.148+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:37:31.148+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:37:31.173+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.102 seconds
+[2026-08-04T08:38:01.742+0000] {processor.py:186} INFO - Started process (PID=2202) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:38:01.743+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:38:01.746+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:38:01.746+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:38:01.770+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:38:01.788+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:38:01.788+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:38:01.813+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:38:01.812+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:38:01.833+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.097 seconds
+[2026-08-04T08:38:31.964+0000] {processor.py:186} INFO - Started process (PID=2254) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:38:31.965+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:38:31.968+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:38:31.967+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:38:31.987+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:38:32.005+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:38:32.005+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:38:32.029+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:38:32.029+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:38:32.048+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.090 seconds
+[2026-08-04T08:39:02.189+0000] {processor.py:186} INFO - Started process (PID=2311) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:39:02.190+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:39:02.193+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:39:02.193+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:39:02.215+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:39:02.237+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:39:02.237+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:39:02.264+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:39:02.264+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:39:02.286+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.104 seconds
+[2026-08-04T08:39:32.565+0000] {processor.py:186} INFO - Started process (PID=2375) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:39:32.567+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:39:32.569+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:39:32.569+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:39:32.591+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:39:32.613+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:39:32.612+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:39:32.639+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:39:32.638+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:39:32.666+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.108 seconds
+[2026-08-04T08:40:02.922+0000] {processor.py:186} INFO - Started process (PID=2440) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:40:02.923+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:40:02.926+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:40:02.926+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:40:02.946+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:40:02.966+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:40:02.965+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:40:02.992+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:40:02.992+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:40:03.017+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.101 seconds
+[2026-08-04T08:40:33.171+0000] {processor.py:186} INFO - Started process (PID=2505) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:40:33.172+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:40:33.176+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:40:33.175+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:40:33.198+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:40:33.220+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:40:33.220+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:40:33.248+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:40:33.248+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:40:33.271+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.106 seconds
+[2026-08-04T08:41:03.886+0000] {processor.py:186} INFO - Started process (PID=2570) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:41:03.887+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:41:03.890+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:41:03.890+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:41:03.910+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:41:03.930+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:41:03.930+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:41:03.956+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:41:03.956+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:41:03.979+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.099 seconds
+[2026-08-04T08:41:34.434+0000] {processor.py:186} INFO - Started process (PID=2635) to work on /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:41:34.435+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/brewline_pipeline_bigquery_dag.py for tasks to queue
+[2026-08-04T08:41:34.439+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:41:34.438+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:41:34.463+0000] {processor.py:925} INFO - DAG(s) 'brewline_pipeline_bigquery' retrieved from /opt/airflow/dags/brewline_pipeline_bigquery_dag.py
+[2026-08-04T08:41:34.486+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:41:34.486+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:41:34.520+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:41:34.520+0000] {dag.py:4180} INFO - Setting next_dagrun for brewline_pipeline_bigquery to 2026-08-03 00:00:00+00:00, run_after=2026-08-04 00:00:00+00:00
+[2026-08-04T08:41:34.547+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/brewline_pipeline_bigquery_dag.py took 0.119 seconds
