@@ -30,7 +30,7 @@ except ImportError:
 import json
 from datetime import datetime, date, timezone
 from pathlib import Path
-
+from decimal import Decimal
 import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
@@ -103,7 +103,17 @@ def fetch_raw_file(bucket: storage.Bucket, source: dict, run_date: date) -> pd.D
         return pd.read_csv(io.BytesIO(raw_bytes), dtype=str)
     return pd.DataFrame(json.load(io.BytesIO(raw_bytes)))
 
-
+def _normalize_value(value, arrow_type):
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return None
+    if pa.types.is_decimal(arrow_type):
+        return Decimal(str(value)) if not isinstance(value, Decimal) else value
+    if pa.types.is_list(arrow_type):
+        return [_normalize_value(v, arrow_type.value_type) for v in value]
+    if pa.types.is_struct(arrow_type):
+        return {f.name: _normalize_value(value.get(f.name), f.type) for f in arrow_type}
+    return value
+    
 def build_arrow_table(df: pd.DataFrame, source_name: str) -> pa.Table:
     """Builds the pyarrow table strictly from the canonical schema in
     schemas.py -- no inference anywhere. Every column's type is a fact
@@ -114,26 +124,11 @@ def build_arrow_table(df: pd.DataFrame, source_name: str) -> pa.Table:
     schema = to_pyarrow_schema(source_name)
     arrays = []
     for field in schema:
-        # pandas' missing-value sentinel is always float NaN, even in a
-        # dtype=str column (dtype=str only governs non-null cells) -- so
-        # a blank CSV cell survives read_csv as float('nan'), not None.
-        # pyarrow accepts None as a null for any target type but rejects
-        # a bare float NaN against a non-float type outright, which is
-        # exactly what produced "Expected bytes, got a 'float' object"
-        # for customer_phone. Normalize NaN -> None here, uniformly,
-        # before array construction, rather than in validation (where
-        # NaN correctly reads as "legitimately missing").
-        values = [
-            None if (isinstance(v, float) and pd.isna(v)) else v
-            for v in df[field.name].tolist()
-        ]
+        values = [_normalize_value(v, field.type) for v in df[field.name].tolist()]
         try:
             arrays.append(pa.array(values, type=field.type))
         except (pa.lib.ArrowInvalid, pa.lib.ArrowTypeError) as exc:
-            raise ValueError(
-                f"{source_name}.{field.name}: value doesn't match declared "
-                f"type {field.type} ({exc})"
-            ) from exc
+            raise ValueError(f"{source_name}.{field.name}: value doesn't match declared type {field.type} ({exc})") from exc
     return pa.Table.from_arrays(arrays, schema=schema)
 
 

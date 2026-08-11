@@ -37,7 +37,7 @@ seeds:
     +schema: silver
     exchange_rates:
       +column_types:
-        rate_to_usd: "{{ 'DECIMAL(10,6)' if target.type == 'duckdb' else 'NUMERIC(10,6)' }}"
+        rate_to_usd: "{{ 'DECIMAL(10,6)' if target.type == 'duckdb' else 'NUMERIC' }}"
     
 
 models:

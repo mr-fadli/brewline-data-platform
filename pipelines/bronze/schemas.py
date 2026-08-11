@@ -14,6 +14,7 @@ JSON itself is typed.
 from google.cloud import bigquery
 import pandas as pd
 import pyarrow as pa
+from decimal import Decimal
 from datetime import datetime, date
 
 LINEAGE_FIELDS = [
@@ -28,17 +29,17 @@ SCHEMAS = {
         ("customer_email", "STRING"),
         ("created_at", "STRING"),
         ("currency", "STRING"),
-        ("total_price", "FLOAT64"),
+        ("total_price", "NUMERIC"),
         ("source_name", "STRING"),
         ("financial_status", "STRING"),
         ("cancelled_at", "STRING"),
         ("refunds", "RECORD_REPEATED", [
-            ("refund_id", "STRING"), ("amount", "FLOAT64"),
+            ("refund_id", "STRING"), ("amount", "NUMERIC"),
             ("created_at", "STRING"), ("reason", "STRING"),
         ]),
         ("line_items", "RECORD_REPEATED", [
             ("sku", "STRING"), ("name", "STRING"),
-            ("qty", "INT64"), ("price", "FLOAT64"),
+            ("qty", "INT64"), ("price", "NUMERIC"),
         ]),
     ] + LINEAGE_FIELDS,
 
@@ -96,7 +97,7 @@ def to_bigquery_schema(source_name: str) -> list[bigquery.SchemaField]:
 # canonical name before comparing.
 _TYPE_ALIASES = {
     "INTEGER": "INT64", "INT64": "INT64",
-    "FLOAT": "FLOAT64", "FLOAT64": "FLOAT64",
+    "NUMERIC": "NUMERIC", "DECIMAL": "NUMERIC",   # DuckDB calls it DECIMAL, BigQuery calls it NUMERIC — same concept
     "BOOLEAN": "BOOL", "BOOL": "BOOL",
     "STRUCT": "RECORD", "RECORD": "RECORD",
 }
@@ -142,8 +143,13 @@ def schema_diff(existing_sig: tuple, canonical_sig: tuple) -> str:
     return "\n".join(lines)
 
 
-_PA_TYPE_MAP = {"STRING": pa.string(), "FLOAT64": pa.float64(), "INT64": pa.int64(),
-                "TIMESTAMP": pa.timestamp("us", tz="UTC"), "DATE": pa.date32()}
+_PA_TYPE_MAP = {
+    "STRING": pa.string(),
+    "NUMERIC": pa.decimal128(18, 4),   # 18 total digits, 4 after the decimal — plenty for currency
+    "INT64": pa.int64(),
+    "TIMESTAMP": pa.timestamp("us", tz="UTC"),
+    "DATE": pa.date32(),
+}
 
 def to_pyarrow_schema(source_name: str) -> pa.Schema:
     fields = []
@@ -225,6 +231,10 @@ def _scalar_type_mask(col: pd.Series, arrow_type) -> pd.Series:
     col.map() -- one pass, C-level iteration, not a Python for-loop -- for
     object-dtype columns, where individual elements could genuinely be
     anything (this is exactly the case that caught '555-1754' earlier)."""
+    if pa.types.is_decimal(arrow_type):
+        if pd.api.types.is_float_dtype(col) or pd.api.types.is_integer_dtype(col):
+            return pd.Series(True, index=col.index)
+        return col.map(lambda v: pd.isna(v) or (isinstance(v, (int, float, Decimal)) and not isinstance(v, bool)))
     if pa.types.is_string(arrow_type):
         if pd.api.types.is_string_dtype(col) and not pd.api.types.is_object_dtype(col):
             return pd.Series(True, index=col.index)
@@ -245,6 +255,8 @@ def _scalar_type_mask(col: pd.Series, arrow_type) -> pd.Series:
 
 
 def _matches_type(value, arrow_type) -> bool:
+    if pa.types.is_decimal(arrow_type):
+        return isinstance(value, (int, float, Decimal)) and not isinstance(value, bool)
     if pa.types.is_string(arrow_type):
         return isinstance(value, str)
     if pa.types.is_floating(arrow_type):

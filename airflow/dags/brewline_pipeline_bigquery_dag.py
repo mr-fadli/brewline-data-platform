@@ -37,6 +37,8 @@ with DAG(
     schedule="@daily",
     start_date=datetime(2026, 6, 8),
     catchup=False,
+    max_active_runs=1,      # only one day's DAG run in flight at a time
+    max_active_tasks=2,     # at most 2 tasks (across all runs) executing at once
     tags=["brewline", "bigquery"],
 ) as dag:
 

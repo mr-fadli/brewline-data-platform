@@ -26,7 +26,7 @@ def docker_task(task_id, image, command, env=None):
 with DAG(
     dag_id="brewline_pipeline",
     schedule="@daily",
-    start_date=datetime(2026, 7, 1),
+    start_date=datetime(2026, 7, 8),
     catchup=False,
     tags=["brewline"],
 ) as dag:
