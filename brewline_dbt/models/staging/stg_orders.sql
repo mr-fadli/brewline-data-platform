@@ -2,13 +2,15 @@
   config(
     materialized='incremental' if target.type == 'bigquery' else 'table',
     unique_key='order_id',
-    partition_by={'field': 'order_ts_raw', 'data_type': 'datetime', 'granularity': 'day'} if target.type == 'bigquery' else none,
+    partition_by={'field': 'order_run_date', 'data_type': 'date'} if target.type == 'bigquery' else none,
     cluster_by=['channel'] if target.type == 'bigquery' else none,
     incremental_strategy='merge' if target.type == 'bigquery' else none
   )
 }}
--- order_ts_raw is UTC-normalized upstream; 
--- partitioning here reflects UTC calendar days, matching how weekly bucketing is later done in fact_weekly_revenue
+-- order_ts_raw is UTC-normalized upstream; order_run_date (carried from
+-- bronze's _run_date) drives partitioning and the incremental watermark --
+-- more robust than order_ts_raw itself, since a business timestamp can
+-- occasionally land earlier than expected due to timezone-offset spillover.
 
 WITH 
 square_aggregated AS (
@@ -17,7 +19,8 @@ square_aggregated AS (
         location_id,
         COALESCE(customer_phone, location_id || '_' || CAST(DATE(created_at_local) AS {{ dbt.type_string() }})) AS customer_key,
         MIN(created_at_local) AS order_ts_local,
-        SUM(CAST(qty AS {{ dbt.type_float() }}) * CAST(unit_price AS {{ dbt.type_float() }}) - CAST(discount AS {{ dbt.type_float() }})) AS amount_original
+        MIN(_run_date) AS order_run_date,
+        SUM(CAST(qty AS {{ dbt.type_numeric() }}) * CAST(unit_price AS {{ dbt.type_numeric() }}) - CAST(discount AS {{ dbt.type_numeric() }})) AS amount_original
     FROM {{ source('bronze', 'square_transactions') }}
     GROUP BY transaction_id, location_id, customer_phone, created_at_local
 ),
@@ -28,6 +31,7 @@ square_shaped AS (
         'retail' AS channel,
         'USD' AS currency,
         s.amount_original,
+        s.order_run_date,
         {{ convert_naive_to_utc('s.order_ts_local', 'tz.timezone_name') }} AS order_ts_raw
     FROM square_aggregated s
     JOIN {{ ref('store_timezones') }} tz ON s.location_id = tz.location_id
@@ -38,7 +42,8 @@ shopify_shaped AS (
         customer_email AS customer_key,
         CASE WHEN source_name = 'recharge' THEN 'subscription' ELSE 'online_oneoff' END AS channel,
         currency,
-        CAST(total_price AS {{ dbt.type_float() }}) AS amount_original,
+        CAST(total_price AS {{ dbt.type_numeric() }}) AS amount_original,
+        _run_date AS order_run_date,
         {{ parse_and_convert_to_utc('created_at') }} AS order_ts_raw
     FROM {{ source('bronze', 'shopify_orders') }}
     WHERE cancelled_at IS NULL
@@ -50,7 +55,7 @@ combined AS (
 converted AS (
     SELECT
         c.*,
-        c.amount_original * COALESCE(r.rate_to_usd, 1.0) AS amount_usd,
+        c.amount_original * COALESCE(r.rate_to_usd, CAST(1 AS {{ dbt.type_numeric() }})) AS amount_usd
     FROM combined c
     LEFT JOIN {{ ref('exchange_rates') }} r
         ON c.currency = r.currency AND CAST(c.order_ts_raw AS DATE) = r.currency_date
@@ -58,5 +63,5 @@ converted AS (
 SELECT * FROM converted
 
 {% if is_incremental() %}
-WHERE order_ts_raw > (SELECT MAX(order_ts_raw) FROM {{ this }})
+WHERE order_run_date > (SELECT MAX(order_run_date) FROM {{ this }})
 {% endif %}

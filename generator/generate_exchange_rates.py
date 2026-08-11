@@ -26,7 +26,7 @@ START_DATE = date(2026, 7, 8)
 # How many days of data to generate, starting from START_DATE (inclusive).
 # e.g. NUM_DAYS = 23 with START_DATE = 2026-06-08 generates 2026-06-08
 # through 2026-06-30.
-NUM_DAYS = 60
+NUM_DAYS = 70
 
 # Where this script itself lives, e.g. my_project/generator/
 SCRIPT_DIR = Path(__file__).resolve().parent

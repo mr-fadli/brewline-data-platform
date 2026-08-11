@@ -37,11 +37,11 @@ def resolve_all_files(source: dict) -> list[Path]:
     return matches
 
 
-def stamp_lineage(df: pd.DataFrame, source_name: str, run_date:date) -> pd.DataFrame:
+def stamp_lineage(df: pd.DataFrame, source_name: str, run_date: date) -> pd.DataFrame:
     df = df.copy()
     df["_source_system"] = source_name
     df["_ingested_at"] = datetime.now(timezone.utc).isoformat()
-    df["_run_date"] = run_date
+    df["_run_date"] = run_date  # NEW — keeps bronze schema symmetric across dev/prod
     return df
 
 

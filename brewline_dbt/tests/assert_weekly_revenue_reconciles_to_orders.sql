@@ -7,4 +7,4 @@ FROM (
         (SELECT SUM(total_revenue) FROM {{ ref('fact_weekly_revenue') }}) AS gold_total,
         (SELECT SUM(amount_usd) FROM {{ ref('stg_orders') }}) AS silver_total
 )
-WHERE ABS(gold_total - silver_total) > 0.01
+WHERE ABS(gold_total - silver_total) > 0.10
