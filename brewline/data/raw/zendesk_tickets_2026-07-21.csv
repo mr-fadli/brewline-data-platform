@@ -1,0 +1,9 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-4001,,Coffee doesn't taste like what I ordered,2026-07-21T19:52:00-07:00,"quality,refund_request",#6455
+ZD-4002,williamrodriguez@example.net,Coffee doesn't taste like what I ordered,2026-07-21T06:33:00-07:00,"quality,refund_request",#6460
+ZD-4004,,Coffee doesn't taste like what I ordered,2026-07-21T22:41:00-07:00,"quality,refund_request",#6487
+ZD-4005,millerroy@example.com,"Wrong grind size sent, whole bean expected",2026-07-21T20:05:00-05:00,"quality,refund_request",#6495
+ZD-4007,moorericky@example.net,"My coffee tastes off, tastes stale",2026-07-21T20:50:00-05:00,"quality,refund_request",#6505
+ZD-4051,,Bag arrived crushed,2026-07-21T10:00:00+00:00,"damaged,refund_request",#7562
+ZD-4063,sarayoung@example.org,Where is my box??,2026-07-21T07:00:00+00:00,"shipping,frustrated",
+ZD-4067,,Bag arrived crushed,2026-07-21T07:00:00+00:00,"damaged,refund_request",

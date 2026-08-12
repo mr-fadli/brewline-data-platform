@@ -42,7 +42,7 @@ from pathlib import Path
 from faker import Faker
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from config import RAW_DIR
+from brewline.config import RAW_DIR
 
 fake = Faker()
 Faker.seed(42)

@@ -1,0 +1,3 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-4058,lmoon@example.net,Bag arrived crushed,2026-07-19T16:00:00+00:00,"damaged,refund_request",#6989
+ZD-4064,,Package says delivered but I don't have it,2026-07-19T09:00:00+00:00,"shipping,frustrated",#7073

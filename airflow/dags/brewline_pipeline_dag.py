@@ -33,7 +33,7 @@ with DAG(
 
     bronze_ingest = docker_task(
         "bronze_ingest", "brewline-bronze:latest",
-        f"python {CONTAINER_PROJECT_DIR}/pipelines/bronze/ingest.py",
+        f"python {CONTAINER_PROJECT_DIR}/brewline/pipelines/bronze/ingest.py",
     )
     dbt_env = {"DBT_DUCKDB_PATH": f"{CONTAINER_PROJECT_DIR}/brewline.duckdb"}
     dbt_seed = docker_task("dbt_seed", "brewline-dbt:latest", "dbt seed --profiles-dir .", dbt_env)

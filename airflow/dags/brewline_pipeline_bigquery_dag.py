@@ -44,7 +44,7 @@ with DAG(
 
     bronze_ingest = docker_task(
         "bronze_ingest_bigquery", "brewline-bronze:latest",
-        "python pipelines/bronze/ingest_bigquery.py {{ ds }}",
+        "python brewline/pipelines/bronze/ingest_bigquery.py {{ ds }}",
     )
     dbt_run = docker_task(
         "dbt_run_bigquery", "brewline-dbt:latest",

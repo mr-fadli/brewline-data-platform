@@ -1,0 +1,3 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-4016,vmedina@example.net,Please cancel my subscription,2026-08-08T15:00:00+00:00,cancellation,
+ZD-4055,reedross@example.com,Please cancel my subscription,2026-08-08T08:00:00+00:00,cancellation,

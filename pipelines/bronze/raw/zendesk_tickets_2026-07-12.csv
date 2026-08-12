@@ -1,3 +1,0 @@
-ticket_id,requester_email,subject,created_at,tags,related_order_id
-ZD-4021,tsanders@example.org,Please cancel my subscription,2026-07-12T20:00:00+00:00,cancellation,#7987
-ZD-4042,,How do I pause my subscription?,2026-07-12T16:00:00+00:00,cancellation,

@@ -1,0 +1,4 @@
+ticket_id,requester_email,subject,created_at,tags,related_order_id
+ZD-4014,,Bag arrived crushed,2026-09-01T13:00:00+00:00,"damaged,refund_request",
+ZD-4018,,Package says delivered but I don't have it,2026-09-01T09:00:00+00:00,"shipping,frustrated",
+ZD-4032,,Box was soaked/damaged in transit,2026-09-01T20:00:00+00:00,"damaged,refund_request",

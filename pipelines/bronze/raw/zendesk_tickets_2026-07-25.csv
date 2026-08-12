@@ -1,3 +1,0 @@
-ticket_id,requester_email,subject,created_at,tags,related_order_id
-ZD-4035,ddavis@example.org,Tracking hasn't updated in days,2026-07-25T11:00:00+00:00,"shipping,frustrated",
-ZD-4061,johnsonjoshua@example.org,Bag arrived crushed,2026-07-25T11:00:00+00:00,"damaged,refund_request",#7465
