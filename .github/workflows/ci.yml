@@ -31,7 +31,7 @@ jobs:
         run: python generator/generate_exchange_rates.py
 
       - name: Run bronze ingestion (local/dev)
-        run: python pipelines/bronze/ingest.py
+        run: python brewline/pipelines/bronze/ingest.py
 
       - name: dbt deps
         run: cd brewline_dbt && dbt deps
