@@ -5,8 +5,6 @@ from Shopify's own exports, Square's daily batch, etc. This script exists
 only to seed a realistic GCS layout from our synthetic generator's output
 for local development and testing against the "production" GCS path.
 """
-import sys
-from pathlib import Path
 from datetime import datetime
 from google.cloud import storage
 from google.auth import impersonated_credentials
@@ -16,7 +14,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-sys.path.append(str(Path(__file__).resolve().parents[3]))
 from brewline.config import RAW_DIR, SOURCES
 from brewline.logging_config import get_logger
 

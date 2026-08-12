@@ -9,8 +9,8 @@ LOG_DIR = PROJECT_ROOT / "logs"
 
 BREWLINE_DIR = PROJECT_ROOT / "brewline"
 BRONZE_DIR = BREWLINE_DIR / "pipelines" / "bronze"
-DATA_DIR = BREWLINE_DIR / "data"
 
+DATA_DIR = BREWLINE_DIR / "data"
 RAW_DIR = DATA_DIR / "raw"
 BRONZE_PARQUET_DIR = DATA_DIR / "parquet"
 

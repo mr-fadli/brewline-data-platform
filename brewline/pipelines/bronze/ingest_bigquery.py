@@ -1,4 +1,3 @@
-# pipelines/bronze/ingest_bigquery.py
 """
 Production bronze ingestion: reads ONE day's raw file per source from the
 GCS landing zone (matching Airflow's logical_date/run_date), writes
@@ -29,7 +28,6 @@ except ImportError:
 
 import json
 from datetime import datetime, date, timezone
-from pathlib import Path
 from decimal import Decimal
 import pandas as pd
 import pyarrow as pa
@@ -38,8 +36,6 @@ from google.cloud import storage, bigquery
 from google.auth import impersonated_credentials
 import google.auth
 
-sys.path.append(str(Path(__file__).resolve().parent))         # this folder, for schemas.py
-sys.path.append(str(Path(__file__).resolve().parents[3]))      # brewline directory, for config / logging_config
 from brewline.config import SOURCES
 from brewline.logging_config import get_logger
 from brewline.pipelines.bronze.schemas import to_bigquery_schema, to_pyarrow_schema, validate_dataframe_schema, schema_signature, schema_diff

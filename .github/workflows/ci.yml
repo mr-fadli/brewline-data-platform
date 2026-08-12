@@ -1,4 +1,3 @@
-# .github/workflows/ci.yml
 name: CI
 
 on:
@@ -19,7 +18,9 @@ jobs:
           cache: "pip"
 
       - name: Install pipeline dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
 
       - name: Install dbt
         run: pip install dbt-duckdb

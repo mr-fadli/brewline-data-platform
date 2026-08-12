@@ -16,7 +16,6 @@ import sys
 from datetime import datetime, timezone, date
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).resolve().parents[3]))
 import duckdb
 import pandas as pd
 
