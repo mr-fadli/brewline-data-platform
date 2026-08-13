@@ -3,18 +3,19 @@ from datetime import datetime
 from airflow import DAG
 from airflow.providers.docker.operators.docker import DockerOperator
 from docker.types import Mount
+import os
 
-HOST_PROJECT_DIR = "D:/Ijal/data_engineer/brewline_coffee_co"
+HOST_PROJECT_DIR = os.environ["HOST_PROJECT_DIR"]
 CONTAINER_PROJECT_DIR = "/opt/project"
-HOST_GCLOUD_DIR = "C:/Users/cepot/AppData/Roaming/gcloud"          # adjust to your actual Windows path, e.g. C:/Users/you/AppData/Roaming/gcloud
+HOST_GCLOUD_DIR = os.environ.get("HOST_GCLOUD_DIR", "~/.config/gcloud")          # adjust to your actual Windows path, e.g. C:/Users/you/AppData/Roaming/gcloud
 
 project_mount = Mount(source=HOST_PROJECT_DIR, target=CONTAINER_PROJECT_DIR, type="bind")
 gcloud_mount = Mount(source=HOST_GCLOUD_DIR, target="/root/.config/gcloud", type="bind", read_only=True)
 
 GCP_ENV = {
-    "GCP_PROJECT_ID": "brewline-coffee-co",
-    "GCS_BUCKET_NAME": "brewline-data-lake",
-    "BRONZE_INGEST_SA": "brewline-bronze-ingest@brewline-coffee-co.iam.gserviceaccount.com",
+    "GCP_PROJECT_ID": os.environ["GCP_PROJECT_ID"],
+    "GCS_BUCKET_NAME": os.environ["GCS_BUCKET_NAME"],
+    "BRONZE_INGEST_SA": os.environ["BRONZE_INGEST_SA"],
     "GOOGLE_APPLICATION_CREDENTIALS": "/root/.config/gcloud/application_default_credentials.json",
 }
 

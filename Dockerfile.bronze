@@ -1,10 +1,11 @@
 FROM python:3.12-slim AS base
 WORKDIR /opt/project
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.txt pyproject.toml ./
+COPY brewline/ ./brewline/
+RUN pip install --no-cache-dir -r requirements.txt && \
+    pip install --no-cache-dir -e .
 
 FROM base AS local
-# local dev only needs the base layer
 
 FROM base AS gcp
 COPY requirements-gcp.txt .

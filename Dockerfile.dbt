@@ -1,0 +1,8 @@
+FROM python:3.12-slim
+WORKDIR /opt/project
+COPY requirements.txt pyproject.toml ./
+COPY brewline/ ./brewline/
+RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
+RUN pip install --no-cache-dir -r requirements.txt && pip install --no-cache-dir -e . && \
+    pip install --no-cache-dir dbt-duckdb==1.10.1 dbt-bigquery==1.12.0
+WORKDIR /opt/project/brewline_dbt
