@@ -25,6 +25,12 @@ jobs:
       - name: Install dbt
         run: pip install dbt-duckdb
 
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run unit tests
+        run: pytest tests/ -v
+
       - name: Generate synthetic data
         run: python generator/generate_data.py
 
