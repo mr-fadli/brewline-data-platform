@@ -1,12 +1,10 @@
 FROM python:3.12-slim AS base
 WORKDIR /opt/project
-COPY requirements.txt pyproject.toml ./
+COPY pyproject.toml ./
 COPY brewline/ ./brewline/
-RUN pip install --no-cache-dir -r requirements.txt && \
-    pip install --no-cache-dir -e .
+RUN pip install --no-cache-dir -e .
 
 FROM base AS local
 
 FROM base AS gcp
-COPY requirements-gcp.txt .
-RUN pip install --no-cache-dir -r requirements-gcp.txt
+RUN pip install --no-cache-dir -e ".[gcp]"

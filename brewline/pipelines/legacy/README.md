@@ -9,4 +9,6 @@ I kept it to show the progression from ad-hoc scripts to a proper transformation
 - No documentation generation
 - Hard to track data lineage
 
+**references/** holds the v1 local CSV reference data the original transform.py read directly; superseded by brewline_dbt/seeds/ once the project moved to dbt.
+
 **What replaced it:** `brewline_dbt/` with 15+ models, 40+ tests, and auto-generated docs.
