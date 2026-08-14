@@ -7,41 +7,57 @@ on:
     branches: [main]
 
 jobs:
-  test-pipeline:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install -e .
+          pip install pytest pytest-cov
+
+      - name: Run Python tests
+        run: pytest tests/ -v --cov=brewline --cov-report=xml
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v4
+        with:
+          files: ./coverage.xml
+
+  dbt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: "pip"
 
       - name: Install pipeline dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install -e .
+        run: pip install -e .
 
       - name: Install dbt
         run: pip install dbt-duckdb
 
-      - name: Install pytest
-        run: pip install pytest
-
-      - name: Run unit tests
-        run: pytest tests/ -v
-
-      - name: Generate synthetic data
-        run: python generator/generate_data.py
-
-      - name: Generate synthetic exchange_rates
-        run: python generator/generate_exchange_rates.py
-
-      - name: Run bronze ingestion (local/dev)
-        run: python brewline/pipelines/bronze/ingest.py
-
       - name: dbt deps
         run: cd brewline_dbt && dbt deps
+
+      - name: Generate synthetic data
+        run: |
+          python generator/generate_data.py
+          python generator/generate_exchange_rates.py
+
+      - name: Run bronze ingestion
+        run: python -m brewline.pipelines.bronze.ingest
 
       - name: dbt seed
         run: cd brewline_dbt && dbt seed
