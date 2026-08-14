@@ -9,6 +9,7 @@ brewline.duckdb.wal
 #miscellaneous
 .env
 __pycache__
+.pytest_cache
 brewline.egg-info/
 logs/
 brewline/data/parquet/
