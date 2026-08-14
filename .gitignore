@@ -13,3 +13,4 @@ __pycache__
 brewline.egg-info/
 logs/
 brewline/data/parquet/
+brewline/data/raw/

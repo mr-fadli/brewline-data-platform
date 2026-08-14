@@ -1,2 +1,0 @@
-ticket_id,requester_email,subject,created_at,tags,related_order_id
-ZD-4011,blakeerik@example.com,Bag arrived crushed,2026-08-07T07:00:00+00:00,"damaged,refund_request",#7608

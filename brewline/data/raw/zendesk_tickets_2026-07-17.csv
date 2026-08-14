@@ -1,3 +1,0 @@
-ticket_id,requester_email,subject,created_at,tags,related_order_id
-ZD-4047,samueldaniels@example.com,Tracking hasn't updated in days,2026-07-17T12:00:00+00:00,"shipping,frustrated",#6320
-ZD-4069,,Where is my box??,2026-07-17T13:00:00+00:00,"shipping,frustrated",

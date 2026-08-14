@@ -1,3 +1,0 @@
-ticket_id,requester_email,subject,created_at,tags,related_order_id
-ZD-4012,,Please cancel my subscription,2026-07-08T16:00:00+00:00,cancellation,#6399
-ZD-4044,keyemily@example.com,Bag arrived crushed,2026-07-08T15:00:00+00:00,"damaged,refund_request",#6621
