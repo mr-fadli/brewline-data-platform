@@ -1,7 +1,14 @@
 """Central configuration for the Brewline bronze pipeline."""
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+def find_project_root() -> Path:
+    current = Path(__file__).resolve().parent
+    for parent in [current, *current.parents]:
+        if (parent / "pyproject.toml").exists():
+            return parent
+    raise RuntimeError("Could not find project root (no pyproject.toml found)")
+
+PROJECT_ROOT = find_project_root()
 
 REFERENCE_DIR = PROJECT_ROOT / "references"
 
