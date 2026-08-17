@@ -35,3 +35,24 @@
 - Per-model incremental materialization judgment: applied only where safe
   (append-only, order-independent); ranking/window-based gold models remain
   full-refresh by design
+
+## v4.1.0 — Stage 4 hardening
+- Restructured into an installable `brewline` package (`pyproject.toml`,
+  `pip install -e .`) — removed manual `sys.path.append()` hacks throughout
+- Currency columns migrated from FLOAT64/DOUBLE to NUMERIC/DECIMAL across
+  bronze schemas, dbt models, and the exchange rate seed — eliminates
+  floating-point representation drift (see ADR-015)
+- Environment/secrets split across root `.env` (shared GCP config) and
+  `airflow/.env` (Docker-specific paths), invoked via `compose.ps1`/`.sh`
+  wrapper scripts (see ADR-017)
+- CI scoped explicitly to DuckDB only, with a new dedicated pytest suite
+  (extractor type-safety, config structural invariants) running alongside
+  dbt tests (see ADR-018, ADR-019)
+- Full historical backfill (July–September 2026) verified end-to-end via
+  Airflow against BigQuery, surfacing and fixing real production-shaped
+  issues: BigQuery partition-decorator schema conflicts with nested/
+  repeated fields, `accepted_values` test quoting on numeric BigQuery
+  columns, and Airflow backfill state-resumption interacting with a
+  mid-backfill schema migration
+- Legacy v1 (hand-orchestrated silver/gold) and pre-dbt reference data
+  preserved under `pipelines/legacy/`, documented rather than deleted

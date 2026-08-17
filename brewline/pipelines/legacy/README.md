@@ -2,6 +2,7 @@
 
 This was my first iteration — hand-rolled Python + SQL before introducing dbt.
 I kept it to show the progression from ad-hoc scripts to a proper transformation framework.
+This is intentionally left broken to kept the legacy true to the original v1 design (messy and unstructured).
 
 **Why it was replaced:**
 - No version control for SQL logic
