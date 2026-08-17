@@ -12,7 +12,7 @@ license = {text = "MIT"}
 authors = [
     {name = "mr-fadli", email = "rijalfadliislamy03@gmail.com"}
 ]
-keywords = ["data-engineering", "etl", "dbt", "airflow", "medallion-architecture"]
+keywords = ["data-engineering", "elt", "dbt", "airflow", "medallion-architecture"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",

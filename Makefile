@@ -19,10 +19,10 @@ build-images:
 	docker build -f Dockerfile.dbt -t brewline-dbt:latest .
 
 airflow-up:
-	cd airflow && ./compose.ps1 up -d
+	cd airflow && docker compose --env-file ../.env --env-file .env up -d
 
 airflow-down:
-	cd airflow && ./compose.ps1 down
+	cd airflow && docker compose --env-file ../.env --env-file .env down
 
 test:
 	pytest tests/ -v
